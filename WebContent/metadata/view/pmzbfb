@@ -1,0 +1,797 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 591,
+        "id": "pmzbfb",
+        "width": 822,
+        "designer|userClassName": "pmzbfb",
+        "designer|userAlias": "pmzbfb",
+        "autoScroll": true,
+        "layout": "absolute",
+        "anchorSize": 500,
+        "bodyPadding": 10,
+        "title": "拍卖指标发布",
+        "jsonSubmit": true,
+        "url": "getoverage"
+    },
+    "designerId": "757723fb-dc8c-478a-aecb-0947d6780ea5",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 70,
+                "layout|y": 80,
+                "designer|snapToGrid": 10,
+                "height": 270,
+                "id": "bh",
+                "width": 290,
+                "designer|displayName": "bh",
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "bh",
+                "titleAlign": "center"
+            },
+            "designerId": "0d2879ef-4efb-4467-a055-da2093483496",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 10,
+                        "id": "dwed",
+                        "width": 170,
+                        "fieldLabel": "单位额度",
+                        "labelWidth": 60,
+                        "name": null,
+                        "value": [
+                            "'100亩'"
+                        ],
+                        "emptyText": "100亩",
+                        "displayField": "value",
+                        "queryMode": "local",
+                        "store": "ticketfbcount",
+                        "valueField": "value"
+                    },
+                    "designerId": "5e023cae-99d0-4b53-b8a1-173b3bea443b",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAmountChange",
+                                "implHandler": [
+                                    "var bar=Ext.widget('bar');\r",
+                                    "var bh=Ext.getCmp('bh');\r",
+                                    "bh.remove(bh.child(\"[xtype='barbar']\"));\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "var length=(newValue.substring(0,newValue.length-1)-100)/5;\r",
+                                    "bar.x=10;\r",
+                                    "bar.y=180-length;\r",
+                                    "//alert(length);\r",
+                                    "//bar.setY(bar.y+length);\r",
+                                    "//bar.setHeight(50+length);\r",
+                                    "//alert(\"hieght\"+bar.height);\r",
+                                    "//alert(\"y\"+bar.y);\r",
+                                    "//bar.y=180-length;\r",
+                                    "bar.height=20+length;\r",
+                                    "bar.id='bar';\r",
+                                    "//bar.anchor='-180 20';\r",
+                                    "//alert(\"y\"+bar.y);\r",
+                                    "//bar.render();\r",
+                                    "//bar.layout();\r",
+                                    "//bar.remove();\r",
+                                    "bh.add(bar);\r",
+                                    "var m=Ext.getCmp('unt').getRawValue();\r",
+                                    "//alert(m);\r",
+                                    "var total=Ext.getCmp('total');\r",
+                                    "if(m===null||m===undefined)\r",
+                                    "{\r",
+                                    "\r",
+                                    "}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "    // alert(newValue.substring(0,newValue.length-1));\r",
+                                    "    // alert(m);\r",
+                                    "    total.setValue(newValue.substring(0,newValue.length-1)*m+'亩');\r",
+                                    "}\r",
+                                    ""
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "f7f6d0e7-6876-4848-95e3-00057815e866"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 50,
+                        "id": "unt",
+                        "width": 170,
+                        "fieldLabel": "本组数量",
+                        "labelWidth": 60,
+                        "name": "count",
+                        "value": [
+                            "1"
+                        ],
+                        "emptyText": "1",
+                        "queryMode": "local",
+                        "store": "ticketfbcount",
+                        "valueField": "text"
+                    },
+                    "designerId": "7a154765-082d-4087-a577-b40f3c929794",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onUntChange",
+                                "implHandler": [
+                                    "\r",
+                                    "var m=Ext.getCmp('dwed').getValue();\r",
+                                    "//alert(m);\r",
+                                    "var total=Ext.getCmp('total');\r",
+                                    "if(m===null||m==='')\r",
+                                    "{\r",
+                                    "\r",
+                                    "}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "\r",
+                                    "    total.setValue(newValue*m.substring(0,m.length-1)+'亩');\r",
+                                    "}\r",
+                                    ""
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "d7edb9e6-2eac-430d-8a29-218fa9b994af"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 90,
+                        "id": "total",
+                        "width": 170,
+                        "fieldLabel": "本组总额",
+                        "labelWidth": 60,
+                        "name": "total"
+                    },
+                    "designerId": "baf3f709-f753-48bb-b0f4-02df6ea62ee6"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 130,
+                        "width": 170,
+                        "fieldLabel": "设置基价",
+                        "labelWidth": 60
+                    },
+                    "designerId": "852cb8b1-a90e-49d4-8127-78caa77f7a08"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 170,
+                        "width": 170,
+                        "fieldLabel": "开拍日期",
+                        "labelWidth": 60
+                    },
+                    "designerId": "e98e864c-57f3-463c-bad9-ca6752753fb8"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 120,
+                        "layout|y": 200,
+                        "text": "招标发布"
+                    },
+                    "designerId": "1c60217c-dfe0-4b76-ad72-e46c6fb4e953",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.MessageBox.alert('提示','发布成功');"
+                                ]
+                            },
+                            "designerId": "3bf3bbe2-9d20-41d6-b4fd-245d9e110bb1"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onFormAfterRender",
+                        "implHandler": [
+                            "var myDate=new Date();\r",
+                            "var year=myDate.getFullYear();\r",
+                            "var month=(myDate.getMonth()+1)<10?'0'+(myDate.getMonth()+1):(myDate.getMonth()+1);\r",
+                            "var date=myDate.getDate()<10?'0'+myDate.getDate():myDate.getDate();\r",
+                            "var title1=year+'JP'+month+date+'1';\r",
+                            "\r",
+                            "//alert(Ext.getCmp('aaa').hide());\r",
+                            "this.child(\"[title='bh']\").setTitle(title1);\r",
+                            "\r",
+                            ""
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "designerId": "d7657912-b1a6-46aa-bbeb-3204ac2f7e7f"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 180,
+                        "height": 20,
+                        "id": "bar",
+                        "width": 70,
+                        "designer|displayName": "barbar",
+                        "designer|createAlias": "barbar",
+                        "title": "barbar"
+                    },
+                    "designerId": "a7fc3da4-585a-40f1-b4e0-c6e6829eb306"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 450,
+                "layout|y": 80,
+                "designer|snapToGrid": 10,
+                "height": 270,
+                "width": 290,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "bh2",
+                "titleAlign": "center"
+            },
+            "designerId": "921d00e7-d736-41ac-9cfd-ab3de0d4c94c",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 10,
+                        "id": "dwed2",
+                        "width": 170,
+                        "fieldLabel": "单位额度",
+                        "labelWidth": 60,
+                        "name": null,
+                        "value": [
+                            "'100亩'"
+                        ],
+                        "emptyText": "100亩",
+                        "displayField": "value",
+                        "queryMode": "local",
+                        "store": "ticketfbcount",
+                        "valueField": "value"
+                    },
+                    "designerId": "3d295893-d622-44ad-a7d4-33dd9d04d3bc",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDwed2Change",
+                                "implHandler": [
+                                    "\r",
+                                    "var m=Ext.getCmp('unt2').getValue();\r",
+                                    "//alert(m);\r",
+                                    "var total=Ext.getCmp('total2');\r",
+                                    "if(m===null||m===undefined)\r",
+                                    "{\r",
+                                    "\r",
+                                    "}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "    // alert(newValue.substring(0,newValue.length-1));\r",
+                                    "    // alert(m);\r",
+                                    "    total.setValue(newValue.substring(0,newValue.length-1)*m+'亩');\r",
+                                    "}\r",
+                                    ""
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "7ac63082-0fdd-4969-b72b-1cf237996eb2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 50,
+                        "id": "unt2",
+                        "width": 170,
+                        "fieldLabel": "本组数量",
+                        "labelWidth": 60,
+                        "value": [
+                            "1"
+                        ],
+                        "emptyText": "1",
+                        "queryMode": "local",
+                        "store": "ticketfbcount",
+                        "valueField": "text"
+                    },
+                    "designerId": "87a27bac-a25c-4fb2-a42d-3dcef6f75004",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onUnt2Change",
+                                "implHandler": [
+                                    "\r",
+                                    "var m=Ext.getCmp('dwed2').getValue();\r",
+                                    "//alert(m);\r",
+                                    "var total=Ext.getCmp('total2');\r",
+                                    "if(m===null||m==='')\r",
+                                    "{\r",
+                                    "\r",
+                                    "}\r",
+                                    "else\r",
+                                    "{\r",
+                                    "\r",
+                                    "    total.setValue(newValue*m.substring(0,m.length-1)+'亩');\r",
+                                    "}"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "designerId": "444abc8f-c1b4-4621-9811-9aa100eac848"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 90,
+                        "id": "total2",
+                        "width": 170,
+                        "fieldLabel": "本组总额",
+                        "labelWidth": 60
+                    },
+                    "designerId": "f761614c-c5a0-45b9-9084-e9a4b957470c"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 130,
+                        "width": 170,
+                        "fieldLabel": "设置基价",
+                        "labelWidth": 60
+                    },
+                    "designerId": "b2bd9533-106b-4f33-87be-1fb611308e7c"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 100,
+                        "layout|y": 170,
+                        "width": 170,
+                        "fieldLabel": "开拍日期",
+                        "labelWidth": 60
+                    },
+                    "designerId": "f9df0ffe-4df6-41f8-9853-d0e7715a7bc1"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 120,
+                        "layout|y": 200,
+                        "text": "招标发布"
+                    },
+                    "designerId": "186dfe83-1421-4222-90e8-ee6eebd5cd34",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "Ext.MessageBox.alert('提示','发布成功');"
+                                ]
+                            },
+                            "designerId": "188a2210-4d36-47a7-a2ff-52b90a6c3724"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": -32,
+                        "layout|y": -6,
+                        "height": 250,
+                        "width": 140,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "charfb"
+                    },
+                    "designerId": "3f77e53c-e4c8-43dc-8ad4-64c63cf77199",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-column-chart",
+                    "autoName": "ColumnChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.series.Column",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": [
+                                    "{'display':'insideEnd','field':'y','color':'#333','text-anchor':'middle'}"
+                                ],
+                                "xField": null,
+                                "yField": [
+                                    "y2"
+                                ]
+                            },
+                            "designerId": "95e1360b-dcc2-4ac8-a7df-d444c555032b"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onFormBeforeRender",
+                        "implHandler": [
+                            "var myDate=new Date();\r",
+                            "var year=myDate.getFullYear();\r",
+                            "var month=(myDate.getMonth()+1)<10?'0'+(myDate.getMonth()+1):(myDate.getMonth()+1);\r",
+                            "var date=myDate.getDate()<10?'0'+myDate.getDate():myDate.getDate();\r",
+                            "var title2=year+'JP'+month+date+'2';\r",
+                            "\r",
+                            "//alert(Ext.getCmp('aaa').hide());\r",
+                            "this.child(\"[title='bh2']\").setTitle(title2);\r",
+                            ""
+                        ],
+                        "name": "beforerender",
+                        "scope": "me"
+                    },
+                    "designerId": "2de1a18d-d8d4-4341-96c8-eeb4baa7594a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 500,
+                "layout|y": 10,
+                "text": "添加指标"
+            },
+            "designerId": "556a8381-f3fb-44c8-af53-8014b8ecc4dc",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var tt=Ext.getCmp('pmzbfb');\r",
+                            "//var tj=Ext.widget('jp');\r",
+                            "//tj.x=70;\r",
+                            "//tj.y=400;\r",
+                            "//tt.add(tj);\r",
+                            "//alert('ess');\r",
+                            "var myDate=new Date();\r",
+                            "var year=myDate.getFullYear();\r",
+                            "var month=(myDate.getMonth()+1)<10?'0'+(myDate.getMonth()+1):(myDate.getMonth()+1);\r",
+                            "var date=myDate.getDate()<10?'0'+myDate.getDate():myDate.getDate();\r",
+                            "var n=Ext.getCmp('count').getValue();\r",
+                            "\r",
+                            "alert('n'+n);\r",
+                            "var y=80+Math.floor(n/2)*320;\r",
+                            "//alert(y);\r",
+                            "if(n%2===0)\r",
+                            "{\r",
+                            "    var ticket1=Ext.widget('jp');\r",
+                            "    var title=year+'JP'+month+date+n;\r",
+                            "    ticket1.setTitle(title);\r",
+                            "    ticket1.setTitle('00000');\r",
+                            "    ticket1.x=70;\r",
+                            "    ticket1.y=y;\r",
+                            "    tt.add(ticket1);\r",
+                            "\r",
+                            "}\r",
+                            "else\r",
+                            "{\r",
+                            "\r",
+                            "    var ticket2=Ext.widget('jp');\r",
+                            "    var title2=year+'JP'+month+date+n;\r",
+                            "    ticket2.setTitle(title2);\r",
+                            "    ticket2.x=450;\r",
+                            "    ticket2.y=y;\r",
+                            "    tt.add(ticket2);\r",
+                            "}\r",
+                            "n++;\r",
+                            "Ext.getCmp('count').setValue(n);\r",
+                            "//alert(n);\r",
+                            ""
+                        ]
+                    },
+                    "designerId": "af7b3943-6a0f-488b-a48c-fd598fd93223"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 600,
+                "layout|y": 10,
+                "text": "删除指标"
+            },
+            "designerId": "5e2a8d59-9c32-4d70-be42-6732a14f47eb",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var tt=Ext.getCmp('pmzbfb');\r",
+                            "var tj=Ext.widget('jp');\r",
+                            "tj.x=70;\r",
+                            "tj.y=400;\r",
+                            "tt.add(tj);\r",
+                            "alert('ess');\r",
+                            "\r",
+                            ""
+                        ]
+                    },
+                    "designerId": "ea1a9748-a0c6-42ae-8838-93a99d2800ae"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 10,
+                "id": "overage",
+                "fieldLabel": "当前信息库地票总额:",
+                "labelWidth": 150,
+                "name": "overage"
+            },
+            "designerId": "7d520b41-ee86-42c9-90bb-5105e72c1c82"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPmzbfbBeforeRender",
+                "implHandler": [
+                    "this.load();"
+                ],
+                "name": "beforerender",
+                "scope": "me"
+            },
+            "designerId": "6a7b257f-753c-4143-af52-3dd49d5d60f4"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 260,
+                "layout|y": 10,
+                "fieldLabel": "本次发布总额",
+                "value": [
+                    "0"
+                ]
+            },
+            "designerId": "908cfd4d-c9b1-4614-8db1-51a406875670"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 50,
+                "hidden": true,
+                "hideMode": "offsets",
+                "id": "count",
+                "fieldLabel": "count",
+                "hideLabel": true,
+                "name": "count",
+                "value": [
+                    "2"
+                ],
+                "blankText": null,
+                "emptyText": "2"
+            },
+            "designerId": "d41e2742-d4bb-46e7-8c05-4ad58ea60ffd"
+        }
+    ]
+}

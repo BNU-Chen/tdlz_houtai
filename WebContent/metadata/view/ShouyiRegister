@@ -1,0 +1,253 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "autoRender": true,
+        "autoShow": true,
+        "height": 485,
+        "id": "ShouyiRegister",
+        "width": 567,
+        "designer|userClassName": "ShouyiRegister",
+        "designer|userAlias": "ShouyiRegister",
+        "autoScroll": true,
+        "layout": "absolute",
+        "title": "收益额度信息登记",
+        "jsonSubmit": true,
+        "url": "getBenefitList12"
+    },
+    "designerId": "ae33f27e-8430-46f4-92d7-184cb882113a",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 140,
+                "id": "zjlcf",
+                "fieldLabel": "资金流出方",
+                "name": "zjlcf"
+            },
+            "designerId": "cefd9328-5ed3-4e33-9af9-d3f215258185"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 200,
+                "id": "yt",
+                "fieldLabel": "用途",
+                "name": "yt"
+            },
+            "designerId": "ce8d3fa3-9a0f-47ef-866d-7b111a645e37"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 300,
+                "layout|y": 140,
+                "id": "zjlrf",
+                "fieldLabel": "资金流入方",
+                "name": "zjlrf"
+            },
+            "designerId": "cc2e3831-57d5-48b0-a8aa-c4885531d3b6"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 300,
+                "layout|y": 200,
+                "id": "jbr",
+                "fieldLabel": "经办人",
+                "name": "jbr"
+            },
+            "designerId": "cd2abf79-b10b-4054-813c-a9bd83fabd6a"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 300,
+                "layout|y": 20,
+                "id": "pjh",
+                "fieldLabel": "票据号",
+                "name": "pjh"
+            },
+            "designerId": "dc1bb1cb-2fb1-4c76-a097-7b4b9e264ba6"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 300,
+                "layout|y": 80,
+                "id": "je",
+                "fieldLabel": "金额",
+                "name": "je"
+            },
+            "designerId": "f94b6ce2-e8ff-4f23-97d1-9a812ed9b2e2"
+        },
+        {
+            "type": "Ext.form.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 80,
+                "id": "jysj",
+                "fieldLabel": "交易时间",
+                "name": "jysj"
+            },
+            "designerId": "acb8f2a3-b085-46a0-bc80-a5f9a2d10e4e"
+        },
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 260,
+                "autoRender": false,
+                "id": "dzqr",
+                "fieldLabel": "到账确认",
+                "name": "dzqr",
+                "emptyText": "请选择",
+                "displayField": "name",
+                "queryMode": "local",
+                "store": "ShouyiCombox",
+                "valueField": "value"
+            },
+            "designerId": "6c5d45b1-9864-4426-a7ba-f0e9098cdec4"
+        },
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 20,
+                "autoRender": false,
+                "id": "htbh",
+                "fieldLabel": "合同编号",
+                "name": "htbh",
+                "emptyText": "请选择",
+                "displayField": "value",
+                "queryMode": "local",
+                "store": "ShouyiRegisterHtbh",
+                "valueField": "value"
+            },
+            "designerId": "e66ceef5-0ca7-4b60-9531-0efe41869cec"
+        },
+        {
+            "type": "Ext.form.field.File",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 300,
+                "layout|y": 260,
+                "id": "scsmj",
+                "width": 240,
+                "fieldLabel": "票据扫描件",
+                "name": "scsmj",
+                "buttonText": "选择"
+            },
+            "designerId": "4b62781c-f2c1-4405-ab98-4d0bcb0d3d76"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 230,
+                "layout|y": 330,
+                "width": 90,
+                "text": "保存"
+            },
+            "designerId": "8e7ffc5b-84fd-43a9-8621-49c4c4dce2f5",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "\r",
+                            "var form = Ext.getCmp('ShouyiRegister').getForm(); // get the basic form\r",
+                            "if (form.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "    form.submit({\r",
+                            "        url:'getBenefitList12',\r",
+                            "        success: function(form, action) {\r",
+                            "            Ext.Msg.alert('保存成功', action.result.msg);\r",
+                            "            var mystore = Ext.StoreMgr.get('ShouyiFind_Zijin'); //获得store对象                                                   \r",
+                            "            mystore.load();\r",
+                            "        },\r",
+                            "        failure: function(form, action) {\r",
+                            "            Ext.Msg.alert('保存失败', action.result.msg);\r",
+                            "        }\r",
+                            "    });\r",
+                            "} else { // display error alert if the data is invalid\r",
+                            "    Ext.Msg.alert('Invalid Data', 'Please correct form errors.');\r",
+                            "}\r",
+                            ""
+                        ]
+                    },
+                    "designerId": "17a23d7d-7bd7-4bff-93b4-4274201c63a4"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 260,
+        "id": null,
+        "width": 290,
+        "designer|userClassName": "jp",
+        "designer|userAlias": "jp",
+        "layout": "absolute",
+        "bodyPadding": 10,
+        "title": "编号",
+        "titleAlign": "center"
+    },
+    "designerId": "c21a2414-94f1-4444-884f-0420e6158879",
+    "cn": [
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 10,
+                "width": 170,
+                "fieldLabel": "单位额度",
+                "labelWidth": 60,
+                "displayField": "value",
+                "queryMode": "local",
+                "store": "ticketfbcount",
+                "valueField": "value"
+            },
+            "designerId": "df3f278e-831b-4e08-bc79-bce278419d02"
+        },
+        {
+            "type": "Ext.form.field.ComboBox",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 50,
+                "width": 170,
+                "fieldLabel": "本组数量",
+                "labelWidth": 60,
+                "queryMode": "local",
+                "store": "ticketfbcount",
+                "valueField": "text"
+            },
+            "designerId": "363f5839-6924-4129-8618-d6af4c6240c3"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 90,
+                "width": 170,
+                "fieldLabel": "本组总额",
+                "labelWidth": 60
+            },
+            "designerId": "ea9d98aa-ed19-4ed7-993f-855766fab55a"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 130,
+                "width": 170,
+                "fieldLabel": "设置基价",
+                "labelWidth": 60
+            },
+            "designerId": "2eb170fd-aae7-48f3-aeb7-4f69c72dcf79"
+        },
+        {
+            "type": "Ext.form.field.Date",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 100,
+                "layout|y": 170,
+                "width": 170,
+                "fieldLabel": "开拍日期",
+                "labelWidth": 60
+            },
+            "designerId": "b34aacc2-5205-4920-8621-bfe4671f02ac"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 120,
+                "layout|y": 200,
+                "text": "招标发布"
+            },
+            "designerId": "5b790b11-20d5-4d34-905b-f459bd156610",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "Ext.MessageBox.alert('提示','发布成功');"
+                        ]
+                    },
+                    "designerId": "ba914ad5-2d8c-4824-8bc1-f67abcdd8f8c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": -32,
+                "layout|y": -6,
+                "height": 250,
+                "width": 140,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "charfb"
+            },
+            "designerId": "86958f07-2a03-47c7-867d-435f3fe9271d",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'display':'insideEnd','field':'y','color':'#333','text-anchor':'middle'}"
+                        ],
+                        "xField": null,
+                        "yField": [
+                            "y"
+                        ]
+                    },
+                    "designerId": "855a6bf5-cc55-4887-951d-09519b10c774"
+                }
+            ]
+        }
+    ]
+}

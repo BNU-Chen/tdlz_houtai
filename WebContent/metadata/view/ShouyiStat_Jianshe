@@ -1,0 +1,253 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 485,
+        "width": 691,
+        "designer|userClassName": "ShouyiStat_Jianshe",
+        "designer|userAlias": "ShouyiStat_Jianshe",
+        "layout": "border",
+        "title": "建设单位收益分析"
+    },
+    "designerId": "1c7adfc6-f430-4607-85c0-064ba94e94e2",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "designer|snapToGrid": 10,
+                "height": 123,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "选择查询条件"
+            },
+            "designerId": "68506adf-8f58-4526-aefd-df2e6ad1eb13",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 60,
+                        "id": "ShouyiStatJiansheField",
+                        "fieldLabel": "关键词"
+                    },
+                    "designerId": "12e68735-e696-4676-be77-4a6f4cfb2e4b"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 20,
+                        "id": "ShouyiStatJiansheDateStart",
+                        "fieldLabel": "起始时间"
+                    },
+                    "designerId": "2b719bcf-9533-4d6f-a359-c27234ffb6d7"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 310,
+                        "layout|y": 20,
+                        "id": "ShouyiStatJiansheDateEnd",
+                        "fieldLabel": "结束时间"
+                    },
+                    "designerId": "b28058f5-2566-4afb-bf22-0c115d5a23a5"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 420,
+                        "layout|y": 60,
+                        "width": 90,
+                        "text": "统计分析"
+                    },
+                    "designerId": "2d0dc339-f238-4490-a140-e886dcdd45e7",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiStatJiansheDateStart').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiStatJiansheDateEnd').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('ShouyiStatJiansheField').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiStat_Jianshe'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"25\",\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword1:getKeyword1\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "d192f0d1-27ee-459b-b873-b804d8f63862"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "dock": null,
+                "title": "建设单位收益分配统计表",
+                "store": "ShouyiStat_Jianshe"
+            },
+            "designerId": "955a9756-06bc-42fa-abec-aa1e5eb56b75",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 58,
+                        "dataIndex": "xh",
+                        "text": "序号",
+                        "format": "0,000"
+                    },
+                    "designerId": "1d2e9dc4-151b-476c-afef-bda5b226e0d5"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "dwmc",
+                        "text": "单位名称"
+                    },
+                    "designerId": "7e2bb4fc-7554-4a00-b0bf-b1ee1436b05c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "sjdkbh",
+                        "text": "所建地块编号"
+                    },
+                    "designerId": "61945ba8-eefd-4bef-95d2-fed5c7db8ee9"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "cyrw",
+                        "text": "参与任务"
+                    },
+                    "designerId": "70570616-470b-4e6c-a82d-315d33186bc7"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "cysj",
+                        "text": "参与时间"
+                    },
+                    "designerId": "a0879dc2-6ed6-4387-9423-3cca83e3487e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "sy",
+                        "text": "收益（万）"
+                    },
+                    "designerId": "a3e658b4-9bd2-47ab-8b60-53facc9413a2"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 184,
+                        "dataIndex": "sybl",
+                        "text": "所占总收益的百分比（%）"
+                    },
+                    "designerId": "485430a6-e923-442b-856d-76ea9fe870c6"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "d52ad8e6-8102-4419-be99-1236eaedbc7a"
+                }
+            ]
+        }
+    ]
+}

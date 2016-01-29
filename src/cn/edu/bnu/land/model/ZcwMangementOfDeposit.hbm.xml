@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-12 7:26:18 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ZcwMangementOfDeposit" table="zcw_mangement_of_deposit" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="loginName" type="string">
+            <column name="login_name" length="50">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="ticketId" type="string">
+            <column name="ticket_id" length="50">
+                <comment>&#181;&#216;&#198;&#177;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="deposit" type="string">
+            <column name="deposit" length="50">
+                <comment>&#177;&#163;&#214;&#164;&#189;&#240;</comment>
+            </column>
+        </property>
+        <property name="statusofdeposit" type="string">
+            <column name="statusofdeposit" length="20">
+                <comment>&#214;&#167;&#184;&#182;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="contract" type="string">
+            <column name="contract" length="20">
+                <comment>&#186;&#207;&#205;&#172;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="bidResult" type="string">
+            <column name="bid_result" length="50">
+                <comment>&#190;&#186;&#188;&#219;&#189;&#225;&#185;&#251;</comment>
+            </column>
+        </property>
+        <property name="returnstatus" type="string">
+            <column name="returnstatus" length="50">
+                <comment>&#205;&#203;&#187;&#185;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="diedline" type="date">
+            <column name="diedline" length="10">
+                <comment>&#177;&#163;&#214;&#164;&#189;&#240;&#214;&#167;&#184;&#182;&#189;&#216;&#214;&#185;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,289 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 485,
+        "width": 695,
+        "designer|userClassName": "ShouyiStat_Nonghu",
+        "designer|userAlias": "ShouyiStat_Nonghu",
+        "layout": "border",
+        "title": "农户收益分析"
+    },
+    "designerId": "81597ef5-eb33-45fc-99ad-a4be16c87f71",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "designer|snapToGrid": 10,
+                "height": 124,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "选择查询条件"
+            },
+            "designerId": "d135e6b8-3b1a-4bfc-8bce-cc419cf24acc",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 60,
+                        "id": "ShouyiStatNonghuField",
+                        "width": 180,
+                        "fieldLabel": "关键词",
+                        "labelWidth": 60
+                    },
+                    "designerId": "3077fe1c-5a75-4b4e-b189-8a555256a399"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 20,
+                        "id": "ShouyiStatNonghuDateStart",
+                        "width": 180,
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "a212f28a-788a-442c-9ff8-4f81d9068d25"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 300,
+                        "layout|y": 20,
+                        "id": "ShouyiStatNonghuDateEnd",
+                        "width": 180,
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "91afff81-ef74-47d7-8827-c4099dfd6d0e"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 370,
+                        "layout|y": 60,
+                        "width": 60,
+                        "text": "查询"
+                    },
+                    "designerId": "ef32fbd4-367b-45f8-b191-c5598b0dba5d",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiStatNonghuDateStart').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiStatNonghuDateEnd').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('ShouyiStatNonghuField').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiStat_Nonghu'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"25\",\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword1:getKeyword1\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "e125d726-e638-41f8-992e-99be4998280d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "title": "农户收益分配统计表",
+                "store": "ShouyiStat_Nonghu"
+            },
+            "designerId": "1501c74b-ab3f-4969-8810-8c21e17697e8",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 46,
+                        "text": "序号"
+                    },
+                    "designerId": "2fb5bf0e-b46f-4053-b38b-1ead87880ba6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 67,
+                        "dataIndex": "nhxm",
+                        "text": "农户姓名"
+                    },
+                    "designerId": "3d1fbb87-6283-40ee-a9ae-5b794379e0ec"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 91,
+                        "dataIndex": "yydkbh",
+                        "text": "拥有地块编号"
+                    },
+                    "designerId": "5f3ddfc8-b759-4033-8fdf-f2968246fa1d"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "lzsj",
+                        "text": "流转时间"
+                    },
+                    "designerId": "c910f59f-1919-4481-8235-99c6224c9ae0"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 77,
+                        "dataIndex": "lzl",
+                        "text": "流转量（亩）"
+                    },
+                    "designerId": "a05dcc5d-7ee7-4142-84ea-605cc9519199"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 144,
+                        "dataIndex": "lzlbl",
+                        "text": "所占该地票的百分比（%）"
+                    },
+                    "designerId": "1e938afa-6bb4-42ac-b34b-e9e4c11a3516"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 63,
+                        "dataIndex": "sy",
+                        "text": "收益（万）"
+                    },
+                    "designerId": "918bc8c9-fa85-4c26-b27e-9b3fb5994710"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 160,
+                        "dataIndex": "sybl",
+                        "text": "所占农户总收益的百分比（%）"
+                    },
+                    "designerId": "8ba8c87b-b9d4-47e9-b4c9-9336b0c41399"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "5dc46483-1079-4b12-87a2-6fb8190f7c33"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "ShouyiStat_Nonghu"
+                    },
+                    "designerId": "6a5ff516-710c-4783-8d22-f6bdf712d9fa"
+                }
+            ]
+        }
+    ]
+}

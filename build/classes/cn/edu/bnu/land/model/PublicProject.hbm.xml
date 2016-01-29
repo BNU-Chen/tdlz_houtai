@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-10-5 11:38:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.PublicProject" table="`public_ project`" catalog="tdlz">
+        <id name="projectId" type="java.lang.Integer">
+            <column name="ProjectID" />
+            <generator class="identity" />
+        </id>
+        <property name="projectname" type="string">
+            <column name="Projectname" length="100" />
+        </property>
+        <property name="rlocation" type="string">
+            <column name="RLocation" length="100" />
+        </property>
+        <property name="rmapnumber" type="string">
+            <column name="RMapnumber" length="45" />
+        </property>
+        <property name="rarea" type="string">
+            <column name="RArea" length="45" />
+        </property>
+        <property name="rproperty" type="string">
+            <column name="RProperty" length="45" />
+        </property>
+        <property name="rqualityFlag" type="string">
+            <column name="RQualityFlag" length="45" />
+        </property>
+        <property name="conUnit" type="string">
+            <column name="conUnit" length="45" />
+        </property>
+        <property name="starttime" type="date">
+            <column name="starttime" length="10" />
+        </property>
+        <property name="completiontime" type="date">
+            <column name="completiontime" length="10" />
+        </property>
+        <property name="rmoney" type="string">
+            <column name="rmoney" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

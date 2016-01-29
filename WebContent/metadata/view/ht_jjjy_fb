@@ -1,0 +1,61 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 462,
+        "width": 704,
+        "designer|userClassName": "ht_jjjy_fb",
+        "designer|userAlias": "ht_jjjy_fb1",
+        "title": "竞价交易<<地票发布",
+        "activeTab": 0
+    },
+    "designerId": "7c515274-4568-46a2-ab5b-cca6bb3aaeec",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "a6c384d3-57ff-4e81-ae3a-2f696d90bdfc",
+            "masterInstanceId": "757723fb-dc8c-478a-aecb-0947d6780ea5",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "676279c1-227f-4960-9205-d71af53ff54b"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "51adb1bb-13b5-47c0-8ccb-fc0484385364",
+            "masterInstanceId": "fe3d76ce-c0d8-4cd8-960c-256181548c7e",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "f033c7e1-742e-4721-b73c-b9bdcb06be45"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,827 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "myViewPort",
+        "designer|userClassName": "MyViewport",
+        "layout": "border"
+    },
+    "designerId": "cf4ba8e6-6ee4-4903-9b13-4617964eb1bc",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "autoRender": false,
+                "id": "htglTabPanelMain",
+                "itemId": null,
+                "activeTab": 0
+            },
+            "designerId": "c4187c1b-a9df-4a6b-ba83-5c362f693a19",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "62fdd4e3-50be-4439-9256-b411cf76ce46",
+                    "masterInstanceId": "56977a6d-f04b-4659-acc8-e7b201fd16cd",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "758411a1-17e5-4e38-9759-4cc0614f31d8"
+                        }
+                    ]
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onHtglTabPanelMainShow",
+                        "implHandler": [
+                            "Ext.Ajax.request({\r",
+                            "    url:'timer_creat_xml'\r",
+                            "\r",
+                            "});"
+                        ],
+                        "name": "show",
+                        "scope": "me"
+                    },
+                    "designerId": "396de116-a4aa-4023-8b3b-2567ee8ec396"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "height": 150,
+                "layout": "fit",
+                "title": null
+            },
+            "designerId": "5483bb3a-4e20-4305-8237-16c883b9df93",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "html": "<a href=\"j_spring_security_logout\">退出      </a>",
+                        "text": null
+                    },
+                    "designerId": "f87f4694-aab0-4b5e-8522-18f244a004b6"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<a href=\"http://localhost:8080/tdlz_dzjy02/index.html\" target=\"blank\">          集体建设用地电子交易系统</a>",
+                        "text": ""
+                    },
+                    "designerId": "97e20577-903a-4e7d-8ee4-8e2e9c3e11ed"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "<a href=\"http://localhost:8080/tdlz_homeWebSite/\" target=\"blank\">       门户网站</a>",
+                        "text": ""
+                    },
+                    "designerId": "a3b19ba2-3135-4b62-b4ce-b0030c014328"
+                },
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 201,
+                        "width": 201,
+                        "src": "images/title_htgl.png"
+                    },
+                    "designerId": "91ccf520-82ec-4628-b3f1-378b57336b69"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "layout|split": true,
+                "id": null,
+                "width": 150,
+                "layout": "accordion",
+                "collapsible": true,
+                "title": "管理面板"
+            },
+            "designerId": "b49d0b2c-6309-4819-90e4-79f1294cbecc",
+            "cn": [
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 102,
+                        "title": "信息发布推送",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "\r",
+                            "     {\r",
+                            "        id: 'infoArticleZXDTTab',\r",
+                            "        text: '最新动态',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "    },\r",
+                            "     {\r",
+                            "        id: 'infoArticleTZGGTab',\r",
+                            "        text: '通知公告',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'infoArticleNDZCTab',\r",
+                            "        text: '供地信息',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "      \r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'infoArticleNDZRTab',\r",
+                            "        text: '需求信息',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true       \r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'infoArticleZJJYTab',\r",
+                            "        text: '最新交易',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "    },\r",
+                            "   \r",
+                            "        \r",
+                            "     {\r",
+                            "        id: 'infoArticleJYLCTab',\r",
+                            "        text: '交易流程',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'infoArticleQRCodeTab',\r",
+                            "        text: '二维码管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf:true\r",
+                            "    }\r",
+                            "    \r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "1a0f6575-ccc2-40ba-bc7f-99e81fd0491f",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "fca041e9-54d8-4ba5-805d-ba1d09a694b8"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange1",
+                                "implHandler": [
+                                    "//var xtype = selected[0].get('id');   \r",
+                                    "//Ext.MessageBox.alert('xtype',xtype);\r",
+                                    "//var tabPanel=Ext.ComponentQuery.query('tabpanel')[0];\r",
+                                    "//tabPanel.removeAll(true);\r",
+                                    "//tabPanel.add(Ext.widget(xtype));\r",
+                                    "// Ext.MessageBox.alert('info444',title);\r",
+                                    "\r",
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "\r",
+                                    "\r",
+                                    "var xtypes=xtype.split(\",\");\r",
+                                    "for(var i=0;i<xtypes.length;i++){\r",
+                                    "    myTabPanel.add(Ext.widget(xtypes[i]));\r",
+                                    "}\r",
+                                    "\r",
+                                    "var mywin=Ext.create('Ext.window.Window',{\r",
+                                    "    title: '农地转入信息推送',\r",
+                                    "    minWidth: 700,\r",
+                                    "    minHeight: 380,\r",
+                                    "    layout: 'fit',\r",
+                                    "    items: [Ext.widget(xtypes[1])]\r",
+                                    "});\r",
+                                    "mywin.show();"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "b3d2062e-ac6f-48a7-a68b-e004195dca70"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "地票审核入库",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: 'gx',\r",
+                            "        text: '指标登记审核',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "  \r",
+                            "    {\r",
+                            "        id: 'ht_shjd_dagl1',\r",
+                            "        text: '档案管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "\r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "3f3188c3-6c5c-4283-8711-c946c3451081",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "40bbac8c-64a0-425b-9dcd-9ca61f4d1dfc"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange11",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "b0ae6f13-6484-41bd-a536-0046bda80104"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "保证金管理",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: 'ht_bzjgl_cz1',\r",
+                            "        text: '充值管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "  \r",
+                            "    {\r",
+                            "        id: 'ht_bzjgl_tk1',\r",
+                            "        text: '退款管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_bzjgl_lsjl1',\r",
+                            "        text: '历史记录',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "\r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "5f90a9e4-8358-444e-bc62-207af7c3816d",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "ea9de080-21be-4f92-9d6a-f310ff6cd651"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange111",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "//Ext.MessageBox.alert();\r",
+                                    "myTabPanel.add(Ext.widget(xtype));"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "eca972ea-3e1a-4284-96eb-d864ac31039a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "竞价交易管理",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: 'ht_jjjygl_fb',\r",
+                            "        text: '发布公告',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "  \r",
+                            "    \r",
+                            "    {\r",
+                            "        id: 'pmzbfb',\r",
+                            "        text: '指标发布',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_jjjy_zgsh',\r",
+                            "        text: '资格审核',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_jjjy_jygl1',\r",
+                            "        text: '交易管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_jjjy_zbsh',\r",
+                            "        text: '中标审核',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "  \r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "eaadbeb1-5618-4cc2-85ba-b2b76c9ff671",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "ce6448bd-7a14-443a-8dd1-49a3adf5ea27"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange1111",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');  \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));\r",
+                                    ""
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "662508fe-f455-44d8-bc12-4be60b7bff30"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "网签网备",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: 'qt_dzjy_wsqy',\r",
+                            "        text: '网上签约',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_wqwb_jysh1',\r",
+                            "        text: '交易审核',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_wqwb_fzba1',\r",
+                            "        text: '发证备案',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ht_wqwb_dagl',\r",
+                            "        text: '档案管理',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "  \r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "34210a05-42d7-4544-a820-09c695b9374a",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "4da57c33-3cb0-4811-8623-a5b1246e89ff"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange11111",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "ced3bb72-e6ad-4aa2-9242-465d57cea0e6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "交易态势分析",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [    \r",
+                            "    {\r",
+                            "        id: 'TaishiFind',\r",
+                            "        text: '交易态势查询',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'TaishiPrice',\r",
+                            "        text: '按交易价格分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "  \r",
+                            "    {\r",
+                            "        id: 'TaishiVolume',\r",
+                            "        text: '按交易量分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'TaishiNumber',\r",
+                            "        text: '按交易次数分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "\r",
+                            "    {\r",
+                            "        id: 'TaishiArea',\r",
+                            "        text: '按交易区域分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'TaishiAlarm',\r",
+                            "        text: '交易态势异常分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "  \r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "8553c333-8405-4a93-9e05-f201d6dd5b09",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "d2542e0c-006e-46ce-9f32-75256753092e"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange111111",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "37d1d6d9-2333-4a1e-b668-1e7e5340be02"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "收益分配溯源",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: 'ShouyiFind_Hetong',\r",
+                            "        text: '收益查询',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "  \r",
+                            "    {\r",
+                            "        id: 'ShouyiRegister',\r",
+                            "        text: '收益登记',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ShouyiStat_Nonghu',\r",
+                            "        text: '统计分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ShouyiAlarm',\r",
+                            "        text: '异常分析',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "  \r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "722f56c4-a4e6-4b9d-80d0-b96752e1c4d4",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "e9f58598-bfc8-476d-ae09-89a741b45180"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange1111111",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');   \r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));\r",
+                                    "if(xtype=='ShouyiStat_Nonghu'){\r",
+                                    "    myTabPanel.add(Ext.widget('ShouyiStat_Jianshe')); \r",
+                                    "}\r",
+                                    "if(xtype=='ShouyiFind_Hetong'){\r",
+                                    "    myTabPanel.add(Ext.widget('ShouyiFind_Zijin')); \r",
+                                    "}\r",
+                                    ""
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "ace44472-a434-41bc-9f0d-5047961a315f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "title": "信息检索与统计",
+                        "root": [
+                            "{expanded: true,\r",
+                            "children: [\r",
+                            "    {\r",
+                            "        id: '',\r",
+                            "        text: '信息检索设置',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        children:[\r",
+                            "        \t{\r",
+                            "        \t\tid: 'Crawl',\r",
+                            "                text: '检索网站设置',\r",
+                            "                icon:'images/tubiao.jpg',\r",
+                            "                leaf: true\r",
+                            "    \t\t},\r",
+                            "            {\r",
+                            "                id: 'Extract',\r",
+                            "                text: '字段存储设置',\r",
+                            "                icon:'images/tubiao.jpg',\r",
+                            "                leaf: true\r",
+                            "            },\r",
+                            "            {\r",
+                            "                id: 'Keywords',\r",
+                            "                text: '查询主题词设置',\r",
+                            "                icon:'images/tubiao.jpg',\r",
+                            "                leaf: true\r",
+                            "            }\r",
+                            "        ]\r",
+                            "    },\r",
+                            "    {\r",
+                            "        id: 'ccQueryStatisticsTab',\r",
+                            "        text: '查询与统计',\r",
+                            "        icon:'images/tubiao.png',\r",
+                            "        leaf: true\r",
+                            "    }\r",
+                            "]}"
+                        ],
+                        "rootVisible": false
+                    },
+                    "designerId": "89bbcf42-5bca-491c-9fe2-1670ae83920f",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "480f7fde-0504-424c-a5a6-8ea0984ac27e"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTreepanelSelectionChange2",
+                                "implHandler": [
+                                    "var xtype = selected[0].get('id');  \r",
+                                    "//Ext.Msg.alert(\"\",xtype);\r",
+                                    "var myTabPanel = Ext.getCmp('htglTabPanelMain');\r",
+                                    "//Ext.Msg.alert(\"\",myTabPanel.id);\r",
+                                    "myTabPanel.removeAll(true);\r",
+                                    "myTabPanel.add(Ext.widget(xtype));"
+                                ],
+                                "name": "selectionchange",
+                                "scope": "me"
+                            },
+                            "designerId": "9dff72ca-12ba-4744-b85c-2ceb1232f2ec"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

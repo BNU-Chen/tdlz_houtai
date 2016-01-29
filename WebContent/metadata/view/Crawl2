@@ -1,0 +1,22 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 440,
+        "html": "<iframe src='http://localhost:8090/main.jsp' width='100%' height='100%'/>",
+        "width": 757,
+        "designer|userClassName": "Crawl2",
+        "designer|userAlias": "Crawl2",
+        "autoScroll": true,
+        "layout": "border",
+        "title": "检索网站设置"
+    },
+    "configAlternates": {
+        "html": "string"
+    },
+    "designerId": "9da0aa53-ead3-4ba3-8187-8d2a76d696b0"
+}

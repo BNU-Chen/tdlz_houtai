@@ -1,0 +1,115 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 606,
+        "width": 776,
+        "designer|userClassName": "ht_wqwb_htmb",
+        "designer|userAlias": "ht_wqwb_htmb1",
+        "autoScroll": true,
+        "layout": "absolute",
+        "title": "合同模板"
+    },
+    "designerId": "ec0e29fe-edd6-4e2d-8222-2cad7298e0d6",
+    "cn": [
+        {
+            "type": "Ext.form.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 10,
+                "layout|y": 80,
+                "height": 432,
+                "width": 720,
+                "fieldLabel": "内容",
+                "labelWidth": 40
+            },
+            "designerId": "3632b478-4d16-4dec-a3e6-9402ef28f4d8"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 250,
+                "layout|y": 540,
+                "width": 70,
+                "text": "确定"
+            },
+            "designerId": "780a22ee-79f5-458c-bc32-b00edd1b7b8d"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 400,
+                "layout|y": 540,
+                "width": 70,
+                "text": "修改"
+            },
+            "designerId": "46123ac8-b57f-4298-bbce-6a3ea59cd10b"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 50,
+                "layout|y": 40,
+                "width": 170,
+                "fieldLabel": "合同编号",
+                "labelWidth": 60
+            },
+            "designerId": "0073effd-131c-4ef9-bf0c-57adcdb5997f"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 250,
+                "layout|y": 40,
+                "width": 160,
+                "fieldLabel": "甲方",
+                "labelWidth": 60
+            },
+            "designerId": "fd00d2fb-ae77-4bc6-bf03-1ca6105befdf"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 460,
+                "layout|y": 40,
+                "fieldLabel": "乙方",
+                "labelWidth": 60
+            },
+            "designerId": "70aa49b4-b8e5-4fac-83ad-8c9ed539c2b5"
+        }
+    ]
+}

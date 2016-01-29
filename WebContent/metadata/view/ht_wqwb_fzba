@@ -1,0 +1,322 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 588,
+        "width": 875,
+        "designer|userClassName": "ht_wqwb_fzba",
+        "designer|userAlias": "ht_wqwb_fzba1",
+        "autoScroll": true,
+        "layout": "fit",
+        "title": "发放凭证"
+    },
+    "designerId": "84fef1fb-561c-4346-950d-9d20c3319351",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 310,
+                "width": 690,
+                "title": "",
+                "titleAlign": "center",
+                "store": "qzff"
+            },
+            "designerId": "d1090b50-2944-4f29-86cc-9c4a78f59e65",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 110,
+                        "dataIndex": "ticketid",
+                        "text": "地票编号"
+                    },
+                    "designerId": "a7b14b17-ae50-4b72-a936-69dcdb0a40fa"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 98,
+                        "dataIndex": "amount",
+                        "text": "额度"
+                    },
+                    "designerId": "48bd3c83-b890-43bf-a1cc-b5b92b57be59"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 113,
+                        "dataIndex": "winner",
+                        "text": "中标单位"
+                    },
+                    "designerId": "153a3ec5-0108-4b05-892c-81782152ae28"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 91,
+                        "dataIndex": "windate",
+                        "text": "中标日期"
+                    },
+                    "designerId": "edfff514-d3c7-4a18-91f9-89472cd804ac"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 99,
+                        "dataIndex": "price",
+                        "text": "中标价格"
+                    },
+                    "designerId": "7d97a652-de0f-4a74-a8a8-fa425215020e"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 82,
+                        "dataIndex": "jycheck",
+                        "text": "审核状态"
+                    },
+                    "designerId": "8dfec238-170d-4b1c-a23c-b84aa7126baf"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 86,
+                        "dataIndex": "string",
+                        "text": "生成凭证"
+                    },
+                    "designerId": "baab6266-1bf9-4483-b667-c9b8ab1fa5ac",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>生成凭证</label></button>\";"
+                                ]
+                            },
+                            "designerId": "72c4e3ab-444d-46f4-8177-f9a6647303bc"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 100,
+                        "dataIndex": "certification",
+                        "text": "凭证预览"
+                    },
+                    "designerId": "3bfb8cf7-a8e7-4528-aa47-2d14815f9fc0",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>凭证预览</label></button>\";"
+                                ]
+                            },
+                            "designerId": "62cf298f-483a-4e4b-9f1a-4a1c2a588ad8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 100,
+                        "dataIndex": "string",
+                        "text": "备案入库"
+                    },
+                    "designerId": "58787bff-cc39-49e9-824e-f0ee831d4d77",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>备案</label></button>\";"
+                                ]
+                            },
+                            "designerId": "71b69ee1-a174-46a6-9241-c9500630195e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "8e998e89-f086-41b7-b697-992d6dc024f4"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "qzff"
+                    },
+                    "designerId": "8d47d94a-47f4-4d95-a83c-3b8e6f887fb3"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelCellClick",
+                        "implHandler": [
+                            "if(cellIndex=='6')\r",
+                            "{\r",
+                            "\r",
+                            "    var ff=Ext.StoreMgr.get('qzff');\r",
+                            "\r",
+                            "    Ext.Ajax.request(\r",
+                            "    {\r",
+                            "        url:'updatepz',\r",
+                            "        method:'post', \r",
+                            "        headers:{\r",
+                            "\r",
+                            "\r",
+                            "            'Content-Type':'application/json'\r",
+                            "        },\r",
+                            "\r",
+                            "\r",
+                            "        success:function(response){\r",
+                            "            var result=Ext.decode(response.responseText);\r",
+                            "            Ext.MessageBox.alert('信息',result.msg,function(btn){\r",
+                            "                //ff.load();\r",
+                            "            });\r",
+                            "        },\r",
+                            "        failure:function(){\r",
+                            "            Ext.MessageBox.alert('错误','操作失败！');\r",
+                            "        },\r",
+                            "        params: Ext.encode(record.getData())\r",
+                            "        // record:record.getData()\r",
+                            "\r",
+                            "\r",
+                            "    }\r",
+                            "\r",
+                            "    );\r",
+                            "\r",
+                            "}\r",
+                            "if(cellIndex=='7')\r",
+                            "{\r",
+                            "    //alert(record.get('contractcontent'));\r",
+                            "    //window.open(record.get('contractcontent'));   \r",
+                            "    window.open(decodeURI(record.get('certification'),'gbk'));\r",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "designerId": "d7861446-6f9a-4606-857e-80412d8df6cd"
+                }
+            ]
+        }
+    ]
+}

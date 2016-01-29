@@ -1,0 +1,368 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "landSearch",
+        "designer|userAlias": "landSearch",
+        "layout": "border",
+        "title": "农业用地"
+    },
+    "designerId": "66ad5512-f928-4f3b-aafc-a6b43b77e896",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "layout": "border",
+                "title": "高级检索>>农业用地检索"
+            },
+            "designerId": "fa98bf5b-47e1-4213-ab99-6a283d456c8e",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "center",
+                        "title": "检索结果",
+                        "forceFit": true,
+                        "store": "landinfo1"
+                    },
+                    "designerId": "8cfe42d5-c865-42a9-8ed2-38b8acf277b7",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 52,
+                                "dataIndex": "landid",
+                                "text": "编号",
+                                "format": "0,000."
+                            },
+                            "designerId": "423e2438-afc8-4250-b73d-9c3d84b05419"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "area",
+                                "text": "区域"
+                            },
+                            "designerId": "b307f297-e576-4726-84eb-1f06c9f2dbaf"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "acre",
+                                "text": "面积"
+                            },
+                            "designerId": "96a1e047-5e64-4fba-95c5-9a9075532328"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "transtyle",
+                                "text": "流转方式"
+                            },
+                            "designerId": "64c8acf8-4bfd-4762-a39d-9c44a7e4e781"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 68,
+                                "dataIndex": "price",
+                                "text": "价格"
+                            },
+                            "designerId": "070594c9-a37c-40d6-ac95-92c9da6b5ab8"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 86,
+                                "dataIndex": "year",
+                                "text": "年限"
+                            },
+                            "designerId": "bdf778cb-b429-480e-8595-078aae065a03"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 119,
+                                "dataIndex": "releasedate",
+                                "text": "发布日期"
+                            },
+                            "designerId": "1c0db743-fc62-41ac-8ff3-d7ce6b234a7a"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "trading",
+                                "text": "是否可交易"
+                            },
+                            "designerId": "a7bd1915-c270-495e-8d7d-f0015261f0fa"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "f519371e-b24f-45ce-86ac-f1a28cbd41a5"
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "bottom",
+                                "width": 360,
+                                "displayInfo": true,
+                                "store": "landinfo1"
+                            },
+                            "designerId": "e192993b-1b35-4bd8-8410-df35b5201c79"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|region": "north",
+                        "designer|snapToGrid": 10,
+                        "height": 116,
+                        "layout": "absolute",
+                        "bodyPadding": 10,
+                        "title": "输入检索条件",
+                        "jsonSubmit": true,
+                        "url": "find_transinfo"
+                    },
+                    "designerId": "968c3327-8a51-4a67-838b-47d41110dbe0",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 10,
+                                "layout|y": 0,
+                                "dock": null,
+                                "height": null,
+                                "id": "areaID",
+                                "margin": 15,
+                                "width": 200,
+                                "fieldLabel": "区域",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "name": "area",
+                                "selectOnFocus": true,
+                                "displayField": "areaText",
+                                "queryMode": "local",
+                                "store": "areaStore",
+                                "valueField": "area"
+                            },
+                            "designerId": "840d18eb-3392-4b28-9d8b-0c0ffa0f0409"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 250,
+                                "layout|y": 0,
+                                "dock": null,
+                                "id": "acreID",
+                                "margin": 15,
+                                "width": 200,
+                                "fieldLabel": "面积",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "name": "acre",
+                                "value": null,
+                                "selectOnFocus": true,
+                                "displayField": null,
+                                "queryMode": "local",
+                                "store": null,
+                                "valueField": null
+                            },
+                            "designerId": "4f4c0080-06fa-4e84-a15a-aa043caa5106"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 10,
+                                "layout|y": 40,
+                                "dock": null,
+                                "id": "transtyleID",
+                                "margin": 15,
+                                "width": 200,
+                                "fieldLabel": "流转方式",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "name": "transtyle",
+                                "value": null,
+                                "selectOnFocus": true,
+                                "displayField": "styleText",
+                                "queryMode": "local",
+                                "store": "transtyleStore",
+                                "valueField": "style"
+                            },
+                            "designerId": "1827b1d6-5315-40b7-9317-9c8c9c9e14d9"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 250,
+                                "layout|y": 40,
+                                "id": "yearID",
+                                "margin": 15,
+                                "width": 200,
+                                "fieldLabel": "年限",
+                                "labelAlign": "right",
+                                "labelWidth": 60,
+                                "name": "year",
+                                "value": null,
+                                "selectOnFocus": true,
+                                "displayField": "yearText",
+                                "queryMode": "local",
+                                "store": "yearStore",
+                                "valueField": "year"
+                            },
+                            "designerId": "0a5d1c17-335d-4a0e-b0b3-7339eb46fc49"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 470,
+                                "layout|y": 0,
+                                "height": 30,
+                                "margin": 40,
+                                "width": 72,
+                                "text": "检索"
+                            },
+                            "designerId": "4c04deb5-5bad-4b25-8141-3738493931e7",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "handle",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "handler",
+                                        "designer|params": [
+                                            "button",
+                                            "event"
+                                        ],
+                                        "implHandler": [
+                                            "\r",
+                                            "var mystore = Ext.StoreMgr.get('landinfo1');\r",
+                                            "\r",
+                                            "mystore.load(\r",
+                                            "{params:{\r",
+                                            "    start:\"0\",\r",
+                                            "    limit:\"10\",\r",
+                                            "    outArea:Ext.getCmp('areaID').getValue(),\r",
+                                            "    outAcre:Ext.getCmp('acreID').getValue(),\r",
+                                            "    outTranstyle:Ext.getCmp('transtyleID').getValue(),\r",
+                                            "outYear:Ext.getCmp('yearID').getValue()}\r",
+                                            "}\r",
+                                            ");"
+                                        ]
+                                    },
+                                    "designerId": "777a865d-d218-4c0a-a38e-55bd9fea5366"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

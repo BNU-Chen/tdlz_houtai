@@ -1,0 +1,226 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 629,
+        "id": "ht_wqwb_dagl",
+        "width": 925,
+        "designer|userClassName": "ht_wqwb_dagl",
+        "designer|userAlias": "ht_wqwb_dagl",
+        "autoScroll": true,
+        "layout": "fit",
+        "title": "备案记录"
+    },
+    "designerId": "f5c44b68-bc1a-43c0-b98a-e5160819ce0d",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 310,
+                "width": 700,
+                "title": "",
+                "titleAlign": "center",
+                "store": "record"
+            },
+            "designerId": "e6912491-cd53-4fa6-8ce4-a1dc2f10471a",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 129,
+                        "dataIndex": "ticketid",
+                        "text": "地票编号"
+                    },
+                    "designerId": "92b766ff-1f85-4cc6-9e67-e41c849ecbc6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "winner",
+                        "text": "中标单位"
+                    },
+                    "designerId": "cdef0e4d-7c41-4737-bfab-9be8356efef3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 112,
+                        "dataIndex": "amount",
+                        "text": "额度"
+                    },
+                    "designerId": "1e0e2138-a024-4fc0-bbb4-da425e34ae2f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 112,
+                        "dataIndex": "price",
+                        "text": "单价"
+                    },
+                    "designerId": "70e61456-4342-480f-b286-9e660899f8ee"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 75,
+                        "dataIndex": "totalprice",
+                        "text": "总价"
+                    },
+                    "designerId": "950cd4b6-6f99-494c-bc0c-bd491ef87d4f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 126,
+                        "dataIndex": "windate",
+                        "text": "中标日期"
+                    },
+                    "designerId": "878a3f8b-f434-4055-a41b-382596d67f97"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 72,
+                        "dataIndex": "contractcontent",
+                        "text": "合同"
+                    },
+                    "designerId": "f4f2943c-6d34-45d6-b895-fdfeabb779cb",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>查看合同</label></button>\";"
+                                ]
+                            },
+                            "designerId": "25885119-bc0c-4bc1-894b-c0eee390ca42"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 75,
+                        "dataIndex": "certification",
+                        "text": "证书"
+                    },
+                    "designerId": "86457573-28a5-4e5f-bee7-507d2e5b6d55",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>查看凭证</label></button>\";"
+                                ]
+                            },
+                            "designerId": "a5319590-d3d7-49e5-94ed-7397357df588"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6a360e41-1d2f-483e-b60b-5c23876ee6e6"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "record"
+                    },
+                    "designerId": "f11b3fa4-a3cf-4063-b854-d05daad21937"
+                }
+            ]
+        }
+    ]
+}

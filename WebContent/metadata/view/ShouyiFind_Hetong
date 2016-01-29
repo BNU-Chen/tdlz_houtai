@@ -1,0 +1,441 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 485,
+        "id": "ShouyiFind_Hetong",
+        "width": 692,
+        "designer|userClassName": "ShouyiFind_Hetong",
+        "designer|userAlias": "ShouyiFind_Hetong",
+        "layout": "border",
+        "title": "合同信息查询"
+    },
+    "designerId": "39b5b942-6287-4567-be4a-b669fbf4c17e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "designer|snapToGrid": 10,
+                "height": 126,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "选择查询条件"
+            },
+            "designerId": "a4716529-645f-4adc-8f95-787fe8055337",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 450,
+                        "layout|y": 20,
+                        "id": "ShouyiFindHetongField",
+                        "width": 180,
+                        "designer|displayName": "ShouyiFindHetongField",
+                        "fieldLabel": "关键词",
+                        "labelWidth": 60
+                    },
+                    "designerId": "db825ff0-c3eb-40e1-bb0e-7e2e550d79dd"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 20,
+                        "id": "ShouyiFindHetongDateStart",
+                        "width": 180,
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "1ed680d2-283e-476a-8383-9902036196ee"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 240,
+                        "layout|y": 20,
+                        "id": "ShouyiFindHetongDateEnd",
+                        "width": 180,
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "fd9ae976-083c-43dc-8d19-e48df0f4982e"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 90,
+                        "layout|y": 60,
+                        "width": 60,
+                        "text": "查询"
+                    },
+                    "designerId": "e2c96b70-8e63-49e6-b98a-f2345f68efb9",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiFindHetongDateStart').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiFindHetongDateEnd').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('ShouyiFindHetongField').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiFind'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"25\",\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword1:getKeyword1\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "336b77c4-2e25-4b9d-9b1b-cf25b219e9fa"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 310,
+                        "layout|y": 60,
+                        "width": 60,
+                        "text": "删除"
+                    },
+                    "designerId": "a565969b-6177-4696-b290-2bbac0b6cdcc",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var grid = Ext.getCmp('ShouyiHetongTable');\r",
+                                    "var record = grid.getSelectionModel().getSelection();\r",
+                                    "if(record.length === 0){\r",
+                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                    "    return;\r",
+                                    "\r",
+                                    "}else{\r",
+                                    "\r",
+                                    "    var  tablexh =new Array(record.length);\r",
+                                    "    for(var i = 0;i<record.length;i++){\r",
+                                    "        tablexh[i] = record[i].get(\"xh\");\r",
+                                    "\r",
+                                    "    }\r",
+                                    "\r",
+                                    "    Ext.Ajax.request({\r",
+                                    "        url:'getBenefitList14',\r",
+                                    "        params:{tablexh:tablexh},\r",
+                                    "\r",
+                                    "        success:function(response){\r",
+                                    "            Ext.Msg.alert('删除提示','该条信息已成功删除！');\r",
+                                    "            var mystore = Ext.StoreMgr.get('ShouyiFind');\r",
+                                    "            mystore.load();\r",
+                                    "\r",
+                                    "        }\r",
+                                    "\r",
+                                    "    });\r",
+                                    "\r",
+                                    "}"
+                                ]
+                            },
+                            "designerId": "c98928c0-2bc3-4b48-9e62-6dea789de794"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 520,
+                        "layout|y": 60,
+                        "width": 60,
+                        "text": "修改"
+                    },
+                    "designerId": "7d1b45e9-a28c-47f6-bc39-9189b501a2ab",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiFindHetongDateStart').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiFindHetongDateEnd').getValue(),'Y-m-d');\r",
+                                    "var getKeyword1 = Ext.getCmp('ShouyiFindHetongField').getValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiFind'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    start:\"0\",\r",
+                                    "    limit:\"25\",\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword1:getKeyword1\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "4a35f6a6-d973-436b-adaf-cb6fe605493b"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "id": "ShouyiHetongTable",
+                "title": "合同信息列表",
+                "store": "ShouyiFind"
+            },
+            "designerId": "219482ad-a665-4788-86a1-e4509f555935",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 39,
+                        "text": "序号"
+                    },
+                    "designerId": "be2e688a-77ce-4d89-b810-baf6c59c51fe"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 69,
+                        "dataIndex": "htbh",
+                        "text": "合同编号"
+                    },
+                    "designerId": "1bd269ec-d87e-41bb-8bb7-04cd60223c05"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 76,
+                        "dataIndex": "jysj",
+                        "text": "交易时间"
+                    },
+                    "designerId": "ffc834e5-1406-4732-81c5-0b4c987b5050"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 76,
+                        "dataIndex": "jyl",
+                        "text": "交易量（亩）"
+                    },
+                    "designerId": "9957af53-ef02-4ccb-b2eb-b81434c12e0c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "jyqy",
+                        "text": "交易区域"
+                    },
+                    "designerId": "d83a63d5-1396-4b5b-917d-f5500c8fd669"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 83,
+                        "dataIndex": "gmqymc",
+                        "text": "购买企业名称"
+                    },
+                    "designerId": "b9d32c88-b40d-465c-b675-4ae0608d6fa8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 83,
+                        "dataIndex": "qyxz",
+                        "text": "企业性质"
+                    },
+                    "designerId": "2a40c7f6-a9ed-4e8a-b8a4-fe4493fc8f4e"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 72,
+                        "dataIndex": "qysy",
+                        "text": "企业收益"
+                    },
+                    "designerId": "59415dc7-cbb9-4852-9cd2-c93a18d20d71"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nhsy",
+                        "text": "农户收益"
+                    },
+                    "designerId": "78022e27-db89-4901-ba80-6b68f66199d0"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "zfsy",
+                        "text": "政府收益"
+                    },
+                    "designerId": "9c104489-6599-4041-b6b4-2bac2846d4ea"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "c6323a62-4574-4923-a25d-b11117b244b6"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "ShouyiFind"
+                    },
+                    "designerId": "0b5e533c-f75f-40ba-be93-51a01df6168f"
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "designerId": "126e0a29-c34a-4a0f-92c4-c296587f5010"
+                }
+            ]
+        }
+    ]
+}

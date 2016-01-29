@@ -1,0 +1,393 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 655,
+        "id": "qt_dzjy_wsqy",
+        "width": 886,
+        "designer|userClassName": "ht_wqwb_wsqy",
+        "designer|userAlias": "qt_dzjy_wsqy",
+        "layout": "absolute",
+        "title": "网上签约"
+    },
+    "designerId": "c058cef9-c556-4f99-8ac2-561bdc4fe000",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 10,
+                "layout|y": 50,
+                "height": 380,
+                "minHeight": null,
+                "style": [
+                    "{ lineheight:'200'}"
+                ],
+                "width": 870,
+                "bodyStyle": [
+                    "{ lineHeight:'200'}"
+                ],
+                "title": "待签约地票",
+                "titleAlign": "center",
+                "titleCollapse": false,
+                "columnLines": false,
+                "store": "sign"
+            },
+            "designerId": "fd62b47f-399e-423f-9769-28b682a5a9d3",
+            "cn": [
+                {
+                    "type": "Ext.grid.RowNumberer",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 45,
+                        "dataIndex": null,
+                        "text": "序号"
+                    },
+                    "designerId": "ac44ec0e-18b0-4db0-b22f-c89f8e84a70f"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 92,
+                        "dataIndex": "ticketid",
+                        "text": "地票编号"
+                    },
+                    "designerId": "ecbf3966-8141-4d6e-957e-5e44e62d7d56"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "amount",
+                        "text": "额度"
+                    },
+                    "designerId": "77c326e9-182b-45af-a9cc-8de5844416ba"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "price",
+                        "menuText": null,
+                        "text": "中标价格"
+                    },
+                    "designerId": "be783b89-ffe3-4bcc-a2c4-f655ba7a9f77"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "totalprice",
+                        "menuText": null,
+                        "text": "总价"
+                    },
+                    "designerId": "0cde3f38-889a-40a1-a0dd-847649cd4928"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 96,
+                        "dataIndex": "winner",
+                        "text": "中标单位"
+                    },
+                    "designerId": "2dd20e37-c0c3-422b-9886-64291dca9862"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "windate",
+                        "text": "中标日期"
+                    },
+                    "designerId": "70b71664-e3e1-42e2-b2e3-f3471c126c6c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "contractid",
+                        "text": "合同编号"
+                    },
+                    "designerId": "bd76421a-6645-4e8f-b904-2dacd5108bce"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 71,
+                        "dataIndex": "contractstatus",
+                        "text": "客户确认"
+                    },
+                    "designerId": "53992e1e-2858-424d-8ebf-0cbb92d04acf"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 0,
+                        "designer|displayName": "操作",
+                        "text": "操作"
+                    },
+                    "designerId": "e7e7fff3-62e5-4d54-8803-e4bd1e63c95f",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>邀请签约</label></button>\";"
+                                ]
+                            },
+                            "designerId": "8dd8bf21-aee7-4eac-a85c-6bd0c81bdf35"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 0,
+                        "designer|displayName": "操作",
+                        "dataIndex": "contractcontent",
+                        "text": "操作"
+                    },
+                    "designerId": "f8f4c0b0-1c76-40e4-9a2d-a8bb3eb63f17",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button href=\"+value+\"><label>查看合同</label></button>\";"
+                                ]
+                            },
+                            "designerId": "be44cf40-e538-4cbb-a247-2a06c0780ce7"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": null,
+                        "height": null,
+                        "maxHeight": null,
+                        "minHeight": null,
+                        "style": [
+                            "{ lineHeight:'200'}"
+                        ],
+                        "loadingHeight": null
+                    },
+                    "designerId": "92f028b2-1966-4d0d-83ac-c7f91afaf3f4"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "sign"
+                    },
+                    "designerId": "d762bdae-a344-46ec-b325-821fd18129bd"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelCellClick",
+                        "implHandler": [
+                            "if(cellIndex=='9')\r",
+                            "{\r",
+                            "\r",
+                            "    var sign=Ext.StoreMgr.get('sign');\r",
+                            "\r",
+                            "    Ext.Ajax.request(\r",
+                            "    {\r",
+                            "        url:'updatesign',\r",
+                            "        method:'post', \r",
+                            "        headers:{\r",
+                            "\r",
+                            "\r",
+                            "            'Content-Type':'application/json'\r",
+                            "        },\r",
+                            "\r",
+                            "\r",
+                            "        success:function(response){\r",
+                            "            var result=Ext.decode(response.responseText);\r",
+                            "            Ext.MessageBox.alert('信息',result.msg,function(btn){\r",
+                            "                sign.load();\r",
+                            "            });\r",
+                            "        },\r",
+                            "        failure:function(){\r",
+                            "            Ext.MessageBox.alert('错误','操作失败！');\r",
+                            "        },\r",
+                            "        params: Ext.encode(record.getData())\r",
+                            "        // record:record.getData()\r",
+                            "\r",
+                            "\r",
+                            "    }\r",
+                            "\r",
+                            "    );\r",
+                            "\r",
+                            "}\r",
+                            "if(cellIndex=='10')\r",
+                            "{\r",
+                            "    //alert(record.get('contractcontent'));\r",
+                            "    //window.open(record.get('contractcontent'));   \r",
+                            "    window.open(decodeURI(record.get('contractcontent'),'gbk'));\r",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "designerId": "9b12f289-8152-4647-9cc0-ab67cc9cad9d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 10,
+                "layout|y": 520,
+                "text": "温馨提示："
+            },
+            "designerId": "724f27df-b5e9-45fb-950d-2b6c560e4826"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 80,
+                "layout|y": 520,
+                "height": 20,
+                "text": "1）如果生成网签号则说明合同签订成功"
+            },
+            "designerId": "be05866b-edff-486c-a47c-2e79a6b70fb9"
+        },
+        {
+            "type": "Ext.form.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 80,
+                "layout|y": 550,
+                "height": 20,
+                "text": "2）在截止日期前不能签订合同则视为放弃"
+            },
+            "designerId": "03cb4fab-c96e-46a6-b106-fd4d849ce0b0"
+        }
+    ]
+}

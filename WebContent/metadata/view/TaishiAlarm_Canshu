@@ -1,0 +1,198 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 500,
+        "width": 557,
+        "designer|userClassName": "TaishiAlarm_Canshu",
+        "designer|userAlias": "TaishiAlarm_Canshu",
+        "layout": "absolute",
+        "title": "交易态势异常监测参数设置"
+    },
+    "designerId": "827487f3-8a80-4937-a2cc-f9575f4f4ac9",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 50,
+                "width": 240,
+                "fieldLabel": "同一地区反复交易次数",
+                "labelWidth": 150
+            },
+            "designerId": "7c903bc7-99fa-40b6-b2e9-ebbdfa67d450"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 110,
+                "width": 240,
+                "fieldLabel": "每亩最高交易价格",
+                "labelWidth": 150
+            },
+            "designerId": "1a7ef04e-e4cf-4623-9c22-5bb02f5bb486"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 170,
+                "width": 240,
+                "fieldLabel": "每亩最低交易价格",
+                "labelWidth": 150
+            },
+            "designerId": "31653765-4843-42a9-81ed-992a76bc8c42"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 230,
+                "width": 240,
+                "fieldLabel": "同一企业最多成交量",
+                "labelWidth": 150
+            },
+            "designerId": "806f2a19-3d2d-4f85-8a7b-e428f5fb4b6b"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 290,
+                "width": 240,
+                "fieldLabel": "企业失败交易次数（负信用值）上限",
+                "labelWidth": 150
+            },
+            "designerId": "35627364-7e15-4ac4-9e11-b551e9b705b8"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 110,
+                "layout|y": 350,
+                "width": 240,
+                "fieldLabel": "举报次数",
+                "labelWidth": 150
+            },
+            "designerId": "ea77ac17-1ab7-411c-a23a-fef31676d845"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 120,
+                "layout|y": 420,
+                "width": 90,
+                "text": "保存"
+            },
+            "designerId": "0c4801f8-ba23-476f-9de6-c094dde72291",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var tabs = this.up('tabpanel');\r",
+                            "tabs.removeAll(true);\r",
+                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                            "var newtab = tabs.add(Ext.widget('TaishiAlarm'));\r",
+                            "Ext.MessageBox.confirm('参数保存框','参数保存成功！',function(btn){\r",
+                            "    ;\r",
+                            "});"
+                        ]
+                    },
+                    "designerId": "f4b30c73-eadd-4590-bb26-8219db8a9d7c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 290,
+                "layout|y": 420,
+                "width": 90,
+                "text": "取消"
+            },
+            "designerId": "0b732ff0-275f-48f4-b758-635dc8bd9e9e",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var tabs = this.up('tabpanel');\r",
+                            "tabs.removeAll(true);\r",
+                            "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                            "var newtab = tabs.add(Ext.widget('TaishiAlarm'));\r",
+                            ""
+                        ]
+                    },
+                    "designerId": "c8aabaa4-cdf2-4d7d-a29e-bf66fe60002d"
+                }
+            ]
+        }
+    ]
+}

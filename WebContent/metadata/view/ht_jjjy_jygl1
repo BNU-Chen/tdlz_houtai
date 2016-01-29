@@ -1,0 +1,664 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 539,
+        "width": 795,
+        "designer|userClassName": "ht_jjjy_jygl1",
+        "designer|userAlias": "ht_jjjy_jygl1",
+        "title": "竞价交易管理<<交易管理",
+        "activeTab": 0
+    },
+    "designerId": "3152cfb7-1a12-4962-9928-5a4e754414c7",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "竞价交易管理>>挂牌管理"
+            },
+            "designerId": "375be16d-843b-4027-8c8c-0dad4395e1cd",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 10,
+                        "width": 210,
+                        "fieldLabel": "本批次编号",
+                        "labelWidth": 70
+                    },
+                    "designerId": "67af9cb9-4bca-433b-8cb5-086865db6f9f"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 280,
+                        "layout|y": 10,
+                        "width": 200,
+                        "fieldLabel": "发布额度",
+                        "labelWidth": 70
+                    },
+                    "designerId": "552538b5-a5d1-4b0e-859a-0dd027122534"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 40,
+                        "width": 200,
+                        "fieldLabel": "发布时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "80e9da5f-6923-4923-8f5a-062675e1b0a1"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 280,
+                        "layout|y": 40,
+                        "width": 190,
+                        "fieldLabel": "发布人",
+                        "labelWidth": 60
+                    },
+                    "designerId": "0ba17d95-7d06-4838-8f6e-60966ee4e04e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 510,
+                        "layout|y": 50,
+                        "width": 190,
+                        "fieldLabel": "开拍时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "3b5330f9-0e24-4bfd-b902-de2f9aac9871"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 530,
+                        "layout|y": 10,
+                        "width": 170,
+                        "fieldLabel": "出让数量",
+                        "labelWidth": 60
+                    },
+                    "designerId": "1fddea05-3af3-400c-9bdc-23fd1c114370"
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 110,
+                        "height": 270,
+                        "width": 700,
+                        "title": "交易管理",
+                        "titleAlign": "center"
+                    },
+                    "designerId": "15321fe5-5218-424e-be72-2b81098fafb8",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "地票编号"
+                            },
+                            "designerId": "6a29e413-faef-46f5-81b8-3da1dd0fc978"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "状态"
+                            },
+                            "designerId": "4bd80556-b916-497c-821b-789911237669"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "地票额滴"
+                            },
+                            "designerId": "410b02ef-0df7-4280-b094-70275e13252b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "当前最高价格"
+                            },
+                            "designerId": "ba47d60e-dab5-4614-892a-83b024a01996"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "时间i信息"
+                            },
+                            "designerId": "33fce16a-84e9-44c8-bf2c-f2440f44a40c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "出价人次"
+                            },
+                            "designerId": "91b38895-ef5d-43ed-85e2-d1c515cd4c63"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "69b4709a-fa74-4343-9d89-3dc5971016b8"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "designerId": "aa57331c-c5f2-4514-84d6-45724f3f6071"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "designerId": "2065844c-34d0-4ddf-9627-75c9f31052a4",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 62,
+                                        "text": "开拍"
+                                    },
+                                    "designerId": "f1c63af8-412f-4fb8-ac8f-b4ea9135d7c0"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 62,
+                                        "text": "结束"
+                                    },
+                                    "designerId": "4fef16cc-71f0-486e-91f5-de182835ab20"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 62,
+                                        "text": "撤销"
+                                    },
+                                    "designerId": "5ba92e7c-9a23-4277-a8df-c189cc824069"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "bottom",
+                                "width": 360,
+                                "displayInfo": true
+                            },
+                            "designerId": "649762fa-8b96-4c9a-bce4-ce4982223b64"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "42610e31-dfa7-48a0-bcfb-9d451e4b02fb"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "竞价交易管理>>拍卖管理"
+            },
+            "designerId": "3bda5ea7-22e4-4710-a96d-81343f30a474",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 10,
+                        "width": 150,
+                        "fieldLabel": "本批次编号",
+                        "labelWidth": 70
+                    },
+                    "designerId": "f90494a4-6312-49fc-b00e-de79116b9196"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 180,
+                        "layout|y": 10,
+                        "width": 130,
+                        "fieldLabel": "发布额度",
+                        "labelWidth": 70
+                    },
+                    "designerId": "fddc65dd-afa9-4d3d-83c4-59b5f63a2e1b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 20,
+                        "layout|y": 40,
+                        "width": 140,
+                        "fieldLabel": "发布时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "8deb7efb-f56b-4023-bc2b-ea44a394533b"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 190,
+                        "layout|y": 40,
+                        "width": 140,
+                        "fieldLabel": "发布人",
+                        "labelWidth": 60
+                    },
+                    "designerId": "c2aeeb46-18cf-4339-96ff-5ce8acd7e927"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 350,
+                        "layout|y": 40,
+                        "width": 130,
+                        "fieldLabel": "开拍时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "89dcb06f-fae8-44d6-a9cf-b23961cc7907"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 350,
+                        "layout|y": 10,
+                        "width": 130,
+                        "fieldLabel": "分组数量",
+                        "labelWidth": 60
+                    },
+                    "designerId": "39ae309f-19cf-47a0-8024-e17eae22714b"
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 30,
+                        "layout|y": 90,
+                        "height": 160,
+                        "title": ""
+                    },
+                    "designerId": "aff47188-97b8-4c81-8092-8b27062a3f48",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "地票编号"
+                            },
+                            "designerId": "306b8bdc-123e-402c-9bc5-3e708d1e3672"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "状态"
+                            },
+                            "designerId": "0dc1fc45-7110-409f-8738-51c45368836c"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "数量信息"
+                            },
+                            "designerId": "5cedce0f-e062-47cc-8ff6-c96eb2b408e6"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "实时价格"
+                            },
+                            "designerId": "51246c47-2769-483f-8add-efc150fff774"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "时间信息"
+                            },
+                            "designerId": "9b3e004e-3832-49ea-a0c8-075aa4a6b383"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "string",
+                                "text": "竞拍信息"
+                            },
+                            "designerId": "91ee37dc-2fc6-4edc-bb08-021a07bb4e2f"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "dd9ecf33-a269-4da8-a5fd-26b7bff437e0"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "designerId": "08ffb441-d0ff-4fb1-bd45-ca709f9f8956"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "designerId": "4c0e70bd-8544-4a4f-b660-29d362f62cfa",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 50,
+                                        "text": "开拍"
+                                    },
+                                    "designerId": "add42e8f-5892-4d65-8922-245a52779a36"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 54,
+                                        "text": "下一轮"
+                                    },
+                                    "designerId": "38e88c70-5d49-4ffd-8064-699a28b3b9f5"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 53,
+                                        "text": "结束"
+                                    },
+                                    "designerId": "a8267828-32ec-45bb-bae5-fd15a7336bc2"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "width": 54,
+                                        "text": "撤销"
+                                    },
+                                    "designerId": "2170b66f-97e4-4441-8f9d-6bf0deb7039c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 150,
+                        "layout|y": 291,
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true
+                    },
+                    "designerId": "5c8ebfe8-8111-439a-871e-efa7c94eca64"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 500,
+                        "layout|y": 10,
+                        "width": 60,
+                        "fieldLabel": "Label",
+                        "hideLabel": true,
+                        "emptyText": "全部"
+                    },
+                    "designerId": "af670df4-53a1-4043-a4f7-55547d2e3f00"
+                },
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "9b898b53-4f98-4ba7-aec1-fa9b781eb3bc"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-5-7 21:59:26 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitFind" table="benefit_find" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="htbh" type="string">
+            <column name="htbh" length="32" />
+        </property>
+        <property name="jysj" type="date">
+            <column name="jysj" length="10" />
+        </property>
+        <property name="jyl" type="java.lang.Integer">
+            <column name="jyl" />
+        </property>
+        <property name="jyqy" type="string">
+            <column name="jyqy" length="128" />
+        </property>
+        <property name="gmqymc" type="string">
+            <column name="gmqymc" length="128" />
+        </property>
+        <property name="qyxz" type="string">
+            <column name="qyxz" length="16" />
+        </property>
+        <property name="qysy" type="java.lang.Integer">
+            <column name="qysy" />
+        </property>
+        <property name="nhsy" type="java.lang.Integer">
+            <column name="nhsy" />
+        </property>
+        <property name="zfsy" type="java.lang.Integer">
+            <column name="zfsy" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,263 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 805,
+        "id": "articlepb",
+        "width": 1000,
+        "designer|userClassName": "ht_jjjygl_fb",
+        "designer|userAlias": "ht_jjjygl_fb",
+        "autoScroll": true,
+        "layout": "absolute",
+        "bodyPadding": 10,
+        "title": "指标出让公告发布"
+    },
+    "designerId": "85ce74eb-0728-47f4-8cda-4cf4df768c71",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 20,
+                "width": 670,
+                "fieldLabel": "信息名称",
+                "name": "articleName"
+            },
+            "designerId": "0b20f570-8065-4d6e-8199-140c5738b6f5"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 70,
+                "width": 280,
+                "fieldLabel": "信息作者",
+                "name": "articleAuthor"
+            },
+            "designerId": "13496075-4ce6-4fd1-b577-26b82f3b8fbd"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 460,
+                "layout|y": 70,
+                "width": 200,
+                "fieldLabel": "频道栏目",
+                "name": "channelId",
+                "value": [
+                    "'指标发布'"
+                ],
+                "readOnly": true
+            },
+            "designerId": "cde2544d-2b08-4b83-b5ce-5b8bd8f2269a"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 30,
+                "layout|y": 120,
+                "width": 280,
+                "fieldLabel": "信息来源",
+                "name": "articleSource"
+            },
+            "designerId": "cddbcf42-7830-4671-80d8-4da0745f74fb"
+        },
+        {
+            "type": "Ext.form.field.HtmlEditor",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|anchor": null,
+                "layout|x": 30,
+                "layout|y": 180,
+                "height": 400,
+                "width": 750,
+                "fieldLabel": "信息内容",
+                "name": "articleContent"
+            },
+            "designerId": "36b388d5-8bff-46d7-893c-7e2258a8e237"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 180,
+                "layout|y": 620,
+                "text": "信息发布"
+            },
+            "designerId": "fe3bb2d4-b959-4c1e-8f49-8127c04c2449",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "   var myform = Ext.getCmp('articlepb').getForm();\r",
+                            "\r",
+                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "                    myform.submit({\r",
+                            "                        url:'add_draftArticle',\r",
+                            "                        success: function(form, action) {\r",
+                            "                            Ext.Msg.alert('success', '修改内容成功');\r",
+                            "\r",
+                            "                          \r",
+                            "                            var mystore = Ext.StoreMgr.get('ArticleDraftCJWTStore'); //获得store对象                                                   \r",
+                            "                            mystore.load();\r",
+                            "                            //win.close();\r",
+                            "\r",
+                            "                        },\r",
+                            "                        failure: function(form, action) {\r",
+                            "                            Ext.Msg.alert('failure', '修改内容失败');                           \r",
+                            "                           // win.close();\r",
+                            "                        }\r",
+                            "                    });\r",
+                            "                } else {\r",
+                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                            "                }\r",
+                            "\r",
+                            "            "
+                        ]
+                    },
+                    "designerId": "9b85e9b8-5feb-4be8-b69e-1f4f09b4557d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 370,
+                "layout|y": 620,
+                "text": "保存为草稿"
+            },
+            "designerId": "8c0f6b44-8bfb-4e85-8b37-4540f4b7ff52",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            " var myform = Ext.getCmp('articlepb').getForm();\r",
+                            "\r",
+                            "                // Ext.getCmp('').setValues('');\r",
+                            "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                            "                    myform.submit({\r",
+                            "                        url:'add_pubArticle',\r",
+                            "\r",
+                            "                        success: function(form, action) {\r",
+                            "                            Ext.Msg.alert('success', '修改内容成功');\r",
+                            "\r",
+                            "                            var mystore = Ext.StoreMgr.get('ArticlePubZXDTStore'); //获得store对象                                                   \r",
+                            "                            mystore.load();\r",
+                            "\r",
+                            "                           // win.close();\r",
+                            "\r",
+                            "                        },\r",
+                            "                        failure: function(form, action) {\r",
+                            "                            Ext.Msg.alert('failure', '修改内容失败');                           \r",
+                            "                            //win.close();\r",
+                            "                        }\r",
+                            "                    });\r",
+                            "                } else {\r",
+                            "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                            "                }\r",
+                            "\r",
+                            "               "
+                        ]
+                    },
+                    "designerId": "26cf68d3-64f0-4739-9c3c-6d5439463251"
+                }
+            ]
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 560,
+                "layout|y": 620,
+                "text": "再写一篇"
+            },
+            "designerId": "5cf2408c-b4c8-45f0-a462-4ab3614b5afd",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var myform=Ext.getCmp('articlepb');\r",
+                            "myform.reSet();"
+                        ]
+                    },
+                    "designerId": "fea690ec-5293-41a7-bc7f-2ea144ce2192"
+                }
+            ]
+        }
+    ]
+}

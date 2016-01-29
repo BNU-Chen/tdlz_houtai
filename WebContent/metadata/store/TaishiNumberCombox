@@ -1,0 +1,27 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "TaishiNumberTextField",
+        "storeId": "TaishiNumberCombox",
+        "designer|userClassName": "TaishiNumberCombox",
+        "designer|userAlias": "TaishiNumberCombox",
+        "data": [
+            "[\r",
+            "    \r",
+            "  ['长寿区','1'],\r",
+            "  ['江津区','2'],\r",
+            "  ['潼南县','3'],\r",
+            "  ['丰都县','4'],\r",
+            "  ['石柱县','5'],\r",
+            "  ['北碚区','6']\r",
+            "]"
+        ]
+    },
+    "designerId": "9a1d9c3c-263d-43da-a11e-c06ddfe05278"
+}

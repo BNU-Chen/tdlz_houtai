@@ -1,0 +1,257 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "designer|userClassName": "ht_bzjgl_tk",
+        "designer|userAlias": "ht_bzjgl_tk1",
+        "autoScroll": true,
+        "layout": "absolute",
+        "bodyPadding": 10,
+        "title": "保证金退款管理"
+    },
+    "designerId": "a51c135d-5a1e-4f35-87b9-ee229d62e5cd",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 20,
+                "layout|y": 40,
+                "height": 340,
+                "title": "保证金退还管理",
+                "titleAlign": "center",
+                "store": "depositmanage"
+            },
+            "designerId": "5113ec32-ebf9-4c08-9555-00e936e7ae3b",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 84,
+                        "dataIndex": "loginName",
+                        "text": "用户名"
+                    },
+                    "designerId": "a85bc44a-139e-4e38-a1a3-8f67f956b74b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 82,
+                        "dataIndex": "ticketId",
+                        "text": "地票编号"
+                    },
+                    "designerId": "d257bc45-d624-4050-af88-5e890041724c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 82,
+                        "dataIndex": "area",
+                        "text": "额度"
+                    },
+                    "designerId": "a8de6602-1316-4921-9d06-4df6d8015699"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 85,
+                        "dataIndex": "area",
+                        "text": "保证金"
+                    },
+                    "designerId": "233cc4de-9943-4708-8829-0772735e62bb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 85,
+                        "dataIndex": "contract",
+                        "text": "合同状态"
+                    },
+                    "designerId": "80adda4d-21d9-4ef2-82f3-ce961aa3d529"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 88,
+                        "dataIndex": "returnstatus",
+                        "text": "保证金状态"
+                    },
+                    "designerId": "a88a6ae7-1821-4724-b0cd-580a8eeb83b6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 88,
+                        "dataIndex": "diedline",
+                        "text": "截止日期"
+                    },
+                    "designerId": "c6fcb9fb-ae38-422e-80e9-815b57998f40"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 88,
+                        "dataIndex": "string",
+                        "text": "操作"
+                    },
+                    "designerId": "9999a7cb-22ea-42ff-a1e8-d7abbb576415",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<input type='button' value='已退还'>\";\r",
+                                    ""
+                                ]
+                            },
+                            "designerId": "3a746b20-b5a0-4bb3-8347-0a4b66d84a02"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "28bede11-86b4-4d8c-b55e-881ae5369400",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onViewCellClick",
+                                "implHandler": [
+                                    "\r",
+                                    "if(cellIndex=='8')\r",
+                                    "{\r",
+                                    "\r",
+                                    "\r",
+                                    "    Ext.MessageBox.confirm('提醒','您确定要执行该操作码？',function(btn){\r",
+                                    "        if(btn=='yes')\r",
+                                    "        {\r",
+                                    "            var d=Ext.StoreMgr.get('depositmanage');\r",
+                                    "            d.load(\r",
+                                    "            {\r",
+                                    "                url:'updatedepositapplyback',\r",
+                                    "                params:\r",
+                                    "                {\r",
+                                    "                    loginName:record.get('loginName'),\r",
+                                    "                    ticketId:record.get('ticketId')\r",
+                                    "                }\r",
+                                    "            }\r",
+                                    "            );\r",
+                                    "        }\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "\r",
+                                    "    });\r",
+                                    "\r",
+                                    "}"
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "designerId": "260493c4-4b5e-4482-8acd-decf480ecb33"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.selection.CheckboxModel",
+                    "reference": {
+                        "name": "selModel",
+                        "type": "object"
+                    },
+                    "codeClass": "Ext.selection.CheckboxModel",
+                    "designerId": "6d722113-05a7-4e92-882d-dcc921af2e27"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true,
+                        "store": "depositmanage"
+                    },
+                    "designerId": "a958e66b-67bd-4282-bb00-f68662e67302"
+                }
+            ]
+        }
+    ]
+}

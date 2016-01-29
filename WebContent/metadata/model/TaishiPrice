@@ -1,0 +1,39 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TaishiPrice",
+        "designer|userAlias": "TaishiPrice"
+    },
+    "designerId": "baf908c0-50c0-4092-8292-956eb6731a12",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "je"
+            },
+            "designerId": "ce5726b8-b082-4951-93fd-a5d955878566"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "jysj"
+            },
+            "designerId": "f1bc92eb-0b2c-4e29-b94e-bf4c15523ae8"
+        }
+    ]
+}

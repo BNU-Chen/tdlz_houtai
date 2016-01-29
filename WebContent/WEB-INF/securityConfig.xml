@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+    
+    <http pattern="/*.xml" security="none"/>
+    <http pattern="/rss_reader.apk" security="none"/>
+    <http pattern="/confirm_device_user" security="none"/>
+    <http pattern="/save_Settings_of_RSSFeed" security="none"/>
+    <http pattern="/save_android_user_register" security="none"/>
+	<http auto-config='true'>
+	<intercept-url pattern="/**/*.jpg" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	<intercept-url pattern="/**/*.png" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	<intercept-url pattern="/**/*.gif" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	<intercept-url pattern="/**/*.css" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	<intercept-url pattern="/**/*.js" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	
+		<intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/**" access="ROLE_USER" />
+		<form-login login-page='/login.jsp' default-target-url="/index.html"
+			authentication-failure-url="/login.jsp?login=failed" />
+		<access-denied-handler error-page="/accessDenied.jsp" />
+		<!-- 使 用记住用户名、密码功能，指定数据源和加密的key 
+		<remember-me data-source-ref="dataSource" /> -->
+		<!-- logout 页面，logout后清除session -->
+		<logout invalidate-session="true" logout-success-url="/login.jsp" />
+		<!-- session 失 效后跳转的页面，最大登陆次数 -->
+		<session-management invalid-session-url="/login.jsp?login=timeout">
+			<concurrency-control max-sessions="1"
+				expired-url="/login.jsp?login=again" />
+		</session-management>
+
+	</http>
+	<authentication-manager>
+		<authentication-provider>
+			<user-service>
+				<user name="admin" password="admin" authorities="ROLE_USER, ROLE_ADMIN" />
+				<user name="bob" password="bobspassword" authorities="ROLE_USER" />
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>

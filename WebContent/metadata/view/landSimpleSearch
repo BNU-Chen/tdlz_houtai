@@ -1,0 +1,132 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "landSimpleSearch",
+        "designer|userAlias": "landSimpleSearch",
+        "autoScroll": true,
+        "layout": "border",
+        "title": "农业用地"
+    },
+    "designerId": "7ddee2a2-6891-47b0-9456-2fdbd3829790",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "dock": null,
+                "container|align": "stretch",
+                "height": 56,
+                "layout": "hbox",
+                "bodyPadding": 10,
+                "title": ""
+            },
+            "designerId": "b1851059-96b8-4f61-bbd3-9ea1e15b14e0",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "margin": "",
+                        "width": 420,
+                        "fieldLabel": "",
+                        "hideLabel": true
+                    },
+                    "designerId": "76a74778-af96-4539-b918-d37af366ed5d"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": "x-btn-text-icon",
+                        "height": null,
+                        "margin": 5,
+                        "renderTo": null,
+                        "width": 70,
+                        "icon": "",
+                        "iconAlign": "bottom",
+                        "iconCls": "",
+                        "scale": "large",
+                        "text": "检索"
+                    },
+                    "designerId": "0251ce75-d1ce-44bd-8623-c7137d0f02d5"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "margin": 5,
+                        "width": 69,
+                        "text": "高级检索"
+                    },
+                    "designerId": "7b24db9a-fe67-438d-9168-9e497c9d9b49"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "title": "",
+                "forceFit": true
+            },
+            "designerId": "612f92ec-ca49-4300-93f1-5101ced98a28",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "检索结果："
+                    },
+                    "designerId": "0daf8149-a958-4175-9f1d-146624b8a85b"
+                },
+                {
+                    "type": "Ext.toolbar.Paging",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "width": 360,
+                        "displayInfo": true
+                    },
+                    "designerId": "6712fa10-8ae2-432f-bb87-e3b241dccccc"
+                }
+            ]
+        }
+    ]
+}

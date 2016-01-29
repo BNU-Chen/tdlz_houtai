@@ -1,0 +1,233 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 499,
+        "width": 692,
+        "designer|userClassName": "TaishiPrice",
+        "designer|userAlias": "TaishiPrice",
+        "layout": "border",
+        "title": "按交易价格分析"
+    },
+    "designerId": "49a021cf-96d9-4e56-9a98-270e3076ceca",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "title": "交易价格趋势图"
+            },
+            "designerId": "e07be773-b05c-4c32-a444-af227f7ddd22",
+            "cn": [
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoRender": true,
+                        "height": 319,
+                        "width": 683,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "TaishiPrice"
+                    },
+                    "designerId": "3d16fb51-5fcb-42e6-8992-79ed13f562c9",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-line-chart",
+                    "autoName": "LineChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "jysj"
+                                ],
+                                "title": "交易时间"
+                            },
+                            "designerId": "c15c3153-0c5e-425f-80e7-6f88c765aae8"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "je"
+                                ],
+                                "title": "交易价格"
+                            },
+                            "designerId": "a387d14c-8a5e-4daa-9355-f1c7d47bcaf2"
+                        },
+                        {
+                            "type": "Ext.chart.series.Line",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "xField": "jysj",
+                                "yField": [
+                                    "je"
+                                ],
+                                "smooth": 3
+                            },
+                            "designerId": "4e743393-811c-4c50-a47f-ffe8607fffff"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "designer|snapToGrid": 10,
+                "height": 150,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "查询条件"
+            },
+            "designerId": "4be654a3-5951-4698-aa24-0a83078717db",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 20,
+                        "id": "TaishiPriceDateField1",
+                        "width": 180,
+                        "designer|displayName": "TaishiPriceDateField1",
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "9100c1b1-0c86-4b25-8a62-63e86bfdb913"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 270,
+                        "layout|y": 20,
+                        "id": "TaishiPriceDateField2",
+                        "width": 180,
+                        "designer|displayName": "TaishiPriceDateField2",
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "f651badc-10a4-4878-ad93-c7db8d205cc0"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "id": "TaishiPriceTextField",
+                        "width": 180,
+                        "designer|displayName": "TaishiPriceTextField",
+                        "designer|createAlias": "",
+                        "fieldLabel": "交易区域",
+                        "labelWidth": 60,
+                        "name": "TaishiPriceTextField",
+                        "emptyText": "请选择区域",
+                        "displayField": "name",
+                        "queryMode": "local",
+                        "store": "TaishiPriceCombox",
+                        "valueField": "value"
+                    },
+                    "designerId": "cd49aa0f-b51e-49f9-91e9-98971a9c92c3"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 340,
+                        "layout|y": 70,
+                        "height": null,
+                        "width": 60,
+                        "text": "查询"
+                    },
+                    "designerId": "7893747d-ae3b-4f4d-b208-5d35b8ede43a",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiPriceDateField1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiPriceDateField2').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiPriceTextField').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiPrice'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "d34ce412-1a12-4a75-8ee7-47569c547196"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 724,
+        "width": 1056,
+        "designer|userClassName": "ht_wqwb_jysh",
+        "designer|userAlias": "ht_wqwb_jysh1",
+        "autoScroll": true,
+        "layout": "fit",
+        "title": "交易审核"
+    },
+    "designerId": "c410bf10-4989-468a-b546-7e67114867df",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 340,
+                "width": 700,
+                "title": "",
+                "titleAlign": "center",
+                "store": "jycheck"
+            },
+            "designerId": "ca11d0cf-b159-409a-9307-a29c06ad0eae",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 152,
+                        "dataIndex": "ticketid",
+                        "text": "地票编号"
+                    },
+                    "designerId": "fa21f01f-ca2a-41d9-8817-552ea782d735"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 145,
+                        "dataIndex": "winner",
+                        "text": "中标单位"
+                    },
+                    "designerId": "1d0da254-41cd-4e48-a687-3ce28d0f20f2"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 128,
+                        "dataIndex": "amount",
+                        "text": "额度"
+                    },
+                    "designerId": "1d32ed4a-4b48-4640-bbfe-0db2bb138efd"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 119,
+                        "dataIndex": "price",
+                        "text": "中标价格"
+                    },
+                    "designerId": "95f45281-0259-406a-b4f0-c9beaeadcc77"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 115,
+                        "dataIndex": "netsignid",
+                        "text": "网签号"
+                    },
+                    "designerId": "cbf401a4-3219-4899-b6a1-635c20b29aba"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 126,
+                        "dataIndex": "material",
+                        "text": "上交材料"
+                    },
+                    "designerId": "031bcc8b-a6ce-4a8f-a8bd-35a951f66787",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "var display='';\r",
+                                    "var result=value.split(\",\");\r",
+                                    "for(var i=0;i<result.length;i++){\r",
+                                    "    display=display+\"<label>\"+result[i]+\"</label><br>\";\r",
+                                    "\r",
+                                    "}\r",
+                                    "//alert(display);\r",
+                                    "return display;"
+                                ]
+                            },
+                            "designerId": "dee20aff-58e0-41e1-8c37-f8994c3b3935"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 133,
+                        "dataIndex": "jycheck",
+                        "text": "审核状态"
+                    },
+                    "designerId": "b904f46d-c458-4392-b805-77d227d4e755"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "width": 133,
+                        "dataIndex": "string",
+                        "text": "审核操作"
+                    },
+                    "designerId": "5660ede9-714e-4cb2-8782-b1c92f6cc6f1",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "renderer",
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "implHandler": [
+                                    "return \"<button><label>通过</label></button>\";"
+                                ]
+                            },
+                            "designerId": "d70306c5-56b0-44a9-aa93-735228b886d5"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "032a2ecc-6d79-4893-84fa-29a78358d738"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelCellClick",
+                        "implHandler": [
+                            "if(cellIndex=='7')\r",
+                            "{\r",
+                            "\r",
+                            "    Ext.MessageBox.confirm('信息','您确定要执行通过操作吗？',function(btn){\r",
+                            "                //alert(btn);\r",
+                            "        if(btn=='yes')\r",
+                            "                {\r",
+                            "                    //alert('shenhe');\r",
+                            "                    var check=Ext.StoreMgr.get('jycheck');\r",
+                            "\r",
+                            "    Ext.Ajax.request(\r",
+                            "        {\r",
+                            "    \r",
+                            "        url:'updatecheck',\r",
+                            "        method:'post', \r",
+                            "        headers:{\r",
+                            "\r",
+                            "\r",
+                            "            'Content-Type':'application/json'\r",
+                            "        },\r",
+                            "\r",
+                            "\r",
+                            "        success:function(response){                    \r",
+                            "                check.load();\r",
+                            "            },\r",
+                            "        \r",
+                            "        failure:function(){\r",
+                            "        Ext.MessageBox.alert('错误','操作失败！');\r",
+                            "        },\r",
+                            "        params: Ext.encode(record.getData())\r",
+                            "        // record:record.getData()\r",
+                            "  \r",
+                            "        }\r",
+                            "    ); \r",
+                            "                }\r",
+                            "                   \r",
+                            "            });\r",
+                            "   \r",
+                            "\r",
+                            "}"
+                        ],
+                        "name": "cellclick",
+                        "scope": "me"
+                    },
+                    "designerId": "f87bdb0f-a25e-47c6-a417-577c2388930f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Paging",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "width": 360,
+                "displayInfo": true,
+                "store": "jycheck"
+            },
+            "designerId": "ac1e4de7-c3b3-40ae-bbe1-22bebf2fe728"
+        }
+    ]
+}

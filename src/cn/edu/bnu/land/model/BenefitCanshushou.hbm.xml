@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-26 15:08:03 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitCanshushou" table="benefit_canshushou" catalog="tdlz">
+        <id name="dzzcts" type="int">
+            <column name="dzzcts" />
+            <generator class="assigned" />
+        </id>
+        <property name="cbzgjg" type="java.lang.Integer">
+            <column name="cbzgjg" />
+        </property>
+        <property name="jsbl" type="java.lang.Integer">
+            <column name="jsbl" />
+        </property>
+        <property name="zfbl" type="java.lang.Integer">
+            <column name="zfbl" />
+        </property>
+        <property name="nhbl" type="java.lang.Integer">
+            <column name="nhbl" />
+        </property>
+        <property name="zdqsx" type="java.lang.Integer">
+            <column name="zdqsx" />
+        </property>
+        <property name="jb" type="java.lang.Integer">
+            <column name="jb" />
+        </property>
+    </class>
+</hibernate-mapping>

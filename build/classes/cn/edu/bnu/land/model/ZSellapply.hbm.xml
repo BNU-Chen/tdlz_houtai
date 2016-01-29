@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-2 15:51:46 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.ZSellapply" table="z_sellapply" catalog="tdlz">
+        <id name="ticketid" type="string">
+            <column name="ticketid" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="loginname" type="string">
+            <column name="loginname" length="20">
+                <comment>&#181;&#199;&#194;&#188;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="realname" type="string">
+            <column name="realname" length="20">
+                <comment>&#200;&#168;&#202;&#244;&#200;&#203;&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="typelx" type="string">
+            <column name="typelx" length="20">
+                <comment>&#208;&#212;&#214;&#202;</comment>
+            </column>
+        </property>
+        <property name="cardid" type="string">
+            <column name="cardid" length="20">
+                <comment>&#202;&#161;&#183;&#221;&#214;&#164;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="telephone" type="string">
+            <column name="telephone" length="20">
+                <comment>&#201;&#237;&#183;&#221;&#214;&#164;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="drzw" type="string">
+            <column name="drzw" length="20">
+                <comment>&#181;&#163;&#200;&#206;&#214;&#176;&#206;&#241;</comment>
+            </column>
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="20">
+                <comment>&#193;&#170;&#207;&#181;&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="landid" type="string">
+            <column name="landid" length="20">
+                <comment>&#181;&#216;&#191;&#233;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="dkwz" type="string">
+            <column name="dkwz" length="20">
+                <comment>&#181;&#216;&#191;&#233;&#206;&#187;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="area" type="string">
+            <column name="area" length="20">
+                <comment>&#184;&#180;&#191;&#209;&#185;&#230;&#196;&#163;</comment>
+            </column>
+        </property>
+        <property name="fkid" type="string">
+            <column name="fkid" length="20">
+                <comment>&#184;&#180;&#191;&#209;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="fkdw" type="string">
+            <column name="fkdw" length="20">
+                <comment>&#184;&#180;&#191;&#209;&#181;&#165;&#206;&#187;</comment>
+            </column>
+        </property>
+        <property name="yyt" type="string">
+            <column name="yyt" length="20">
+                <comment>&#212;&#173;&#211;&#195;&#205;&#190;</comment>
+            </column>
+        </property>
+        <property name="applydate" type="date">
+            <column name="applydate" length="10">
+                <comment>&#201;&#234;&#199;&#235;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="ysdate" type="date">
+            <column name="ysdate" length="10">
+                <comment>&#209;&#233;&#202;&#213;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="checkstate" type="string">
+            <column name="checkstate" length="20">
+                <comment>&#201;&#243;&#186;&#203;&#215;&#180;&#204;&#172;</comment>
+            </column>
+        </property>
+        <property name="company" type="string">
+            <column name="company" length="20">
+                <comment>&#181;&#165;&#206;&#187;</comment>
+            </column>
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="20">
+                <comment>&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="bz" type="string">
+            <column name="bz" length="20">
+                <comment>&#177;&#184;&#215;&#162;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

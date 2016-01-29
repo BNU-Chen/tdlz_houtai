@@ -1,0 +1,79 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|snapToGrid": 10,
+        "height": 462,
+        "id": "bzjpz",
+        "width": 636,
+        "designer|userClassName": "bzjpz",
+        "designer|userAlias": "bzjpz",
+        "layout": "absolute",
+        "title": "支付凭证"
+    },
+    "designerId": "3c015431-d1c1-458c-802f-38296ac8f2a0",
+    "cn": [
+        {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 380,
+                "id": "zfpz",
+                "width": 620
+            },
+            "designerId": "0d26733b-5202-4957-8927-efe153ae702f"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|x": 260,
+                "layout|y": 400,
+                "width": 90,
+                "text": "关闭"
+            },
+            "designerId": "45d46188-31d8-4ec5-9d99-729c5a6f93fa",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "//var w=this.getEl().findParentNode('window[id=bzjpz]');\r",
+                            "//w.getEl().close();\r",
+                            "//var i=Ext.query('#bzjpz');\r",
+                            "\r",
+                            "//alert(i.getId());\r",
+                            "//alert(this.getId());\r",
+                            "//alert(this.getEl().getId());\r",
+                            "var w=Ext.getCmp('bzjpz');\r",
+                            "w.close();"
+                        ]
+                    },
+                    "designerId": "60dae36f-8bd8-4dc8-a4eb-65f0ba198ef0"
+                }
+            ]
+        }
+    ]
+}

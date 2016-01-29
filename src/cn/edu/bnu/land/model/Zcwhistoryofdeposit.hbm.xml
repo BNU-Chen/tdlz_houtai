@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-12 10:33:29 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zcwhistoryofdeposit" table="zcwhistoryofdeposit" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="loginname" type="string">
+            <column name="loginname" length="20">
+                <comment>&#211;&#195;&#187;&#167;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="realname" type="string">
+            <column name="realname" length="20" />
+        </property>
+        <property name="ticketid" type="string">
+            <column name="ticketid" length="20" />
+        </property>
+        <property name="operatedate" type="date">
+            <column name="operatedate" length="10">
+                <comment>&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="comein" type="string">
+            <column name="comein" length="20">
+                <comment>&#215;&#170;&#200;&#235;</comment>
+            </column>
+        </property>
+        <property name="getout" type="string">
+            <column name="getout" length="20">
+                <comment>&#215;&#170;&#179;&#246;</comment>
+            </column>
+        </property>
+        <property name="yue" type="string">
+            <column name="yue" length="20">
+                <comment>&#211;&#224;&#182;&#238;</comment>
+            </column>
+        </property>
+        <property name="operator" type="string">
+            <column name="operator" length="20">
+                <comment>&#178;&#217;&#215;&#247;&#212;&#177;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

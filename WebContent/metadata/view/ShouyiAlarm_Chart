@@ -1,0 +1,326 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 500,
+        "width": 694,
+        "designer|userClassName": "ShouyiAlarm_Chart",
+        "designer|userAlias": "ShouyiAlarm_Chart",
+        "layout": "border",
+        "title": "收益分配异常分析"
+    },
+    "designerId": "6de58f72-fdd2-4e47-b2a3-5280002ba6ee",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "designerId": "762454d3-4873-4618-8327-29ad18e03ea1",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "ShouyiAlarmDateStart1",
+                        "width": 165,
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60,
+                        "enforceMaxLength": false,
+                        "maxLength": null,
+                        "useStrict": false
+                    },
+                    "designerId": "7b107b7a-0938-46dd-b152-3a114d8dfac5"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "ShouyiAlarmDateEnd1",
+                        "width": 165,
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "78904887-2c3b-42fa-9acb-9593f1f1527f"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "ShouyiAlarmTextField1",
+                        "width": 165,
+                        "designer|displayName": "ShouyiAlarmTextField",
+                        "designer|createAlias": "",
+                        "fieldLabel": "交易区域",
+                        "labelWidth": 60,
+                        "name": "ShouyiAlarmTextField",
+                        "emptyText": "请选择区域",
+                        "displayField": "name",
+                        "queryMode": "local",
+                        "store": "ShouyiAlarmCombox",
+                        "valueField": "value"
+                    },
+                    "designerId": "5895925f-f726-4800-b1ec-1dc9dc1a3a43"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 60,
+                        "text": "统计分析"
+                    },
+                    "designerId": "9ae80bc6-574e-46c6-8d50-abd16ecf402e",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('ShouyiAlarmDateStart1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('ShouyiAlarmDateEnd1').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('ShouyiAlarmTextField1').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('ShouyiAlarm_Pie'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2,\r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "e84ef438-0899-4cde-9c97-49c3dc506f56"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 60,
+                        "text": "返回"
+                    },
+                    "designerId": "bc30b472-2672-450e-93f1-2d555bdef9f0",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到文章回收站的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('ShouyiAlarm'));\r",
+                                    ""
+                                ]
+                            },
+                            "designerId": "6b2f194b-bb6f-4ed6-b229-0c3a33dfa726"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "layout|split": false,
+                "autoRender": true,
+                "frame": false,
+                "width": 346,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "ShouyiAlarm_Pie"
+            },
+            "designerId": "7db5a0ae-1713-4b92-bf07-566e052c3168",
+            "isBuiltIn": true,
+            "iconCls": "icon-pie-chart",
+            "autoName": "PieChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Pie",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'field':'yctype','display':'none','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "showInLegend": true,
+                        "angleField": "yccount",
+                        "lengthField": null
+                    },
+                    "designerId": "68f4d2df-8d12-449f-8818-50ea53999daa"
+                },
+                {
+                    "type": "Ext.chart.Legend",
+                    "reference": {
+                        "name": "legend",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "position": "right"
+                    },
+                    "designerId": "88a1bf55-21d8-4ca0-92fa-53bc7a275582"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "dock": null,
+                "autoRender": true,
+                "width": 346,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "ShouyiAlarm_Pie"
+            },
+            "designerId": "3415be63-e1af-4dde-b36d-b63f87430dd0",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "yctype"
+                        ],
+                        "position": "left",
+                        "title": "收益分配异常类型"
+                    },
+                    "designerId": "e38809e7-1586-46f5-8399-f66bbdf7fd29"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "yccount"
+                        ],
+                        "majorTickSteps": 1,
+                        "minorTickSteps": 1,
+                        "position": "bottom",
+                        "title": "收益分配异常量",
+                        "decimals": 0
+                    },
+                    "designerId": "e543f409-8e0f-4c56-8e64-91db14931b6b"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'field':['jyl','htbh'],'display':'rotate','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "xField": "yctype",
+                        "yField": [
+                            "yccount"
+                        ],
+                        "type": "bar"
+                    },
+                    "designerId": "a7f02985-52ba-421a-a7fe-e7bb780ca56b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "height": 224,
+                "title": "收益分配异常地图显示"
+            },
+            "designerId": "b91bbdbe-3dbf-4cfb-be5a-8edd95d57238"
+        }
+    ]
+}

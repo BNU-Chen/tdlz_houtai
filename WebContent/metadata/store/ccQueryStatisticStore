@@ -1,0 +1,46 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "model": "ccQueryStatisticModel",
+        "storeId": "ccQueryStatistic",
+        "designer|userClassName": "ccQueryStatisticStore",
+        "designer|userAlias": "ccQueryStatisticStore",
+        "data": null
+    },
+    "designerId": "45197c4e-80b1-46a8-8a0e-684aaadfbbac",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "QueryStatisticInfo"
+            },
+            "designerId": "1bbe327e-18a7-4726-868a-c8124920a6db",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "designerId": "c0890966-b633-4daf-8a7b-9e0c945a55e3"
+                }
+            ]
+        }
+    ]
+}

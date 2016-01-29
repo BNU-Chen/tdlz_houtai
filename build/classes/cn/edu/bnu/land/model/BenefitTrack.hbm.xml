@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-3-26 15:08:03 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.BenefitTrack" table="benefit_track" catalog="tdlz">
+        <id name="xh" type="java.lang.Integer">
+            <column name="xh" />
+            <generator class="identity" />
+        </id>
+        <property name="pjh" type="string">
+            <column name="pjh" length="15" />
+        </property>
+        <property name="htbh" type="string">
+            <column name="htbh" length="15" />
+        </property>
+        <property name="jysj" type="date">
+            <column name="jysj" length="10" />
+        </property>
+        <property name="je" type="java.lang.Integer">
+            <column name="je" />
+        </property>
+        <property name="zjlrf" type="string">
+            <column name="zjlrf" length="128" />
+        </property>
+        <property name="zjlcf" type="string">
+            <column name="zjlcf" length="128" />
+        </property>
+        <property name="yt" type="string">
+            <column name="yt" length="128" />
+        </property>
+        <property name="jbr" type="string">
+            <column name="jbr" length="32" />
+        </property>
+        <property name="dzqr" type="string">
+            <column name="dzqr" length="8" />
+        </property>
+        <property name="scsmj" type="string">
+            <column name="scsmj" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,718 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 459,
+        "width": 756,
+        "designer|userClassName": "Crawl",
+        "designer|userAlias": "Crawl",
+        "autoScroll": true,
+        "layout": "border",
+        "title": "检索网站设置"
+    },
+    "designerId": "8a5b4f33-508f-4dbe-800c-bd76f7e3c11e",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "designerId": "59eefd4b-c203-4912-90f9-02b951d21406",
+            "cn": [
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "html": "<a target=\"_blank\" href = \" http://localhost:8090/index-lyj.jsp\">信息采集管理面板</a>",
+                        "margin": 10,
+                        "width": 150,
+                        "text": null
+                    },
+                    "designerId": "1845d8cf-abaf-454a-abdc-69aa715dc8f7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "dock": null,
+                "id": "crawlurlForm",
+                "layout": "fit",
+                "bodyPadding": 10,
+                "header": false,
+                "title": "检索网站设置",
+                "url": "look_url"
+            },
+            "designerId": "44ef74e5-e449-4942-8749-1d7989395a6e",
+            "cn": [
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "collapsed": false,
+                        "title": "现有信息来源网站列表",
+                        "columnLines": false,
+                        "deferRowRender": false,
+                        "forceFit": true,
+                        "store": "lyjurlStore"
+                    },
+                    "designerId": "0b015898-39d2-4951-9213-191016958e99",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "hidden": true,
+                                "id": "urlnumber",
+                                "width": 30,
+                                "dataIndex": "number",
+                                "text": "编号",
+                                "format": "0"
+                            },
+                            "designerId": "e6a3c436-a277-41ad-8e1a-3cbc33998c66"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "webname",
+                                "text": "网址名称"
+                            },
+                            "designerId": "cc0a7cae-5cb2-4eb8-8f88-e19c1d49318b"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 232,
+                                "dataIndex": "url",
+                                "text": "URL"
+                            },
+                            "designerId": "13261782-fa79-4d79-9e11-92251e98b663"
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "c616efea-2328-4b3f-9084-9469899c0d21"
+                        },
+                        {
+                            "type": "Ext.selection.CheckboxModel",
+                            "reference": {
+                                "name": "selModel",
+                                "type": "object"
+                            },
+                            "codeClass": "Ext.selection.CheckboxModel",
+                            "designerId": "551791c9-00a7-4098-a2d2-8b94c2f1669a"
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "designerId": "b8ce1089-6964-4272-9a01-90c02444d978",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "id": "searchField",
+                                        "fieldLabel": ""
+                                    },
+                                    "designerId": "1028836c-6a93-4fef-94a9-6af1d9771775"
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "查找"
+                                    },
+                                    "designerId": "78e88e6f-6b76-4cb1-87db-6699f3a1e7b2",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "var mystore=Ext.StoreMgr.get('lyjurlStore'); //获得store对象\r",
+                                                    "//在load事件中添加参数\r",
+                                                    "mystore.load(\r",
+                                                    "{params:{\r",
+                                                    "    start:\"0\",\r",
+                                                    "    limit:\"10\",\r",
+                                                    "    searchField:Ext.getCmp('searchField').getValue()\r",
+                                                    "\r",
+                                                    "} \r",
+                                                    "}\r",
+                                                    ");\r",
+                                                    "//Ext.Msg.alert('',Ext.getCmp('searchField_crawlurl').getValue());"
+                                                ]
+                                            },
+                                            "designerId": "e35a6c10-b61d-490b-899c-7aa95980ec34"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "添加"
+                                    },
+                                    "designerId": "088f1773-6c1e-4286-8299-b75da925a02b",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "var win=new Ext.Window({\r",
+                                                    "    height: 170,\r",
+                                                    "    width: 400,\r",
+                                                    "    id:'crawlurlWindow',\r",
+                                                    "    layout: {\r",
+                                                    "        type: 'absolute'\r",
+                                                    "    },\r",
+                                                    "    title: '添加',\r",
+                                                    "    modal:'true',\r",
+                                                    "    items: [\r",
+                                                    "    {\r",
+                                                    "        xtype: 'form',\r",
+                                                    "        height: 220,\r",
+                                                    "        jsonSubmit: true,\r",
+                                                    "        id:'crawlurl_add_Form',\r",
+                                                    "        layout: {\r",
+                                                    "            type: 'absolute'\r",
+                                                    "        },\r",
+                                                    "        bodyPadding: 10,\r",
+                                                    "        url: 'add_crawlurl',\r",
+                                                    "        title: '',\r",
+                                                    "        items: [\r",
+                                                    "        {\r",
+                                                    "            xtype: 'label',\r",
+                                                    "            x: 37,\r",
+                                                    "            y: 20,\r",
+                                                    "            text: '网站名称：'\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'label',\r",
+                                                    "            x: 40,\r",
+                                                    "            y: 55,\r",
+                                                    "            text: '网站URL：'\r",
+                                                    "        },\r",
+                                                    "\r",
+                                                    "        {\r",
+                                                    "            xtype: 'textfield',\r",
+                                                    "            id:'webName',\r",
+                                                    "            name:'webname',\r",
+                                                    "            x: 115,\r",
+                                                    "            y: 20,\r",
+                                                    "            width: 250,\r",
+                                                    "            fieldLabel: ''\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'textfield',\r",
+                                                    "            id:'url',\r",
+                                                    "            name:'url',\r",
+                                                    "            x: 115,\r",
+                                                    "            y: 55,\r",
+                                                    "            width: 250,\r",
+                                                    "            fieldLabel: ''\r",
+                                                    "        },\r",
+                                                    "\r",
+                                                    "        {\r",
+                                                    "            xtype: 'button',\r",
+                                                    "            x: 115,\r",
+                                                    "            y: 100,\r",
+                                                    "            width: 50,\r",
+                                                    "            text: '确定',\r",
+                                                    "            handler:function()\r",
+                                                    "            {\r",
+                                                    "\r",
+                                                    "                var myform=Ext.getCmp('crawlurl_add_Form').getForm();    \r",
+                                                    "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                                    "                    myform.submit({\r",
+                                                    "                        success: function(form, action) {\r",
+                                                    "                            Ext.Msg.alert('提示', action.result.msg);\r",
+                                                    "\r",
+                                                    "                            var mystore=Ext.StoreMgr.get('lyjurlStore'); //获得store对象\r",
+                                                    "                            //在load事件中添加参数\r",
+                                                    "                            mystore.load(\r",
+                                                    "                            {params:{\r",
+                                                    "                                start:\"0\",\r",
+                                                    "                                limit:\"10\",\r",
+                                                    "                                searchField:Ext.getCmp('searchField').getValue()\r",
+                                                    "                            }} );\r",
+                                                    "                            win.close();\r",
+                                                    "                        },\r",
+                                                    "                        failure: function(form, action) {\r",
+                                                    "                            Ext.Msg.alert('提示', '保存失败！');\r",
+                                                    "                            win.close();\r",
+                                                    "                        }\r",
+                                                    "                    });\r",
+                                                    "                } else { \r",
+                                                    "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                                    "                }\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "                return;\r",
+                                                    "\r",
+                                                    "            }\r",
+                                                    "        },\r",
+                                                    "        {\r",
+                                                    "            xtype: 'button',\r",
+                                                    "            handler: function(button, event) {\r",
+                                                    "                win.close();\r",
+                                                    "            },\r",
+                                                    "            x: 230,\r",
+                                                    "            y: 100,\r",
+                                                    "            width: 50,\r",
+                                                    "            text: '取消'\r",
+                                                    "        }\r",
+                                                    "        ]\r",
+                                                    "    }\r",
+                                                    "    ]\r",
+                                                    "});\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "win.show();"
+                                                ]
+                                            },
+                                            "designerId": "2e00da85-d730-402f-b149-508bd83aa46a"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "删除"
+                                    },
+                                    "designerId": "29bf7039-9526-41f5-aa94-0e8ec76de1ad",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "handler",
+                                                "designer|params": [
+                                                    "button",
+                                                    "event"
+                                                ],
+                                                "implHandler": [
+                                                    "\r",
+                                                    "var grid=this.up('grid');\r",
+                                                    "var record =grid.getSelectionModel().getSelection();\r",
+                                                    "\r",
+                                                    "if(record.length===0){\r",
+                                                    "    Ext.Msg.alert('提示','请先选择您要操作的行！');    \r",
+                                                    "    return;\r",
+                                                    "}\r",
+                                                    "else\r",
+                                                    "{\r",
+                                                    "    var ids='';\r",
+                                                    "    for(var i=0;i<record.length;i++)\r",
+                                                    "    {\r",
+                                                    "        ids+=record[i].get(\"number\");\r",
+                                                    "        if(i<record.length-1)ids=ids+\",\";\r",
+                                                    "    }\r",
+                                                    "\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        waitMsg:'正在发送，请等待...',\r",
+                                                    "        url:'del_crawlurl',\r",
+                                                    "        params:{ids:ids},                          \r",
+                                                    "        success:function(response){\r",
+                                                    "            Ext.Msg.alert('success','删除成功！');                \r",
+                                                    "            var mystore=Ext.StoreMgr.get('lyjurlStore'); //获得store对象\r",
+                                                    "            //在load事件中添加参数\r",
+                                                    "            mystore.load(\r",
+                                                    "            {params:{\r",
+                                                    "                start:\"0\",\r",
+                                                    "                limit:\"10\",\r",
+                                                    "                searchField:Ext.getCmp('searchField').getValue()\r",
+                                                    "            }} );\r",
+                                                    "        },\r",
+                                                    "        failure:function(){\r",
+                                                    "            Ext.Msg.alert('failed','删除失败！');\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "}\r",
+                                                    ""
+                                                ]
+                                            },
+                                            "designerId": "bae30217-6f67-443a-b3d5-d9e0644b0aa6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Paging",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "bottom",
+                                "height": 30,
+                                "width": 360,
+                                "displayInfo": true,
+                                "displayMsg": "显示{0} - {1} 条，共计{2}条",
+                                "emptyMsg": "没有数据",
+                                "store": "lyjurlStore"
+                            },
+                            "designerId": "582b014e-6fc1-4bbb-ad58-4092216a23c7"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onGridpanelCellClick",
+                                "implHandler": [
+                                    "if(cellIndex===undefined || cellIndex<2) return;\r",
+                                    "\r",
+                                    "var win=new Ext.Window({\r",
+                                    "    height: 200,\r",
+                                    "    width: 400,\r",
+                                    "    id: 'lyjCrawlurlWindow_update',\r",
+                                    "    layout: {\r",
+                                    "        type: 'absolute'\r",
+                                    "    },\r",
+                                    "    title: '编辑',\r",
+                                    "    modal: true,\r",
+                                    "    items: [\r",
+                                    "    {\r",
+                                    "        xtype: 'form',\r",
+                                    "        id:'crawlurl_update_Form',\r",
+                                    "        height: 220,\r",
+                                    "        layout: {\r",
+                                    "            type: 'absolute'\r",
+                                    "        },\r",
+                                    "        bodyPadding: 10,\r",
+                                    "        jsonSubmit: true,\r",
+                                    "        url: 'update_crawlurl',\r",
+                                    "        title: '',\r",
+                                    "        items: [\r",
+                                    "        {\r",
+                                    "            xtype: 'label',\r",
+                                    "            x: 37,\r",
+                                    "            y: 20,\r",
+                                    "            text: '网站名称：'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'label',\r",
+                                    "            x: 40,\r",
+                                    "            y: 50,\r",
+                                    "            text: '网站URL：'\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textfield',\r",
+                                    "            id:'webName_edit',\r",
+                                    "            x: 115,\r",
+                                    "            y: 20,\r",
+                                    "            width: 250,\r",
+                                    "            fieldLabel: '',\r",
+                                    "            allowBlank: false\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'textfield',\r",
+                                    "            id:'webURL_edit',\r",
+                                    "            x: 115,\r",
+                                    "            y: 50,\r",
+                                    "            width: 250,\r",
+                                    "            fieldLabel: '',\r",
+                                    "            allowBlank: false\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            x: 115,\r",
+                                    "            y: 90,\r",
+                                    "            width: 50,\r",
+                                    "            text: '确定',\r",
+                                    "            handler:function(){                     \r",
+                                    "                var myform=Ext.getCmp('crawlurl_update_Form').getForm();    \r",
+                                    "                if (myform.isValid()) { // make sure the form contains valid data before submitting\r",
+                                    "                    myform.submit({\r",
+                                    "                        success: function(form, action) {\r",
+                                    "                            //Ext.Msg.alert('提示', action.result.msg);\r",
+                                    "\r",
+                                    "                            var mystore=Ext.StoreMgr.get('lyjurlStore'); //获得store对象\r",
+                                    "                            //在load事件中添加参数\r",
+                                    "                            mystore.load(\r",
+                                    "                            {params:{\r",
+                                    "                                start:\"0\",\r",
+                                    "                                limit:\"10\",\r",
+                                    "                                searchField:Ext.getCmp('searchField').getValue()\r",
+                                    "\r",
+                                    "                            }} );\r",
+                                    "                            win.close();\r",
+                                    "                        },\r",
+                                    "                        failure: function(form, action) {\r",
+                                    "                            //Ext.Msg.alert('提示', action.result.msg);\r",
+                                    "                            win.close();\r",
+                                    "                        }\r",
+                                    "                    });\r",
+                                    "                } else { \r",
+                                    "                    Ext.Msg.alert('注意', '填写信息不能为空，请检查！');\r",
+                                    "                }\r",
+                                    "\r",
+                                    "\r",
+                                    "                return;\r",
+                                    "\r",
+                                    "            }\r",
+                                    "        },\r",
+                                    "        {\r",
+                                    "            xtype: 'button',\r",
+                                    "            handler: function(button, event) {\r",
+                                    "                win.close();\r",
+                                    "            },\r",
+                                    "            x: 230,\r",
+                                    "            y: 90,\r",
+                                    "            width: 50,\r",
+                                    "            text: '取消'\r",
+                                    "        }\r",
+                                    "        ]\r",
+                                    "    }\r",
+                                    "    ]\r",
+                                    "});\r",
+                                    "Ext.getCmp('webName_edit').setValue(record.data.webname);\r",
+                                    "Ext.getCmp('webURL_edit').setValue(record.data.url);\r",
+                                    "\r",
+                                    "win.show();"
+                                ],
+                                "name": "cellclick",
+                                "scope": "me"
+                            },
+                            "designerId": "096dd332-0e37-4a17-b67c-cf8fb99fd09d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "layout|region": "south",
+                "container|align": "middle",
+                "container|pack": "center",
+                "height": 130,
+                "layout": "vbox",
+                "bodyPadding": 10,
+                "title": "设置信息采集周期"
+            },
+            "designerId": "c3b803e2-1872-4466-a7fd-4f6e5e8fb322",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "width": 712,
+                        "layout": "hbox"
+                    },
+                    "designerId": "b69abd20-1885-452f-82f6-183e343bc0c9",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 287,
+                                "fieldLabel": "现有信息采集周期"
+                            },
+                            "designerId": "5db40f57-08e2-4a54-8fea-a67a5c74f1c5"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "margin": 5,
+                                "width": 287,
+                                "fieldLabel": "修改后信息采集周期",
+                                "labelWidth": 115
+                            },
+                            "designerId": "7637951d-0d3b-4ace-ab4d-16279454ab84"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "layout|margins": "5",
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "width": 723,
+                        "layout": "hbox"
+                    },
+                    "designerId": "f62aacc0-1070-42e3-9666-a83797efbb23",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "run_button",
+                                "margin": 5,
+                                "width": 75,
+                                "text": "保存"
+                            },
+                            "designerId": "4af074c5-504d-4259-b85d-e173f9eba97a",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onRun_buttonClick",
+                                        "implHandler": [
+                                            "Ext.Msg.alert('提示','要开始运行爬虫程序！');   \r",
+                                            "Ext.Ajax.request({\r",
+                                            "    waitMsg:'正在启动，请等待...',\r",
+                                            "    url:'start_heritrix',\r",
+                                            "\r",
+                                            "    success:function(response){\r",
+                                            "        Ext.Msg.alert('success','启动成功！');                \r",
+                                            "\r",
+                                            "    },\r",
+                                            "    failure:function(){\r",
+                                            "        Ext.Msg.alert('failed','启动失败！');\r",
+                                            "\r",
+                                            "    }\r",
+                                            "});"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "56e845dc-7c40-4e63-86cb-4e5e76e8e28e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

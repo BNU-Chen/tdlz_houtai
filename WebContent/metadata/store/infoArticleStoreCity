@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "autoSync": true,
+        "model": "infoAreaModel",
+        "storeId": "infoArticleStoreCity",
+        "designer|userClassName": "infoArticleStoreCity"
+    },
+    "designerId": "61fcbc06-13ec-489c-b66b-e3d56531d5d9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "get_infoArticleCity"
+            },
+            "designerId": "ce050dc0-0fe8-41a6-9bbb-69d2cb99fe30",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": null
+                    },
+                    "designerId": "d51272c4-6000-420b-a2be-1c23cad87c68"
+                }
+            ]
+        }
+    ]
+}

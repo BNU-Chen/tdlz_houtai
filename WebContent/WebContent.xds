@@ -1,0 +1,1876 @@
+{
+    "name": "WebContent",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": true,
+        "urlPrefix": "http://localhost:8080",
+        "exportPath": "F:/eclipsework2/tdlz_houtai/WebContent",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "cf4ba8e6-6ee4-4903-9b13-4617964eb1bc": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "acdf234a-c287-49b6-887d-80441f0839a7": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "60d0804b-eb6a-4d3b-b2e2-8dcee9c29141": {
+            "paths": [
+                "metadata/store/gxMyStore",
+                "app/store/override/gxMyStore.js",
+                "app/store/gxMyStore.js"
+            ],
+            "className": "gxMyStore"
+        },
+        "f2731273-6844-4b99-b893-7a521c0f326a": {
+            "paths": [
+                "metadata/model/gxMyData",
+                "app/model/override/gxMyData.js",
+                "app/model/gxMyData.js"
+            ],
+            "className": "gxMyData"
+        },
+        "44fbfcc3-4454-437f-b575-8f194964d7e2": {
+            "paths": [
+                "metadata/store/gxsyncPushComBoxData",
+                "app/store/override/gxsyncPushComBoxData.js",
+                "app/store/gxsyncPushComBoxData.js"
+            ],
+            "className": "gxsyncPushComBoxData"
+        },
+        "64d93be1-cf15-4a31-8127-9015d18e4fc5": {
+            "paths": [
+                "metadata/store/gxmailPushStore",
+                "app/store/override/gxmailPushStore.js",
+                "app/store/gxmailPushStore.js"
+            ],
+            "className": "gxmailPushStore"
+        },
+        "d39cb41d-04e9-4edc-8ee4-1290249dff10": {
+            "paths": [
+                "metadata/model/gxUsersData",
+                "app/model/override/gxUsersData.js",
+                "app/model/gxUsersData.js"
+            ],
+            "className": "gxUsersData"
+        },
+        "ced3233c-361b-4a75-9a33-6d2f9e2123ca": {
+            "paths": [
+                "metadata/store/gxusersStore",
+                "app/store/override/gxusersStore.js",
+                "app/store/gxusersStore.js"
+            ],
+            "className": "gxusersStore"
+        },
+        "5d2a7325-4be0-4691-8cc6-d22305d0c406": {
+            "paths": [
+                "metadata/view/infoVoteTab",
+                "app/view/override/infoVoteTab.js",
+                "app/view/infoVoteTab.js"
+            ],
+            "className": "infoVoteTab"
+        },
+        "a8d46619-8ac6-49f5-ac80-4cc819183fb9": {
+            "paths": [
+                "metadata/view/infoVoteResultTab",
+                "app/view/override/infoVoteResultTab.js",
+                "app/view/infoVoteResultTab.js"
+            ],
+            "className": "infoVoteResultTab"
+        },
+        "1ba38885-b024-4d63-b840-8cf43e15cb26": {
+            "paths": [
+                "metadata/view/infoVotePublishTab",
+                "app/view/override/infoVotePublishTab.js",
+                "app/view/infoVotePublishTab.js"
+            ],
+            "className": "infoVotePublishTab"
+        },
+        "a72f4cd4-38f9-4c7d-a2f4-26584637a89f": {
+            "paths": [
+                "metadata/view/infoReportTab",
+                "app/view/override/infoReportTab.js",
+                "app/view/infoReportTab.js"
+            ],
+            "className": "infoReportTab"
+        },
+        "76ec85cf-bf9e-4c82-9529-1b4f82dd7dc3": {
+            "paths": [
+                "metadata/view/infoReportDetailTab",
+                "app/view/override/infoReportDetailTab.js",
+                "app/view/infoReportDetailTab.js"
+            ],
+            "className": "infoReportDetailTab"
+        },
+        "31c5b39f-20c7-44c8-8d54-7ebd7759f753": {
+            "paths": [
+                "metadata/view/infoLetterTab",
+                "app/view/override/infoLetterTab.js",
+                "app/view/infoLetterTab.js"
+            ],
+            "className": "infoLetterTab"
+        },
+        "b48eb626-e5b1-4618-ac84-bbce7d280cd3": {
+            "paths": [
+                "metadata/view/infoLetterDetailTab",
+                "app/view/override/infoLetterDetailTab.js",
+                "app/view/infoLetterDetailTab.js"
+            ],
+            "className": "infoLetterDetailTab"
+        },
+        "02ed23b0-3bfe-4bc5-a435-b92d7102a6db": {
+            "paths": [
+                "metadata/view/infoCommentTab",
+                "app/view/override/infoCommentTab.js",
+                "app/view/infoCommentTab.js"
+            ],
+            "className": "infoCommentTab"
+        },
+        "94dfdd87-2d46-4220-8182-157f29c720ed": {
+            "paths": [
+                "metadata/view/infoChannelTab",
+                "app/view/override/infoChannelTab.js",
+                "app/view/infoChannelTab.js"
+            ],
+            "className": "infoChannelTab"
+        },
+        "103990bd-028e-4a79-b4bf-b3f8546b4ff3": {
+            "paths": [
+                "metadata/view/infoCommentDetailTab",
+                "app/view/override/infoCommentDetailTab.js",
+                "app/view/infoCommentDetailTab.js"
+            ],
+            "className": "infoCommentDetailTab"
+        },
+        "06e33111-b3ce-4165-93cc-bbf5e24b0578": {
+            "paths": [
+                "metadata/store/InfoArticleRecycleStore",
+                "app/store/override/InfoArticleRecycleStore.js",
+                "app/store/InfoArticleRecycleStore.js"
+            ],
+            "className": "InfoArticleRecycleStore"
+        },
+        "4ffc048e-37df-408c-8626-9e659c7681be": {
+            "paths": [
+                "metadata/store/InfoArticleStore",
+                "app/store/override/InfoArticleStore.js",
+                "app/store/InfoArticleStore.js"
+            ],
+            "className": "InfoArticleStore"
+        },
+        "c32ac757-1d2b-4d4a-96d5-694bfea865ba": {
+            "paths": [
+                "metadata/store/InfoChannelStore",
+                "app/store/override/InfoChannelStore.js",
+                "app/store/InfoChannelStore.js"
+            ],
+            "className": "InfoChannelStore"
+        },
+        "7f4c9ae4-d428-486b-8f4c-ed652c710e07": {
+            "paths": [
+                "metadata/store/InfoCommentStore",
+                "app/store/override/InfoCommentStore.js",
+                "app/store/InfoCommentStore.js"
+            ],
+            "className": "InfoCommentStore"
+        },
+        "0629216f-18de-4979-ba86-0ca13e3e8637": {
+            "paths": [
+                "metadata/store/InfoLetterStore",
+                "app/store/override/InfoLetterStore.js",
+                "app/store/InfoLetterStore.js"
+            ],
+            "className": "InfoLetterStore"
+        },
+        "e610c531-0ba2-4922-a473-503fae5d27a0": {
+            "paths": [
+                "metadata/store/InfoReportStore",
+                "app/store/override/InfoReportStore.js",
+                "app/store/InfoReportStore.js"
+            ],
+            "className": "InfoReportStore"
+        },
+        "3c37e836-99a7-4cbe-9e87-aa9db7129033": {
+            "paths": [
+                "metadata/store/InfoVoteStore",
+                "app/store/override/InfoVoteStore.js",
+                "app/store/InfoVoteStore.js"
+            ],
+            "className": "InfoVoteStore"
+        },
+        "c6b92e34-004e-465c-8b0f-83a01819a2e3": {
+            "paths": [
+                "metadata/store/InfoVoteoptionStore",
+                "app/store/override/InfoVoteoptionStore.js",
+                "app/store/InfoVoteoptionStore.js"
+            ],
+            "className": "InfoVoteoptionStore"
+        },
+        "03c26f4f-27e2-44c9-a54b-382625f6fe06": {
+            "paths": [
+                "metadata/model/InfoArticleModel",
+                "app/model/override/InfoArticleModel.js",
+                "app/model/InfoArticleModel.js"
+            ],
+            "className": "InfoArticleModel"
+        },
+        "6362aea4-b0f0-47d0-a247-1b2dd27497fb": {
+            "paths": [
+                "metadata/model/InfoCommentModel",
+                "app/model/override/InfoCommentModel.js",
+                "app/model/InfoCommentModel.js"
+            ],
+            "className": "InfoCommentModel"
+        },
+        "27c61e71-227f-49da-be68-9526d7507e91": {
+            "paths": [
+                "metadata/model/InfoLetterModel",
+                "app/model/override/InfoLetterModel.js",
+                "app/model/InfoLetterModel.js"
+            ],
+            "className": "InfoLetterModel"
+        },
+        "402be1de-8762-45bb-8cc2-aa162c32b4ec": {
+            "paths": [
+                "metadata/model/InfoReportModel",
+                "app/model/override/InfoReportModel.js",
+                "app/model/InfoReportModel.js"
+            ],
+            "className": "InfoReportModel"
+        },
+        "63ff3e1b-d376-4f64-b2a4-a90704c54570": {
+            "paths": [
+                "metadata/model/InfoVoteModel",
+                "app/model/override/InfoVoteModel.js",
+                "app/model/InfoVoteModel.js"
+            ],
+            "className": "InfoVoteModel"
+        },
+        "38d9cde1-5fbf-4f5e-b9ca-1f8582597c4f": {
+            "paths": [
+                "metadata/model/InfoVoteoptionModel",
+                "app/model/override/InfoVoteoptionModel.js",
+                "app/model/InfoVoteoptionModel.js"
+            ],
+            "className": "InfoVoteoptionModel"
+        },
+        "d18e575b-da4d-4bea-b797-9b0e2c42b26a": {
+            "paths": [
+                "metadata/model/InfoChannelModel",
+                "app/model/override/InfoChannelModel.js",
+                "app/model/InfoChannelModel.js"
+            ],
+            "className": "InfoChannelModel"
+        },
+        "0d10ac85-32fe-486d-94cb-9062ce7b305a": {
+            "paths": [
+                "metadata/view/infoArticleTab",
+                "app/view/override/infoArticleTab.js",
+                "app/view/infoArticleTab.js"
+            ],
+            "className": "infoArticleTab"
+        },
+        "5196258f-6a46-4b3c-95ea-8875b50caf81": {
+            "paths": [
+                "metadata/view/infoArticleRecycleTab",
+                "app/view/override/infoArticleRecycleTab.js",
+                "app/view/infoArticleRecycleTab.js"
+            ],
+            "className": "infoArticleRecycleTab"
+        },
+        "b2537df0-0734-43ad-a848-881e88497fea": {
+            "paths": [
+                "metadata/view/infoArticlePublishTab",
+                "app/view/override/infoArticlePublishTab.js",
+                "app/view/infoArticlePublishTab.js"
+            ],
+            "className": "infoArticlePublishTab"
+        },
+        "41d5f408-a3f6-4680-856d-e1dd9a1690b6": {
+            "paths": [
+                "metadata/store/InfoReportClassStore",
+                "app/store/override/InfoReportClassStore.js",
+                "app/store/InfoReportClassStore.js"
+            ],
+            "className": "InfoReportClassStore"
+        },
+        "0338aa11-899b-4dd5-a04d-77ab8fc1d28c": {
+            "paths": [
+                "metadata/store/SchemeToShow",
+                "app/store/override/SchemeToShow.js",
+                "app/store/SchemeToShow.js"
+            ],
+            "className": "SchemeToShow"
+        },
+        "c20fb536-a51e-472a-83b8-bcd7a287ea90": {
+            "paths": [
+                "metadata/model/SchemeToShow",
+                "app/model/override/SchemeToShow.js",
+                "app/model/SchemeToShow.js"
+            ],
+            "className": "SchemeToShow"
+        },
+        "ad687656-322c-4309-a346-76fade38e8ec": {
+            "paths": [
+                "metadata/view/quotaKeywords",
+                "app/view/override/quotaKeywords.js",
+                "app/view/quotaKeywords.js"
+            ],
+            "className": "quotaKeywords"
+        },
+        "12be702b-ca1f-4e9b-9004-206e30bc0644": {
+            "paths": [
+                "metadata/view/quotaExtract",
+                "app/view/override/quotaExtract.js",
+                "app/view/quotaExtract.js"
+            ],
+            "className": "quotaExtract"
+        },
+        "8a5b4f33-508f-4dbe-800c-bd76f7e3c11e": {
+            "paths": [
+                "metadata/view/quotaCrawl",
+                "app/view/override/quotaCrawl.js",
+                "app/view/quotaCrawl.js"
+            ],
+            "className": "quotaCrawl"
+        },
+        "4636780c-97b9-446f-b5df-3fefe15da3ed": {
+            "paths": [
+                "metadata/store/pubInfomationStore",
+                "app/store/override/pubInfomationStore.js",
+                "app/store/pubInfomationStore.js"
+            ],
+            "className": "pubInfomationStore"
+        },
+        "857bf13c-b125-4e0f-8e08-70024969d180": {
+            "paths": [
+                "metadata/store/pubNewDynamicStore",
+                "app/store/override/pubNewDynamicStore.js",
+                "app/store/pubNewDynamicStore.js"
+            ],
+            "className": "pubNewDynamicStore"
+        },
+        "99f26d13-c39c-4484-a9ac-64017ce4b831": {
+            "paths": [
+                "metadata/store/pubProcedureStore",
+                "app/store/override/pubProcedureStore.js",
+                "app/store/pubProcedureStore.js"
+            ],
+            "className": "pubProcedureStore"
+        },
+        "51564b28-0d8a-4ae3-a4b1-45b8030e0ed2": {
+            "paths": [
+                "metadata/store/pubLawStore",
+                "app/store/override/pubLawStore.js",
+                "app/store/pubLawStore.js"
+            ],
+            "className": "pubLawStore"
+        },
+        "537384b1-5808-42b2-9517-646176bcbb2a": {
+            "paths": [
+                "metadata/store/pubNewDealStore",
+                "app/store/override/pubNewDealStore.js",
+                "app/store/pubNewDealStore.js"
+            ],
+            "className": "pubNewDealStore"
+        },
+        "339c0923-5487-43a0-8614-dc6d2ad92332": {
+            "paths": [
+                "metadata/view/lyj_addURL",
+                "app/view/override/lyj_addURL.js",
+                "app/view/lyj_addURL.js"
+            ],
+            "className": "lyj_addURL"
+        },
+        "258a90ba-3a47-4a17-a350-ca4ac1b172aa": {
+            "paths": [
+                "metadata/model/CrawlurlModel",
+                "app/model/override/CrawlurlModel.js",
+                "app/model/CrawlurlModel.js"
+            ],
+            "className": "CrawlurlModel"
+        },
+        "46398cf2-cced-4a58-8203-1f41a1211dc6": {
+            "paths": [
+                "metadata/store/lyjurlStore",
+                "app/store/override/lyjurlStore.js",
+                "app/store/lyjurlStore.js"
+            ],
+            "className": "lyjurlStore"
+        },
+        "3046037c-3cd6-4193-b8cc-25c83d2903a7": {
+            "paths": [
+                "metadata/model/CrawlkeywordsModel",
+                "app/model/override/CrawlkeywordsModel.js",
+                "app/model/CrawlkeywordsModel.js"
+            ],
+            "className": "CrawlkeywordsModel"
+        },
+        "e5b5cb1c-6eee-4306-8859-d08e9d1b3b92": {
+            "paths": [
+                "metadata/store/lyjkeywordsStore",
+                "app/store/override/lyjkeywordsStore.js",
+                "app/store/lyjkeywordsStore.js"
+            ],
+            "className": "lyjkeywordsStore"
+        },
+        "9da0aa53-ead3-4ba3-8187-8d2a76d696b0": {
+            "paths": [
+                "metadata/view/Crawl2",
+                "app/view/override/Crawl2.js",
+                "app/view/Crawl2.js"
+            ],
+            "className": "Crawl2"
+        },
+        "746341cb-06b4-4dc8-92ed-ae43d4cc376e": {
+            "paths": [
+                "metadata/view/z_srdagl",
+                "app/view/override/z_srdagl.js",
+                "app/view/z_srdagl.js"
+            ],
+            "className": "z_srdagl"
+        },
+        "66ad5512-f928-4f3b-aafc-a6b43b77e896": {
+            "paths": [
+                "metadata/view/landSearch",
+                "app/view/override/landSearch.js",
+                "app/view/landSearch.js"
+            ],
+            "className": "landSearch"
+        },
+        "104e53b3-dee4-4595-b905-c31dde169465": {
+            "paths": [
+                "metadata/view/landKeywords",
+                "app/view/override/landKeywords.js",
+                "app/view/landKeywords.js"
+            ],
+            "className": "landKeywords"
+        },
+        "27e7b23a-8366-4ad2-ac9e-816f64ae025c": {
+            "paths": [
+                "metadata/view/landExtract",
+                "app/view/override/landExtract.js",
+                "app/view/landExtract.js"
+            ],
+            "className": "landExtract"
+        },
+        "cf4c32c8-770b-408c-a6a1-6d3df83aaa33": {
+            "paths": [
+                "metadata/view/landCrawl",
+                "app/view/override/landCrawl.js",
+                "app/view/landCrawl.js"
+            ],
+            "className": "landCrawl"
+        },
+        "fe3d76ce-c0d8-4cd8-960c-256181548c7e": {
+            "paths": [
+                "metadata/view/jjjygl_gp",
+                "app/view/override/jjjygl_gp.js",
+                "app/view/jjjygl_gp.js"
+            ],
+            "className": "jjjygl_gp"
+        },
+        "56977a6d-f04b-4659-acc8-e7b201fd16cd": {
+            "paths": [
+                "metadata/view/infoArticleZXDTTab",
+                "app/view/override/infoArticleZXDTTab.js",
+                "app/view/infoArticleZXDTTab.js"
+            ],
+            "className": "infoArticleZXDTTab"
+        },
+        "6aa3aeee-77c3-484c-b1b5-c4803ff0e5cc": {
+            "paths": [
+                "metadata/view/infoArticleZJJYTab",
+                "app/view/override/infoArticleZJJYTab.js",
+                "app/view/infoArticleZJJYTab.js"
+            ],
+            "className": "infoArticleZJJYTab"
+        },
+        "958cc5cb-44bb-4583-b5f8-03333ff5fc21": {
+            "paths": [
+                "metadata/view/infoArticleTZGGTab",
+                "app/view/override/infoArticleTZGGTab.js",
+                "app/view/infoArticleTZGGTab.js"
+            ],
+            "className": "infoArticleTZGGTab"
+        },
+        "2cb0d446-bebf-4a3b-bbaa-ead629eebc91": {
+            "paths": [
+                "metadata/view/infoArticleNDZRTab",
+                "app/view/override/infoArticleNDZRTab.js",
+                "app/view/infoArticleNDZRTab.js"
+            ],
+            "className": "infoArticleNDZRTab"
+        },
+        "b1656928-e0ac-40ef-ac17-717bdde34891": {
+            "paths": [
+                "metadata/view/infoArticleNDZCTab",
+                "app/view/override/infoArticleNDZCTab.js",
+                "app/view/infoArticleNDZCTab.js"
+            ],
+            "className": "infoArticleNDZCTab"
+        },
+        "0ed0ec6b-4017-4294-be68-a6320ec3a498": {
+            "paths": [
+                "metadata/view/infoArticleJYLCTab",
+                "app/view/override/infoArticleJYLCTab.js",
+                "app/view/infoArticleJYLCTab.js"
+            ],
+            "className": "infoArticleJYLCTab"
+        },
+        "c058cef9-c556-4f99-8ac2-561bdc4fe000": {
+            "paths": [
+                "metadata/view/ht_wqwb_wsqy",
+                "app/view/override/ht_wqwb_wsqy.js",
+                "app/view/ht_wqwb_wsqy.js"
+            ],
+            "className": "ht_wqwb_wsqy"
+        },
+        "c410bf10-4989-468a-b546-7e67114867df": {
+            "paths": [
+                "metadata/view/ht_wqwb_jysh",
+                "app/view/override/ht_wqwb_jysh.js",
+                "app/view/ht_wqwb_jysh.js"
+            ],
+            "className": "ht_wqwb_jysh"
+        },
+        "ec0e29fe-edd6-4e2d-8222-2cad7298e0d6": {
+            "paths": [
+                "metadata/view/ht_wqwb_htmb",
+                "app/view/override/ht_wqwb_htmb.js",
+                "app/view/ht_wqwb_htmb.js"
+            ],
+            "className": "ht_wqwb_htmb"
+        },
+        "84fef1fb-561c-4346-950d-9d20c3319351": {
+            "paths": [
+                "metadata/view/ht_wqwb_fzba",
+                "app/view/override/ht_wqwb_fzba.js",
+                "app/view/ht_wqwb_fzba.js"
+            ],
+            "className": "ht_wqwb_fzba"
+        },
+        "f5c44b68-bc1a-43c0-b98a-e5160819ce0d": {
+            "paths": [
+                "metadata/view/ht_wqwb_dagl",
+                "app/view/override/ht_wqwb_dagl.js",
+                "app/view/ht_wqwb_dagl.js"
+            ],
+            "className": "ht_wqwb_dagl"
+        },
+        "7ddee2a2-6891-47b0-9456-2fdbd3829790": {
+            "paths": [
+                "metadata/view/landSimpleSearch",
+                "app/view/override/landSimpleSearch.js",
+                "app/view/landSimpleSearch.js"
+            ],
+            "className": "landSimpleSearch"
+        },
+        "757723fb-dc8c-478a-aecb-0947d6780ea5": {
+            "paths": [
+                "metadata/view/pmzbfb",
+                "app/view/override/pmzbfb.js",
+                "app/view/pmzbfb.js"
+            ],
+            "className": "pmzbfb"
+        },
+        "85ce74eb-0728-47f4-8cda-4cf4df768c71": {
+            "paths": [
+                "metadata/view/ht_jjjygl_fb",
+                "app/view/override/ht_jjjygl_fb.js",
+                "app/view/ht_jjjygl_fb.js"
+            ],
+            "className": "ht_jjjygl_fb"
+        },
+        "5721f705-f7c6-4f18-8b29-ff9748132ca4": {
+            "paths": [
+                "metadata/view/ht_jjjy_zgsh",
+                "app/view/override/ht_jjjy_zgsh.js",
+                "app/view/ht_jjjy_zgsh.js"
+            ],
+            "className": "ht_jjjy_zgsh"
+        },
+        "0e311eb3-1d60-48ce-9c03-0c075473e2d3": {
+            "paths": [
+                "metadata/view/ht_jjjy_zbsh",
+                "app/view/override/ht_jjjy_zbsh.js",
+                "app/view/ht_jjjy_zbsh.js"
+            ],
+            "className": "ht_jjjy_zbsh"
+        },
+        "3152cfb7-1a12-4962-9928-5a4e754414c7": {
+            "paths": [
+                "metadata/view/ht_jjjy_jygl1",
+                "app/view/override/ht_jjjy_jygl1.js",
+                "app/view/ht_jjjy_jygl1.js"
+            ],
+            "className": "ht_jjjy_jygl1"
+        },
+        "7c515274-4568-46a2-ab5b-cca6bb3aaeec": {
+            "paths": [
+                "metadata/view/ht_jjjy_fb",
+                "app/view/override/ht_jjjy_fb.js",
+                "app/view/ht_jjjy_fb.js"
+            ],
+            "className": "ht_jjjy_fb"
+        },
+        "a51c135d-5a1e-4f35-87b9-ee229d62e5cd": {
+            "paths": [
+                "metadata/view/ht_bzjgl_tk",
+                "app/view/override/ht_bzjgl_tk.js",
+                "app/view/ht_bzjgl_tk.js"
+            ],
+            "className": "ht_bzjgl_tk"
+        },
+        "55298a00-701b-4e6d-8e94-c16d4ecda021": {
+            "paths": [
+                "metadata/view/ht_bzjgl_lsjl",
+                "app/view/override/ht_bzjgl_lsjl.js",
+                "app/view/ht_bzjgl_lsjl.js"
+            ],
+            "className": "ht_bzjgl_lsjl"
+        },
+        "23868df9-5ce5-490f-84c5-a1d0c2ae6106": {
+            "paths": [
+                "metadata/view/ht_bzjgl_cz",
+                "app/view/override/ht_bzjgl_cz.js",
+                "app/view/ht_bzjgl_cz.js"
+            ],
+            "className": "ht_bzjgl_cz"
+        },
+        "9c3b7697-710c-4c57-ac61-85408fff78ee": {
+            "paths": [
+                "metadata/view/ccQueryStatisticsTab",
+                "app/view/override/ccQueryStatisticsTab.js",
+                "app/view/ccQueryStatisticsTab.js"
+            ],
+            "className": "ccQueryStatisticsTab"
+        },
+        "dd5ad745-4f92-483f-8c45-b5614929e579": {
+            "paths": [
+                "metadata/view/TaishiVolume",
+                "app/view/override/TaishiVolume.js",
+                "app/view/TaishiVolume.js"
+            ],
+            "className": "TaishiVolume"
+        },
+        "49a021cf-96d9-4e56-9a98-270e3076ceca": {
+            "paths": [
+                "metadata/view/TaishiPrice",
+                "app/view/override/TaishiPrice.js",
+                "app/view/TaishiPrice.js"
+            ],
+            "className": "TaishiPrice"
+        },
+        "aee0a729-013f-4b22-91e8-277649f0fe3a": {
+            "paths": [
+                "metadata/view/TaishiFind",
+                "app/view/override/TaishiFind.js",
+                "app/view/TaishiFind.js"
+            ],
+            "className": "TaishiFind"
+        },
+        "1530222b-d106-4e84-aa06-3403ab3a0906": {
+            "paths": [
+                "metadata/view/TaishiArea",
+                "app/view/override/TaishiArea.js",
+                "app/view/TaishiArea.js"
+            ],
+            "className": "TaishiArea"
+        },
+        "ae33f27e-8430-46f4-92d7-184cb882113a": {
+            "paths": [
+                "metadata/view/ShouyiRegister",
+                "app/view/override/ShouyiRegister.js",
+                "app/view/ShouyiRegister.js"
+            ],
+            "className": "ShouyiRegister"
+        },
+        "83b7ef6e-e8ba-44fa-9d83-d06109d523ae": {
+            "paths": [
+                "metadata/view/ShouyiFind_Zijin",
+                "app/view/override/ShouyiFind_Zijin.js",
+                "app/view/ShouyiFind_Zijin.js"
+            ],
+            "className": "ShouyiFind_Zijin"
+        },
+        "39b5b942-6287-4567-be4a-b669fbf4c17e": {
+            "paths": [
+                "metadata/view/ShouyiFind_Hetong",
+                "app/view/override/ShouyiFind_Hetong.js",
+                "app/view/ShouyiFind_Hetong.js"
+            ],
+            "className": "ShouyiFind_Hetong"
+        },
+        "d486fdd5-8123-40ba-8693-bd2d2474b6c6": {
+            "paths": [
+                "metadata/view/ShouyiAlarm_Canshu",
+                "app/view/override/ShouyiAlarm_Canshu.js",
+                "app/view/ShouyiAlarm_Canshu.js"
+            ],
+            "className": "ShouyiAlarm_Canshu"
+        },
+        "827487f3-8a80-4937-a2cc-f9575f4f4ac9": {
+            "paths": [
+                "metadata/view/TaishiAlarm_Canshu",
+                "app/view/override/TaishiAlarm_Canshu.js",
+                "app/view/TaishiAlarm_Canshu.js"
+            ],
+            "className": "TaishiAlarm_Canshu"
+        },
+        "81597ef5-eb33-45fc-99ad-a4be16c87f71": {
+            "paths": [
+                "metadata/view/ShouyiStat_Nonghu",
+                "app/view/override/ShouyiStat_Nonghu.js",
+                "app/view/ShouyiStat_Nonghu.js"
+            ],
+            "className": "ShouyiStat_Nonghu"
+        },
+        "b33b0fde-cb26-4318-afff-bcb65ce2a154": {
+            "paths": [
+                "metadata/view/TaishiAlarm",
+                "app/view/override/TaishiAlarm.js",
+                "app/view/TaishiAlarm.js"
+            ],
+            "className": "TaishiAlarm"
+        },
+        "b1d11d87-0a07-4b7c-9193-212a65e7e36f": {
+            "paths": [
+                "metadata/view/ShouyiAlarm",
+                "app/view/override/ShouyiAlarm.js",
+                "app/view/ShouyiAlarm.js"
+            ],
+            "className": "ShouyiAlarm"
+        },
+        "1c7adfc6-f430-4607-85c0-064ba94e94e2": {
+            "paths": [
+                "metadata/view/ShouyiStat_Jianshe",
+                "app/view/override/ShouyiStat_Jianshe.js",
+                "app/view/ShouyiStat_Jianshe.js"
+            ],
+            "className": "ShouyiStat_Jianshe"
+        },
+        "ca94edad-5e55-4ce8-8a5b-8472d182e650": {
+            "paths": [
+                "metadata/store/transtyleStore",
+                "app/store/override/transtyleStore.js",
+                "app/store/transtyleStore.js"
+            ],
+            "className": "transtyleStore"
+        },
+        "d88bb446-87ba-4be2-9aa4-a9181a29be08": {
+            "paths": [
+                "metadata/store/ArticleDraftJYLCStore",
+                "app/store/override/ArticleDraftJYLCStore.js",
+                "app/store/ArticleDraftJYLCStore.js"
+            ],
+            "className": "ArticleDraftJYLCStore"
+        },
+        "b1b645e5-cafc-46de-8ce8-629e93ac7c47": {
+            "paths": [
+                "metadata/store/ArticleDraftNDZCStore",
+                "app/store/override/ArticleDraftNDZCStore.js",
+                "app/store/ArticleDraftNDZCStore.js"
+            ],
+            "className": "ArticleDraftNDZCStore"
+        },
+        "003163ff-6b35-48cc-ae12-abcbdeb84735": {
+            "paths": [
+                "metadata/store/ArticleDraftNDZRStore",
+                "app/store/override/ArticleDraftNDZRStore.js",
+                "app/store/ArticleDraftNDZRStore.js"
+            ],
+            "className": "ArticleDraftNDZRStore"
+        },
+        "dffb5281-82f1-4e8f-a153-4076c5415bb9": {
+            "paths": [
+                "metadata/store/ArticleDraftTZGGStore",
+                "app/store/override/ArticleDraftTZGGStore.js",
+                "app/store/ArticleDraftTZGGStore.js"
+            ],
+            "className": "ArticleDraftTZGGStore"
+        },
+        "c1df7cd6-c1ca-4e67-9035-221842068c5d": {
+            "paths": [
+                "metadata/store/ArticleDraftZJJYStore",
+                "app/store/override/ArticleDraftZJJYStore.js",
+                "app/store/ArticleDraftZJJYStore.js"
+            ],
+            "className": "ArticleDraftZJJYStore"
+        },
+        "89a920d7-a47a-4e81-b306-ed7df0bc9dcd": {
+            "paths": [
+                "metadata/store/ArticleDraftZXDTStore",
+                "app/store/override/ArticleDraftZXDTStore.js",
+                "app/store/ArticleDraftZXDTStore.js"
+            ],
+            "className": "ArticleDraftZXDTStore"
+        },
+        "f7b58762-a7ec-40f5-8a8a-0fb36040c373": {
+            "paths": [
+                "metadata/store/ArticlePubJYLCStore",
+                "app/store/override/ArticlePubJYLCStore.js",
+                "app/store/ArticlePubJYLCStore.js"
+            ],
+            "className": "ArticlePubJYLCStore"
+        },
+        "3190655d-e22a-4a37-9b17-dd03c2e2341d": {
+            "paths": [
+                "metadata/store/ArticlePubNDZCStore",
+                "app/store/override/ArticlePubNDZCStore.js",
+                "app/store/ArticlePubNDZCStore.js"
+            ],
+            "className": "ArticlePubNDZCStore"
+        },
+        "0c823540-6b52-46c6-81a2-f9993619bcb4": {
+            "paths": [
+                "metadata/store/ArticlePubNDZRStore",
+                "app/store/override/ArticlePubNDZRStore.js",
+                "app/store/ArticlePubNDZRStore.js"
+            ],
+            "className": "ArticlePubNDZRStore"
+        },
+        "4aabdb45-41b4-41f3-8791-0d2e85eb9660": {
+            "paths": [
+                "metadata/store/ArticlePubTZGGStore",
+                "app/store/override/ArticlePubTZGGStore.js",
+                "app/store/ArticlePubTZGGStore.js"
+            ],
+            "className": "ArticlePubTZGGStore"
+        },
+        "81e6a669-cd26-4fd2-8af0-e5dfa8f7ee3c": {
+            "paths": [
+                "metadata/store/ArticlePubZJJYStore",
+                "app/store/override/ArticlePubZJJYStore.js",
+                "app/store/ArticlePubZJJYStore.js"
+            ],
+            "className": "ArticlePubZJJYStore"
+        },
+        "5e7d47f8-e702-4826-9e1b-7a8df03476e8": {
+            "paths": [
+                "metadata/store/ArticlePubZXDTStore",
+                "app/store/override/ArticlePubZXDTStore.js",
+                "app/store/ArticlePubZXDTStore.js"
+            ],
+            "className": "ArticlePubZXDTStore"
+        },
+        "57f3608e-ee5f-4728-8851-659def304462": {
+            "paths": [
+                "metadata/store/ArticleRecJYLCStore",
+                "app/store/override/ArticleRecJYLCStore.js",
+                "app/store/ArticleRecJYLCStore.js"
+            ],
+            "className": "ArticleRecJYLCStore"
+        },
+        "8b929fb3-26c3-4239-a9eb-5aacb74be0fa": {
+            "paths": [
+                "metadata/store/ArticleRecNDZCStore",
+                "app/store/override/ArticleRecNDZCStore.js",
+                "app/store/ArticleRecNDZCStore.js"
+            ],
+            "className": "ArticleRecNDZCStore"
+        },
+        "16c6d697-7ee7-4215-b23d-1f2fa9366405": {
+            "paths": [
+                "metadata/store/ArticleRecNDZRStore",
+                "app/store/override/ArticleRecNDZRStore.js",
+                "app/store/ArticleRecNDZRStore.js"
+            ],
+            "className": "ArticleRecNDZRStore"
+        },
+        "7fe83c01-0ee2-46a3-85f8-68e252965bbf": {
+            "paths": [
+                "metadata/store/ArticleRecTZGGStore",
+                "app/store/override/ArticleRecTZGGStore.js",
+                "app/store/ArticleRecTZGGStore.js"
+            ],
+            "className": "ArticleRecTZGGStore"
+        },
+        "e5e371d6-4893-405e-a583-0805b1e8ab56": {
+            "paths": [
+                "metadata/store/ArticleRecZJJYStore",
+                "app/store/override/ArticleRecZJJYStore.js",
+                "app/store/ArticleRecZJJYStore.js"
+            ],
+            "className": "ArticleRecZJJYStore"
+        },
+        "da2febff-0644-4304-8a83-4ddd622462a9": {
+            "paths": [
+                "metadata/store/ArticleRecZXDTStore",
+                "app/store/override/ArticleRecZXDTStore.js",
+                "app/store/ArticleRecZXDTStore.js"
+            ],
+            "className": "ArticleRecZXDTStore"
+        },
+        "6a643def-0677-48ec-ba3d-bff172145654": {
+            "paths": [
+                "metadata/store/ShouyiAlarm_Category",
+                "app/store/override/ShouyiAlarm_Category.js",
+                "app/store/ShouyiAlarm_Category.js"
+            ],
+            "className": "ShouyiAlarm_Category"
+        },
+        "20c13e9f-fa52-4bd0-b506-ea033a070111": {
+            "paths": [
+                "metadata/store/ShouyiAlarm_Pie",
+                "app/store/override/ShouyiAlarm_Pie.js",
+                "app/store/ShouyiAlarm_Pie.js"
+            ],
+            "className": "ShouyiAlarm_Pie"
+        },
+        "6d39ba67-fbc6-45c4-9a68-8585bca4e2b8": {
+            "paths": [
+                "metadata/store/TaishiAlarm_Pie",
+                "app/store/override/TaishiAlarm_Pie.js",
+                "app/store/TaishiAlarm_Pie.js"
+            ],
+            "className": "TaishiAlarm_Pie"
+        },
+        "75c6a34a-358c-4913-8f94-3e1634334c9c": {
+            "paths": [
+                "metadata/store/TaishiArea",
+                "app/store/override/TaishiArea.js",
+                "app/store/TaishiArea.js"
+            ],
+            "className": "TaishiArea"
+        },
+        "262dade5-7040-4a32-a5be-6af9c46be27e": {
+            "paths": [
+                "metadata/store/TaishiPrice",
+                "app/store/override/TaishiPrice.js",
+                "app/store/TaishiPrice.js"
+            ],
+            "className": "TaishiPrice"
+        },
+        "c27b3e5f-5382-4e98-9ec9-ef600be3caf1": {
+            "paths": [
+                "metadata/store/TaishiVolume_Column",
+                "app/store/override/TaishiVolume_Column.js",
+                "app/store/TaishiVolume_Column.js"
+            ],
+            "className": "TaishiVolume_Column"
+        },
+        "12b8df79-9dd4-498f-9653-c22c403ae35f": {
+            "paths": [
+                "metadata/store/TaishiVolume_Pie",
+                "app/store/override/TaishiVolume_Pie.js",
+                "app/store/TaishiVolume_Pie.js"
+            ],
+            "className": "TaishiVolume_Pie"
+        },
+        "867e2dfb-9f74-4e4e-beac-45c1465f8d93": {
+            "paths": [
+                "metadata/store/areaStore",
+                "app/store/override/areaStore.js",
+                "app/store/areaStore.js"
+            ],
+            "className": "areaStore"
+        },
+        "45197c4e-80b1-46a8-8a0e-684aaadfbbac": {
+            "paths": [
+                "metadata/store/ccQueryStatisticStore",
+                "app/store/override/ccQueryStatisticStore.js",
+                "app/store/ccQueryStatisticStore.js"
+            ],
+            "className": "ccQueryStatisticStore"
+        },
+        "d996f583-a6c1-4f8c-bbb5-e0ac85543dce": {
+            "paths": [
+                "metadata/store/gxuserStoreNDZC",
+                "app/store/override/gxuserStoreNDZC.js",
+                "app/store/gxuserStoreNDZC.js"
+            ],
+            "className": "gxuserStoreNDZC"
+        },
+        "feb771b2-4ec7-464a-85a9-1f6d79f5b1f0": {
+            "paths": [
+                "metadata/store/gxuserStoreNDZR",
+                "app/store/override/gxuserStoreNDZR.js",
+                "app/store/gxuserStoreNDZR.js"
+            ],
+            "className": "gxuserStoreNDZR"
+        },
+        "4becc089-3c6a-4e80-a2cc-26919eacbc7d": {
+            "paths": [
+                "metadata/store/landinfo1",
+                "app/store/override/landinfo1.js",
+                "app/store/landinfo1.js"
+            ],
+            "className": "landinfo1"
+        },
+        "831d4967-b76a-4542-b95a-cc0ee125cd42": {
+            "paths": [
+                "metadata/store/landquota",
+                "app/store/override/landquota.js",
+                "app/store/landquota.js"
+            ],
+            "className": "landquota"
+        },
+        "65d330ee-2737-4976-83a6-20518e202d7a": {
+            "paths": [
+                "metadata/store/priceStore",
+                "app/store/override/priceStore.js",
+                "app/store/priceStore.js"
+            ],
+            "className": "priceStore"
+        },
+        "9c14f46b-8d0b-4c1a-b4b9-6dfc06124b26": {
+            "paths": [
+                "metadata/store/tradingStore",
+                "app/store/override/tradingStore.js",
+                "app/store/tradingStore.js"
+            ],
+            "className": "tradingStore"
+        },
+        "d121009a-2f11-420b-8589-2e7055b967b3": {
+            "paths": [
+                "metadata/store/yearStore",
+                "app/store/override/yearStore.js",
+                "app/store/yearStore.js"
+            ],
+            "className": "yearStore"
+        },
+        "9643d074-2b74-426d-92a5-71617b21fd2f": {
+            "paths": [
+                "metadata/model/ShouyiAlarm_Category",
+                "app/model/override/ShouyiAlarm_Category.js",
+                "app/model/ShouyiAlarm_Category.js"
+            ],
+            "className": "ShouyiAlarm_Category"
+        },
+        "221a4575-1d73-4d96-bbe4-cb9f38b9aac6": {
+            "paths": [
+                "metadata/model/ShouyiAlarm_Pie",
+                "app/model/override/ShouyiAlarm_Pie.js",
+                "app/model/ShouyiAlarm_Pie.js"
+            ],
+            "className": "ShouyiAlarm_Pie"
+        },
+        "8ff5c339-0261-4bb8-9cd0-b972efac1e7d": {
+            "paths": [
+                "metadata/model/TaishiAlarm_Category",
+                "app/model/override/TaishiAlarm_Category.js",
+                "app/model/TaishiAlarm_Category.js"
+            ],
+            "className": "TaishiAlarm_Category"
+        },
+        "59ef6a45-d140-42d2-8274-412c2586ae67": {
+            "paths": [
+                "metadata/model/TaishiAlarm_Pie",
+                "app/model/override/TaishiAlarm_Pie.js",
+                "app/model/TaishiAlarm_Pie.js"
+            ],
+            "className": "TaishiAlarm_Pie"
+        },
+        "042a451d-339c-4665-ac6e-706ab36c9e36": {
+            "paths": [
+                "metadata/model/TaishiArea",
+                "app/model/override/TaishiArea.js",
+                "app/model/TaishiArea.js"
+            ],
+            "className": "TaishiArea"
+        },
+        "baf908c0-50c0-4092-8292-956eb6731a12": {
+            "paths": [
+                "metadata/model/TaishiPrice",
+                "app/model/override/TaishiPrice.js",
+                "app/model/TaishiPrice.js"
+            ],
+            "className": "TaishiPrice"
+        },
+        "521a7f41-1666-4014-be6d-db8c1e94f4f1": {
+            "paths": [
+                "metadata/model/TaishiVolume_Column",
+                "app/model/override/TaishiVolume_Column.js",
+                "app/model/TaishiVolume_Column.js"
+            ],
+            "className": "TaishiVolume_Column"
+        },
+        "8f706990-a31f-4306-a66a-f66fd50a5748": {
+            "paths": [
+                "metadata/model/TaishiVolume_Pie",
+                "app/model/override/TaishiVolume_Pie.js",
+                "app/model/TaishiVolume_Pie.js"
+            ],
+            "className": "TaishiVolume_Pie"
+        },
+        "10f21fa8-d70a-4172-ba97-a634ac6993cc": {
+            "paths": [
+                "metadata/model/ccQueryStatisticModel",
+                "app/model/override/ccQueryStatisticModel.js",
+                "app/model/ccQueryStatisticModel.js"
+            ],
+            "className": "ccQueryStatisticModel"
+        },
+        "cd8ba65a-1b46-4b90-9659-0da215db855d": {
+            "paths": [
+                "metadata/view/quotaSimpleSearch",
+                "app/view/override/quotaSimpleSearch.js",
+                "app/view/quotaSimpleSearch.js"
+            ],
+            "className": "quotaSimpleSearch"
+        },
+        "dcb8ddce-f309-4c44-a912-dd8d9487929b": {
+            "paths": [
+                "metadata/view/quotaSearch",
+                "app/view/override/quotaSearch.js",
+                "app/view/quotaSearch.js"
+            ],
+            "className": "quotaSearch"
+        },
+        "47460997-9ecb-4c93-829b-674506bb38c3": {
+            "paths": [
+                "metadata/model/inforArticleModel_extra",
+                "app/model/override/inforArticleModel_extra.js",
+                "app/model/inforArticleModel_extra.js"
+            ],
+            "className": "inforArticleModel_extra"
+        },
+        "602e7a07-3d13-4546-b746-6348b6db826e": {
+            "paths": [
+                "metadata/store/infoArticleStoreProvice",
+                "app/store/override/infoArticleStoreProvice.js",
+                "app/store/infoArticleStoreProvice.js"
+            ],
+            "className": "infoArticleStoreProvice"
+        },
+        "60651080-6833-496f-a9fc-03e6aa4f3407": {
+            "paths": [
+                "metadata/model/infoAreaModel",
+                "app/model/override/infoAreaModel.js",
+                "app/model/infoAreaModel.js"
+            ],
+            "className": "infoAreaModel"
+        },
+        "61fcbc06-13ec-489c-b66b-e3d56531d5d9": {
+            "paths": [
+                "metadata/store/infoArticleStoreCity",
+                "app/store/override/infoArticleStoreCity.js",
+                "app/store/infoArticleStoreCity.js"
+            ],
+            "className": "infoArticleStoreCity"
+        },
+        "c3edb233-b28b-407e-b27b-574d9ec0056b": {
+            "paths": [
+                "metadata/view/infoArticleQRCodeTab",
+                "app/view/override/infoArticleQRCodeTab.js",
+                "app/view/infoArticleQRCodeTab.js"
+            ],
+            "className": "infoArticleQRCodeTab"
+        },
+        "2425496a-0db1-4f36-967c-b53e64c7afc1": {
+            "paths": [
+                "metadata/view/TaishiNumber",
+                "app/view/override/TaishiNumber.js",
+                "app/view/TaishiNumber.js"
+            ],
+            "className": "TaishiNumber"
+        },
+        "151b363b-9645-453d-afb8-6c8eb0e96684": {
+            "paths": [
+                "metadata/store/depositmanage",
+                "app/store/override/depositmanage.js",
+                "app/store/depositmanage.js"
+            ],
+            "className": "depositmanage"
+        },
+        "42b5f974-b1f2-4b65-950d-76b30b6520dd": {
+            "paths": [
+                "metadata/store/TaishiNumber_Pie",
+                "app/store/override/TaishiNumber_Pie.js",
+                "app/store/TaishiNumber_Pie.js"
+            ],
+            "className": "TaishiNumber_Pie"
+        },
+        "52222c25-dc78-47d6-8687-dad5fe0ce8c9": {
+            "paths": [
+                "metadata/store/TaishiFind",
+                "app/store/override/TaishiFind.js",
+                "app/store/TaishiFind.js"
+            ],
+            "className": "TaishiFind"
+        },
+        "5326baf7-66b8-42c2-9913-1d7a26c57cdc": {
+            "paths": [
+                "metadata/store/z_zbdjsh",
+                "app/store/override/z_zbdjsh.js",
+                "app/store/z_zbdjsh.js"
+            ],
+            "className": "z_zbdjsh"
+        },
+        "28d70b06-2087-4ae5-8401-5ce013d1d7e1": {
+            "paths": [
+                "metadata/store/lyjfieldStore",
+                "app/store/override/lyjfieldStore.js",
+                "app/store/lyjfieldStore.js"
+            ],
+            "className": "lyjfieldStore"
+        },
+        "591239b0-71dd-4c7b-ac93-5e7de6e5c3f5": {
+            "paths": [
+                "metadata/store/deposithistory",
+                "app/store/override/deposithistory.js",
+                "app/store/deposithistory.js"
+            ],
+            "className": "deposithistory"
+        },
+        "9ccaf7e8-0899-4d97-8dff-24570d207751": {
+            "paths": [
+                "metadata/model/deposithistory",
+                "app/model/override/deposithistory.js",
+                "app/model/deposithistory.js"
+            ],
+            "className": "deposithistory"
+        },
+        "77c83238-140e-4454-aa36-ab521f0be754": {
+            "paths": [
+                "metadata/model/z_dshzb",
+                "app/model/override/z_dshzb.js",
+                "app/model/z_dshzb.js"
+            ],
+            "className": "z_dshzb"
+        },
+        "8ec44f23-b8e2-4e6f-a53a-46ab4585bd53": {
+            "paths": [
+                "metadata/model/TaishiNumber_Pie",
+                "app/model/override/TaishiNumber_Pie.js",
+                "app/model/TaishiNumber_Pie.js"
+            ],
+            "className": "TaishiNumber_Pie"
+        },
+        "f79ab7f7-26a3-4ed6-91bb-a6d270b8121c": {
+            "paths": [
+                "metadata/model/TaishiFind",
+                "app/model/override/TaishiFind.js",
+                "app/model/TaishiFind.js"
+            ],
+            "className": "TaishiFind"
+        },
+        "5b0a912b-f067-4948-9f32-6d5d9c4ce57d": {
+            "paths": [
+                "metadata/model/deposit",
+                "app/model/override/deposit.js",
+                "app/model/deposit.js"
+            ],
+            "className": "deposit"
+        },
+        "a38a91b1-1c47-4f14-aaf5-1920d9205fc1": {
+            "paths": [
+                "metadata/view/gx",
+                "app/view/override/gx.js",
+                "app/view/gx.js"
+            ],
+            "className": "gx"
+        },
+        "4f6b9c6c-4acf-4a2a-ba81-66a206f0bfab": {
+            "paths": [
+                "metadata/model/CrawlfieldModel",
+                "app/model/override/CrawlfieldModel.js",
+                "app/model/CrawlfieldModel.js"
+            ],
+            "className": "CrawlfieldModel"
+        },
+        "59ebbce4-a270-4967-a528-25b161175fe0": {
+            "paths": [
+                "metadata/view/infoAritcleNDZCNewWindow",
+                "app/view/override/infoAritcleNDZCNewWindow.js",
+                "app/view/infoAritcleNDZCNewWindow.js"
+            ],
+            "className": "infoAritcleNDZCNewWindow"
+        },
+        "31c09be4-064c-4e55-bbdd-cd283a600f11": {
+            "paths": [
+                "metadata/store/infoArticleStoreCounty",
+                "app/store/override/infoArticleStoreCounty.js",
+                "app/store/infoArticleStoreCounty.js"
+            ],
+            "className": "infoArticleStoreCounty"
+        },
+        "aabe7dbe-1a87-4d98-81d9-e4cb08e28a49": {
+            "paths": [
+                "metadata/store/infoArticleStoreVillage",
+                "app/store/override/infoArticleStoreVillage.js",
+                "app/store/infoArticleStoreVillage.js"
+            ],
+            "className": "infoArticleStoreVillage"
+        },
+        "13e2a114-183b-4169-ae45-c2cb51fb22df": {
+            "paths": [
+                "metadata/view/infoAritcleNDZRNewWindow",
+                "app/view/override/infoAritcleNDZRNewWindow.js",
+                "app/view/infoAritcleNDZRNewWindow.js"
+            ],
+            "className": "infoAritcleNDZRNewWindow"
+        },
+        "f2043d05-11ab-4fe2-81c9-03640df434b3": {
+            "paths": [
+                "metadata/store/ShouyiStat_Nonghu",
+                "app/store/override/ShouyiStat_Nonghu.js",
+                "app/store/ShouyiStat_Nonghu.js"
+            ],
+            "className": "ShouyiStat_Nonghu"
+        },
+        "07bad1c0-5e07-4da7-b0bb-90dbf43e75c6": {
+            "paths": [
+                "metadata/store/ShouyiAlarmTable",
+                "app/store/override/ShouyiAlarmTable.js",
+                "app/store/ShouyiAlarmTable.js"
+            ],
+            "className": "ShouyiAlarmTable"
+        },
+        "d4700075-4e34-46bc-97a4-49d7dd4c56cf": {
+            "paths": [
+                "metadata/store/ShouyiFind",
+                "app/store/override/ShouyiFind.js",
+                "app/store/ShouyiFind.js"
+            ],
+            "className": "ShouyiFind"
+        },
+        "4a3ae3bc-0774-45f9-908a-df142ba6d984": {
+            "paths": [
+                "metadata/store/ShouyiFind_Zijin",
+                "app/store/override/ShouyiFind_Zijin.js",
+                "app/store/ShouyiFind_Zijin.js"
+            ],
+            "className": "ShouyiFind_Zijin"
+        },
+        "dbcc8085-272c-4482-a93b-d094ca6e00fb": {
+            "paths": [
+                "metadata/store/ShouyiStat_Jianshe",
+                "app/store/override/ShouyiStat_Jianshe.js",
+                "app/store/ShouyiStat_Jianshe.js"
+            ],
+            "className": "ShouyiStat_Jianshe"
+        },
+        "513d2a0b-4fc2-4b5d-ad5b-1cf7d6d3fb39": {
+            "paths": [
+                "metadata/store/TaishiAlarmTable",
+                "app/store/override/TaishiAlarmTable.js",
+                "app/store/TaishiAlarmTable.js"
+            ],
+            "className": "TaishiAlarmTable"
+        },
+        "7d063ed4-073e-41ee-a3ba-7185f937defe": {
+            "paths": [
+                "metadata/model/ShouyiStat_Nonghu",
+                "app/model/override/ShouyiStat_Nonghu.js",
+                "app/model/ShouyiStat_Nonghu.js"
+            ],
+            "className": "ShouyiStat_Nonghu"
+        },
+        "bbd738a0-a72e-4806-b504-27621993d550": {
+            "paths": [
+                "metadata/model/TaishiAlarmTable",
+                "app/model/override/TaishiAlarmTable.js",
+                "app/model/TaishiAlarmTable.js"
+            ],
+            "className": "TaishiAlarmTable"
+        },
+        "1f9eb740-327c-45ba-9b9e-e01f6f25fef6": {
+            "paths": [
+                "metadata/model/Shouyi_Find",
+                "app/model/override/Shouyi_Find.js",
+                "app/model/Shouyi_Find.js"
+            ],
+            "className": "Shouyi_Find"
+        },
+        "2c8a0817-19fc-4ab6-bcd4-3214cc124939": {
+            "paths": [
+                "metadata/model/ShouyiAlarmTable",
+                "app/model/override/ShouyiAlarmTable.js",
+                "app/model/ShouyiAlarmTable.js"
+            ],
+            "className": "ShouyiAlarmTable"
+        },
+        "dc2d2062-4e7c-42d6-bef4-115404147ff0": {
+            "paths": [
+                "metadata/model/ShouyiStat_Jianshe",
+                "app/model/override/ShouyiStat_Jianshe.js",
+                "app/model/ShouyiStat_Jianshe.js"
+            ],
+            "className": "ShouyiStat_Jianshe"
+        },
+        "5f8b6786-2dec-4ddf-9721-e7eaef4e0d2d": {
+            "paths": [
+                "metadata/model/ShouyiFind_Zijin",
+                "app/model/override/ShouyiFind_Zijin.js",
+                "app/model/ShouyiFind_Zijin.js"
+            ],
+            "className": "ShouyiFind_Zijin"
+        },
+        "6ff2ffce-aef4-4cfe-bcf2-971415c7a27d": {
+            "paths": [
+                "metadata/store/acreStore",
+                "app/store/override/acreStore.js",
+                "app/store/acreStore.js"
+            ],
+            "className": "acreStore"
+        },
+        "c21a2414-94f1-4444-884f-0420e6158879": {
+            "paths": [
+                "metadata/view/jp",
+                "app/view/override/jp.js",
+                "app/view/jp.js"
+            ],
+            "className": "jp"
+        },
+        "3c015431-d1c1-458c-802f-38296ac8f2a0": {
+            "paths": [
+                "metadata/view/bzjpz",
+                "app/view/override/bzjpz.js",
+                "app/view/bzjpz.js"
+            ],
+            "className": "bzjpz"
+        },
+        "881cb8a1-280e-4e8c-b31a-4ad59d28547a": {
+            "paths": [
+                "metadata/view/bar",
+                "app/view/override/bar.js",
+                "app/view/bar.js"
+            ],
+            "className": "bar"
+        },
+        "617a726d-2078-44dc-80e6-1bd8cc09a489": {
+            "paths": [
+                "metadata/store/qzff",
+                "app/store/override/qzff.js",
+                "app/store/qzff.js"
+            ],
+            "className": "qzff"
+        },
+        "832529ad-0013-4c37-94a3-04df13987b92": {
+            "paths": [
+                "metadata/store/charfb",
+                "app/store/override/charfb.js",
+                "app/store/charfb.js"
+            ],
+            "className": "charfb"
+        },
+        "c64bbfd0-1328-4c2f-b155-3cfe23e2a12e": {
+            "paths": [
+                "metadata/store/jycheck",
+                "app/store/override/jycheck.js",
+                "app/store/jycheck.js"
+            ],
+            "className": "jycheck"
+        },
+        "316620a9-563b-4687-a07c-9d89d1d4901d": {
+            "paths": [
+                "metadata/store/record",
+                "app/store/override/record.js",
+                "app/store/record.js"
+            ],
+            "className": "record"
+        },
+        "18084243-fc2e-40f0-926c-5409fd77dae0": {
+            "paths": [
+                "metadata/store/ticketfbcount",
+                "app/store/override/ticketfbcount.js",
+                "app/store/ticketfbcount.js"
+            ],
+            "className": "ticketfbcount"
+        },
+        "b10c4f0c-7e09-4a45-8c01-90f40a062e33": {
+            "paths": [
+                "metadata/store/sign",
+                "app/store/override/sign.js",
+                "app/store/sign.js"
+            ],
+            "className": "sign"
+        },
+        "e0757594-30d7-42aa-8a89-dd9f895ae9d1": {
+            "paths": [
+                "metadata/model/ffpz",
+                "app/model/override/ffpz.js",
+                "app/model/ffpz.js"
+            ],
+            "className": "ffpz"
+        },
+        "ac3a3c94-729f-438c-9e7e-192e96ad4a7b": {
+            "paths": [
+                "metadata/model/sign",
+                "app/model/override/sign.js",
+                "app/model/sign.js"
+            ],
+            "className": "sign"
+        },
+        "953c8796-7ae4-4166-8f72-42dd52e30cff": {
+            "paths": [
+                "metadata/model/recor",
+                "app/model/override/recor.js",
+                "app/model/recor.js"
+            ],
+            "className": "recor"
+        },
+        "5fc76cca-2156-40bc-8002-f7219bf10cda": {
+            "paths": [
+                "metadata/model/jycheck",
+                "app/model/override/jycheck.js",
+                "app/model/jycheck.js"
+            ],
+            "className": "jycheck"
+        },
+        "ef60d4a4-a52a-4062-ae47-c78ca9c0fdaa": {
+            "paths": [
+                "metadata/store/ShouyiCombox",
+                "app/store/override/ShouyiCombox.js",
+                "app/store/ShouyiCombox.js"
+            ],
+            "className": "ShouyiCombox"
+        },
+        "8d45f37d-1565-42c4-a82b-b9e9c5b6f43a": {
+            "paths": [
+                "metadata/model/ShouyiCombox",
+                "app/model/override/ShouyiCombox.js",
+                "app/model/ShouyiCombox.js"
+            ],
+            "className": "ShouyiCombox"
+        },
+        "9a1d9c3c-263d-43da-a11e-c06ddfe05278": {
+            "paths": [
+                "metadata/store/TaishiNumberCombox",
+                "app/store/override/TaishiNumberCombox.js",
+                "app/store/TaishiNumberCombox.js"
+            ],
+            "className": "TaishiNumberCombox"
+        },
+        "43e956c0-79d5-4776-b2b5-aa8c2bd3480a": {
+            "paths": [
+                "metadata/store/TaishiPriceCombox",
+                "app/store/override/TaishiPriceCombox.js",
+                "app/store/TaishiPriceCombox.js"
+            ],
+            "className": "TaishiPriceCombox"
+        },
+        "1d9b0492-8865-4a00-9b20-6605b86c1ada": {
+            "paths": [
+                "metadata/store/TaishiVolumeCombox",
+                "app/store/override/TaishiVolumeCombox.js",
+                "app/store/TaishiVolumeCombox.js"
+            ],
+            "className": "TaishiVolumeCombox"
+        },
+        "bd7d422d-2329-47e9-a2bc-2bb66c17ddbf": {
+            "paths": [
+                "metadata/store/lyjfieldStore2",
+                "app/store/override/lyjfieldStore2.js",
+                "app/store/lyjfieldStore2.js"
+            ],
+            "className": "lyjfieldStore2"
+        },
+        "92778059-a547-479d-a534-8b86ef564d49": {
+            "paths": [
+                "metadata/store/lyjfieldmappingStore",
+                "app/store/override/lyjfieldmappingStore.js",
+                "app/store/lyjfieldmappingStore.js"
+            ],
+            "className": "lyjfieldmappingStore"
+        },
+        "0656844d-1f0a-4dc4-8c15-20be929e6226": {
+            "paths": [
+                "metadata/model/CrawfieldmappingModel",
+                "app/model/override/CrawfieldmappingModel.js",
+                "app/model/CrawfieldmappingModel.js"
+            ],
+            "className": "CrawfieldmappingModel"
+        },
+        "53b3b704-923e-4460-94fd-bb83f649c438": {
+            "paths": [
+                "metadata/model/TaishiPriceTextField",
+                "app/model/override/TaishiPriceTextField.js",
+                "app/model/TaishiPriceTextField.js"
+            ],
+            "className": "TaishiPriceTextField"
+        },
+        "cb46e59a-9d26-4a86-a1c0-dc8700774144": {
+            "paths": [
+                "metadata/model/TaishiNumberTextField",
+                "app/model/override/TaishiNumberTextField.js",
+                "app/model/TaishiNumberTextField.js"
+            ],
+            "className": "TaishiNumberTextField"
+        },
+        "57562403-9532-448b-b6b4-2664a58c5e56": {
+            "paths": [
+                "metadata/model/TaishiVolumeTextField",
+                "app/model/override/TaishiVolumeTextField.js",
+                "app/model/TaishiVolumeTextField.js"
+            ],
+            "className": "TaishiVolumeTextField"
+        },
+        "6de58f72-fdd2-4e47-b2a3-5280002ba6ee": {
+            "paths": [
+                "metadata/view/ShouyiAlarm_Chart",
+                "app/view/override/ShouyiAlarm_Chart.js",
+                "app/view/ShouyiAlarm_Chart.js"
+            ],
+            "className": "ShouyiAlarm_Chart"
+        },
+        "7b355da8-fa3a-41d6-95f7-1b5642dc34af": {
+            "paths": [
+                "metadata/view/TaishiAlarm_Chart",
+                "app/view/override/TaishiAlarm_Chart.js",
+                "app/view/TaishiAlarm_Chart.js"
+            ],
+            "className": "TaishiAlarm_Chart"
+        },
+        "7bf91a52-9445-4362-9cea-219be813c44d": {
+            "paths": [
+                "metadata/store/ShouyiRegisterHtbh",
+                "app/store/override/ShouyiRegisterHtbh.js",
+                "app/store/ShouyiRegisterHtbh.js"
+            ],
+            "className": "ShouyiRegisterHtbh"
+        },
+        "e6f340ec-b8ed-45a8-beb8-dd8f8e335297": {
+            "paths": [
+                "metadata/store/ShouyiAlarmCombox",
+                "app/store/override/ShouyiAlarmCombox.js",
+                "app/store/ShouyiAlarmCombox.js"
+            ],
+            "className": "ShouyiAlarmCombox"
+        },
+        "ed70cc00-fe99-4ad8-9852-4501e3f1e0c2": {
+            "paths": [
+                "metadata/store/TaishiAlarmCombox",
+                "app/store/override/TaishiAlarmCombox.js",
+                "app/store/TaishiAlarmCombox.js"
+            ],
+            "className": "TaishiAlarmCombox"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "6de58f72-fdd2-4e47-b2a3-5280002ba6ee",
+            "7b355da8-fa3a-41d6-95f7-1b5642dc34af",
+            "c21a2414-94f1-4444-884f-0420e6158879",
+            "3c015431-d1c1-458c-802f-38296ac8f2a0",
+            "881cb8a1-280e-4e8c-b31a-4ad59d28547a",
+            "a38a91b1-1c47-4f14-aaf5-1920d9205fc1",
+            "2425496a-0db1-4f36-967c-b53e64c7afc1",
+            "66ad5512-f928-4f3b-aafc-a6b43b77e896",
+            "104e53b3-dee4-4595-b905-c31dde169465",
+            "7ddee2a2-6891-47b0-9456-2fdbd3829790",
+            "27e7b23a-8366-4ad2-ac9e-816f64ae025c",
+            "cf4c32c8-770b-408c-a6a1-6d3df83aaa33",
+            "fe3d76ce-c0d8-4cd8-960c-256181548c7e",
+            "6aa3aeee-77c3-484c-b1b5-c4803ff0e5cc",
+            "958cc5cb-44bb-4583-b5f8-03333ff5fc21",
+            "2cb0d446-bebf-4a3b-bbaa-ead629eebc91",
+            "b1656928-e0ac-40ef-ac17-717bdde34891",
+            "0ed0ec6b-4017-4294-be68-a6320ec3a498",
+            "c3edb233-b28b-407e-b27b-574d9ec0056b",
+            "746341cb-06b4-4dc8-92ed-ae43d4cc376e",
+            "c058cef9-c556-4f99-8ac2-561bdc4fe000",
+            "c410bf10-4989-468a-b546-7e67114867df",
+            "ec0e29fe-edd6-4e2d-8222-2cad7298e0d6",
+            "84fef1fb-561c-4346-950d-9d20c3319351",
+            "f5c44b68-bc1a-43c0-b98a-e5160819ce0d",
+            "757723fb-dc8c-478a-aecb-0947d6780ea5",
+            "85ce74eb-0728-47f4-8cda-4cf4df768c71",
+            "5721f705-f7c6-4f18-8b29-ff9748132ca4",
+            "0e311eb3-1d60-48ce-9c03-0c075473e2d3",
+            "3152cfb7-1a12-4962-9928-5a4e754414c7",
+            "7c515274-4568-46a2-ab5b-cca6bb3aaeec",
+            "a51c135d-5a1e-4f35-87b9-ee229d62e5cd",
+            "55298a00-701b-4e6d-8e94-c16d4ecda021",
+            "23868df9-5ce5-490f-84c5-a1d0c2ae6106",
+            "9c3b7697-710c-4c57-ac61-85408fff78ee",
+            "dd5ad745-4f92-483f-8c45-b5614929e579",
+            "49a021cf-96d9-4e56-9a98-270e3076ceca",
+            "aee0a729-013f-4b22-91e8-277649f0fe3a",
+            "b33b0fde-cb26-4318-afff-bcb65ce2a154",
+            "827487f3-8a80-4937-a2cc-f9575f4f4ac9",
+            "1530222b-d106-4e84-aa06-3403ab3a0906",
+            "ae33f27e-8430-46f4-92d7-184cb882113a",
+            "83b7ef6e-e8ba-44fa-9d83-d06109d523ae",
+            "39b5b942-6287-4567-be4a-b669fbf4c17e",
+            "d486fdd5-8123-40ba-8693-bd2d2474b6c6",
+            "81597ef5-eb33-45fc-99ad-a4be16c87f71",
+            "b1d11d87-0a07-4b7c-9193-212a65e7e36f",
+            "1c7adfc6-f430-4607-85c0-064ba94e94e2",
+            "56977a6d-f04b-4659-acc8-e7b201fd16cd",
+            "ad687656-322c-4309-a346-76fade38e8ec",
+            "dcb8ddce-f309-4c44-a912-dd8d9487929b",
+            "cd8ba65a-1b46-4b90-9659-0da215db855d",
+            "12be702b-ca1f-4e9b-9004-206e30bc0644",
+            "8a5b4f33-508f-4dbe-800c-bd76f7e3c11e",
+            "9da0aa53-ead3-4ba3-8187-8d2a76d696b0",
+            "cf4ba8e6-6ee4-4903-9b13-4617964eb1bc",
+            "0d10ac85-32fe-486d-94cb-9062ce7b305a",
+            "31c5b39f-20c7-44c8-8d54-7ebd7759f753",
+            "5196258f-6a46-4b3c-95ea-8875b50caf81",
+            "b2537df0-0734-43ad-a848-881e88497fea",
+            "5d2a7325-4be0-4691-8cc6-d22305d0c406",
+            "a8d46619-8ac6-49f5-ac80-4cc819183fb9",
+            "1ba38885-b024-4d63-b840-8cf43e15cb26",
+            "a72f4cd4-38f9-4c7d-a2f4-26584637a89f",
+            "76ec85cf-bf9e-4c82-9529-1b4f82dd7dc3",
+            "b48eb626-e5b1-4618-ac84-bbce7d280cd3",
+            "02ed23b0-3bfe-4bc5-a435-b92d7102a6db",
+            "94dfdd87-2d46-4220-8182-157f29c720ed",
+            "103990bd-028e-4a79-b4bf-b3f8546b4ff3",
+            "339c0923-5487-43a0-8614-dc6d2ad92332",
+            "59ebbce4-a270-4967-a528-25b161175fe0",
+            "13e2a114-183b-4169-ae45-c2cb51fb22df"
+        ],
+        "store": [
+            "7bf91a52-9445-4362-9cea-219be813c44d",
+            "e6f340ec-b8ed-45a8-beb8-dd8f8e335297",
+            "ed70cc00-fe99-4ad8-9852-4501e3f1e0c2",
+            "9a1d9c3c-263d-43da-a11e-c06ddfe05278",
+            "43e956c0-79d5-4776-b2b5-aa8c2bd3480a",
+            "1d9b0492-8865-4a00-9b20-6605b86c1ada",
+            "bd7d422d-2329-47e9-a2bc-2bb66c17ddbf",
+            "92778059-a547-479d-a534-8b86ef564d49",
+            "ef60d4a4-a52a-4062-ae47-c78ca9c0fdaa",
+            "617a726d-2078-44dc-80e6-1bd8cc09a489",
+            "832529ad-0013-4c37-94a3-04df13987b92",
+            "c64bbfd0-1328-4c2f-b155-3cfe23e2a12e",
+            "316620a9-563b-4687-a07c-9d89d1d4901d",
+            "18084243-fc2e-40f0-926c-5409fd77dae0",
+            "b10c4f0c-7e09-4a45-8c01-90f40a062e33",
+            "6ff2ffce-aef4-4cfe-bcf2-971415c7a27d",
+            "f2043d05-11ab-4fe2-81c9-03640df434b3",
+            "07bad1c0-5e07-4da7-b0bb-90dbf43e75c6",
+            "d4700075-4e34-46bc-97a4-49d7dd4c56cf",
+            "4a3ae3bc-0774-45f9-908a-df142ba6d984",
+            "dbcc8085-272c-4482-a93b-d094ca6e00fb",
+            "513d2a0b-4fc2-4b5d-ad5b-1cf7d6d3fb39",
+            "151b363b-9645-453d-afb8-6c8eb0e96684",
+            "42b5f974-b1f2-4b65-950d-76b30b6520dd",
+            "52222c25-dc78-47d6-8687-dad5fe0ce8c9",
+            "5326baf7-66b8-42c2-9913-1d7a26c57cdc",
+            "28d70b06-2087-4ae5-8401-5ce013d1d7e1",
+            "591239b0-71dd-4c7b-ac93-5e7de6e5c3f5",
+            "ca94edad-5e55-4ce8-8a5b-8472d182e650",
+            "d88bb446-87ba-4be2-9aa4-a9181a29be08",
+            "b1b645e5-cafc-46de-8ce8-629e93ac7c47",
+            "003163ff-6b35-48cc-ae12-abcbdeb84735",
+            "dffb5281-82f1-4e8f-a153-4076c5415bb9",
+            "c1df7cd6-c1ca-4e67-9035-221842068c5d",
+            "89a920d7-a47a-4e81-b306-ed7df0bc9dcd",
+            "f7b58762-a7ec-40f5-8a8a-0fb36040c373",
+            "3190655d-e22a-4a37-9b17-dd03c2e2341d",
+            "0c823540-6b52-46c6-81a2-f9993619bcb4",
+            "4aabdb45-41b4-41f3-8791-0d2e85eb9660",
+            "81e6a669-cd26-4fd2-8af0-e5dfa8f7ee3c",
+            "5e7d47f8-e702-4826-9e1b-7a8df03476e8",
+            "57f3608e-ee5f-4728-8851-659def304462",
+            "8b929fb3-26c3-4239-a9eb-5aacb74be0fa",
+            "16c6d697-7ee7-4215-b23d-1f2fa9366405",
+            "7fe83c01-0ee2-46a3-85f8-68e252965bbf",
+            "e5e371d6-4893-405e-a583-0805b1e8ab56",
+            "da2febff-0644-4304-8a83-4ddd622462a9",
+            "6a643def-0677-48ec-ba3d-bff172145654",
+            "20c13e9f-fa52-4bd0-b506-ea033a070111",
+            "6d39ba67-fbc6-45c4-9a68-8585bca4e2b8",
+            "75c6a34a-358c-4913-8f94-3e1634334c9c",
+            "262dade5-7040-4a32-a5be-6af9c46be27e",
+            "c27b3e5f-5382-4e98-9ec9-ef600be3caf1",
+            "12b8df79-9dd4-498f-9653-c22c403ae35f",
+            "867e2dfb-9f74-4e4e-beac-45c1465f8d93",
+            "45197c4e-80b1-46a8-8a0e-684aaadfbbac",
+            "d996f583-a6c1-4f8c-bbb5-e0ac85543dce",
+            "feb771b2-4ec7-464a-85a9-1f6d79f5b1f0",
+            "4becc089-3c6a-4e80-a2cc-26919eacbc7d",
+            "831d4967-b76a-4542-b95a-cc0ee125cd42",
+            "65d330ee-2737-4976-83a6-20518e202d7a",
+            "9c14f46b-8d0b-4c1a-b4b9-6dfc06124b26",
+            "d121009a-2f11-420b-8589-2e7055b967b3",
+            "41d5f408-a3f6-4680-856d-e1dd9a1690b6",
+            "0338aa11-899b-4dd5-a04d-77ab8fc1d28c",
+            "06e33111-b3ce-4165-93cc-bbf5e24b0578",
+            "4ffc048e-37df-408c-8626-9e659c7681be",
+            "c32ac757-1d2b-4d4a-96d5-694bfea865ba",
+            "602e7a07-3d13-4546-b746-6348b6db826e",
+            "61fcbc06-13ec-489c-b66b-e3d56531d5d9",
+            "31c09be4-064c-4e55-bbdd-cd283a600f11",
+            "aabe7dbe-1a87-4d98-81d9-e4cb08e28a49",
+            "7f4c9ae4-d428-486b-8f4c-ed652c710e07",
+            "0629216f-18de-4979-ba86-0ca13e3e8637",
+            "e610c531-0ba2-4922-a473-503fae5d27a0",
+            "3c37e836-99a7-4cbe-9e87-aa9db7129033",
+            "c6b92e34-004e-465c-8b0f-83a01819a2e3",
+            "60d0804b-eb6a-4d3b-b2e2-8dcee9c29141",
+            "64d93be1-cf15-4a31-8127-9015d18e4fc5",
+            "4636780c-97b9-446f-b5df-3fefe15da3ed",
+            "857bf13c-b125-4e0f-8e08-70024969d180",
+            "99f26d13-c39c-4484-a9ac-64017ce4b831",
+            "51564b28-0d8a-4ae3-a4b1-45b8030e0ed2",
+            "537384b1-5808-42b2-9517-646176bcbb2a",
+            "44fbfcc3-4454-437f-b575-8f194964d7e2",
+            "ced3233c-361b-4a75-9a33-6d2f9e2123ca",
+            "46398cf2-cced-4a58-8203-1f41a1211dc6",
+            "e5b5cb1c-6eee-4306-8859-d08e9d1b3b92"
+        ],
+        "controller": [],
+        "model": [
+            "0656844d-1f0a-4dc4-8c15-20be929e6226",
+            "53b3b704-923e-4460-94fd-bb83f649c438",
+            "cb46e59a-9d26-4a86-a1c0-dc8700774144",
+            "57562403-9532-448b-b6b4-2664a58c5e56",
+            "8d45f37d-1565-42c4-a82b-b9e9c5b6f43a",
+            "e0757594-30d7-42aa-8a89-dd9f895ae9d1",
+            "ac3a3c94-729f-438c-9e7e-192e96ad4a7b",
+            "953c8796-7ae4-4166-8f72-42dd52e30cff",
+            "5fc76cca-2156-40bc-8002-f7219bf10cda",
+            "7d063ed4-073e-41ee-a3ba-7185f937defe",
+            "bbd738a0-a72e-4806-b504-27621993d550",
+            "1f9eb740-327c-45ba-9b9e-e01f6f25fef6",
+            "2c8a0817-19fc-4ab6-bcd4-3214cc124939",
+            "dc2d2062-4e7c-42d6-bef4-115404147ff0",
+            "5f8b6786-2dec-4ddf-9721-e7eaef4e0d2d",
+            "9ccaf7e8-0899-4d97-8dff-24570d207751",
+            "77c83238-140e-4454-aa36-ab521f0be754",
+            "8ec44f23-b8e2-4e6f-a53a-46ab4585bd53",
+            "f79ab7f7-26a3-4ed6-91bb-a6d270b8121c",
+            "5b0a912b-f067-4948-9f32-6d5d9c4ce57d",
+            "9643d074-2b74-426d-92a5-71617b21fd2f",
+            "221a4575-1d73-4d96-bbe4-cb9f38b9aac6",
+            "8ff5c339-0261-4bb8-9cd0-b972efac1e7d",
+            "59ef6a45-d140-42d2-8274-412c2586ae67",
+            "042a451d-339c-4665-ac6e-706ab36c9e36",
+            "baf908c0-50c0-4092-8292-956eb6731a12",
+            "521a7f41-1666-4014-be6d-db8c1e94f4f1",
+            "8f706990-a31f-4306-a66a-f66fd50a5748",
+            "10f21fa8-d70a-4172-ba97-a634ac6993cc",
+            "c20fb536-a51e-472a-83b8-bcd7a287ea90",
+            "03c26f4f-27e2-44c9-a54b-382625f6fe06",
+            "47460997-9ecb-4c93-829b-674506bb38c3",
+            "6362aea4-b0f0-47d0-a247-1b2dd27497fb",
+            "27c61e71-227f-49da-be68-9526d7507e91",
+            "402be1de-8762-45bb-8cc2-aa162c32b4ec",
+            "63ff3e1b-d376-4f64-b2a4-a90704c54570",
+            "38d9cde1-5fbf-4f5e-b9ca-1f8582597c4f",
+            "d18e575b-da4d-4bea-b797-9b0e2c42b26a",
+            "60651080-6833-496f-a9fc-03e6aa4f3407",
+            "f2731273-6844-4b99-b893-7a521c0f326a",
+            "d39cb41d-04e9-4edc-8ee4-1290249dff10",
+            "258a90ba-3a47-4a17-a350-ca4ac1b172aa",
+            "3046037c-3cd6-4193-b8cc-25c83d2903a7",
+            "4f6b9c6c-4acf-4a2a-ba81-66a206f0bfab"
+        ],
+        "resource": [
+            "acdf234a-c287-49b6-887d-80441f0839a7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

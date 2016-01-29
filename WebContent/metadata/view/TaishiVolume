@@ -1,0 +1,296 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 499,
+        "width": 693,
+        "designer|userClassName": "TaishiVolume",
+        "designer|userAlias": "TaishiVolume",
+        "layout": "border",
+        "title": "按交易量分析"
+    },
+    "designerId": "dd5ad745-4f92-483f-8c45-b5614929e579",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "title": "各方交易量分析图"
+            },
+            "designerId": "d1ef175c-ba30-4034-bdc2-d5c85cb54644",
+            "cn": [
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": -6,
+                        "layout|y": 10,
+                        "height": 280,
+                        "width": 340,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "TaishiVolume_Pie"
+                    },
+                    "designerId": "aaec263e-cd34-4f57-b476-1c4cb732517b",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-column-chart",
+                    "autoName": "ColumnChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "jysj"
+                                ],
+                                "title": "交易时间"
+                            },
+                            "designerId": "39fa7eaf-6c20-43ca-a0dd-f0a0876a25e3"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "jyl"
+                                ],
+                                "title": "交易量"
+                            },
+                            "designerId": "4fd56621-7bc6-4a09-a6e3-a8ca940a95e9"
+                        },
+                        {
+                            "type": "Ext.chart.series.Column",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "axis": [
+                                    "top"
+                                ],
+                                "xField": "jysj",
+                                "yField": [
+                                    "jyl"
+                                ]
+                            },
+                            "designerId": "75e110ae-0dc6-4fd4-923b-1fc8c7c52887"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.chart.Chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 330,
+                        "layout|y": 10,
+                        "autoRender": true,
+                        "height": 280,
+                        "width": 350,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "TaishiVolume_Pie"
+                    },
+                    "designerId": "e8b815f1-c0a0-4173-be53-46bd1d54d71f",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-pie-chart",
+                    "autoName": "PieChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.series.Pie",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": [
+                                    "{'field':'jysj','display':'rotate','contrast':true,'font':'12px Arial'}"
+                                ],
+                                "showInLegend": true,
+                                "angleField": "jyl",
+                                "lengthField": null
+                            },
+                            "designerId": "ebb69763-acd2-4ca2-a370-0253f5fcbf6e"
+                        },
+                        {
+                            "type": "Ext.chart.Legend",
+                            "reference": {
+                                "name": "legend",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "position": "right"
+                            },
+                            "designerId": "827aaad7-c9c8-4a11-8017-ae6c591e5beb"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "designer|snapToGrid": 10,
+                "height": 139,
+                "layout": "absolute",
+                "bodyPadding": 10,
+                "title": "查询条件"
+            },
+            "designerId": "0a676a3b-7db6-4d74-b440-e3d48621c0b5",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 20,
+                        "id": "TaishiVolumeDateField1",
+                        "width": 180,
+                        "designer|displayName": "TaishiVolumeDateField1",
+                        "designer|createAlias": "",
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60,
+                        "name": ""
+                    },
+                    "designerId": "07b336b1-0956-46a2-bc7b-a00436af3625"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 270,
+                        "layout|y": 20,
+                        "id": "TaishiVolumeDateField2",
+                        "width": 180,
+                        "designer|displayName": "TaishiVolumeDateField2",
+                        "designer|createAlias": "",
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60,
+                        "name": ""
+                    },
+                    "designerId": "5f8aa739-a1b8-4507-ad04-dd007e4280cf"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 10,
+                        "layout|y": 70,
+                        "id": "TaishiVolumeTextField",
+                        "width": 180,
+                        "designer|displayName": "TaishiVolumeTextField",
+                        "designer|createAlias": "",
+                        "fieldLabel": "交易区域",
+                        "labelWidth": 60,
+                        "name": "TaishiVolumeTextField",
+                        "emptyText": "请选择区域",
+                        "displayField": "name",
+                        "queryMode": "local",
+                        "store": "TaishiVolumeCombox",
+                        "valueField": "value"
+                    },
+                    "designerId": "ca7608c0-a361-4aa2-94f9-70a2c5a16288"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 340,
+                        "layout|y": 70,
+                        "width": 60,
+                        "text": "查询"
+                    },
+                    "designerId": "d320c86d-365e-4e01-8001-347e1d7d50e5",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiVolumeDateField1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiVolumeDateField2').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiVolumeTextField').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiVolume_Pie'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2, \r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "9dbc4780-60e1-42da-86a3-23dbc97e70a8"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,322 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "height": 500,
+        "width": 692,
+        "designer|userClassName": "TaishiAlarm_Chart",
+        "designer|userAlias": "TaishiAlarm_Chart",
+        "layout": "border",
+        "title": "交易态势异常分析"
+    },
+    "designerId": "7b355da8-fa3a-41d6-95f7-1b5642dc34af",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "designerId": "31d9d83e-cb1e-4daf-abda-d5edc71ee139",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "TaishiAlarmDateStart1",
+                        "width": 165,
+                        "designer|displayName": "TaishiAlarmDateStart",
+                        "fieldLabel": "起始时间",
+                        "labelWidth": 60,
+                        "enforceMaxLength": false,
+                        "maxLength": null,
+                        "useStrict": false
+                    },
+                    "designerId": "1aff1b96-dc66-4ac8-bf2e-3b708832032d"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "TaishiAlarmDateEnd1",
+                        "width": 165,
+                        "designer|displayName": "TaishiAlarmDateEnd",
+                        "fieldLabel": "结束时间",
+                        "labelWidth": 60
+                    },
+                    "designerId": "8ee0bdb3-27b5-4300-ae59-aef50fd5a4e7"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "id": "TaishiAlarmTextField1",
+                        "width": 165,
+                        "designer|displayName": "TaishiAlarmTextField",
+                        "fieldLabel": "交易区域",
+                        "labelWidth": 60,
+                        "name": "TaishiAlarmTextField",
+                        "emptyText": "请选择区域",
+                        "displayField": "name",
+                        "queryMode": "local",
+                        "store": "TaishiAlarmCombox",
+                        "valueField": "value"
+                    },
+                    "designerId": "60e1bacf-5128-443f-9859-580b178c73d6"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 60,
+                        "text": "统计分析"
+                    },
+                    "designerId": "a55fa109-b694-4917-8437-f624add3d3fe",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var getDate1 = Ext.util.Format.date(Ext.getCmp('TaishiAlarmDateStart1').getValue(),'Y-m-d');\r",
+                                    "var getDate2 = Ext.util.Format.date(Ext.getCmp('TaishiAlarmDateEnd1').getValue(),'Y-m-d');\r",
+                                    "var getKeyword = Ext.getCmp('TaishiAlarmTextField1').getRawValue();\r",
+                                    "var mystore=Ext.StoreMgr.get('TaishiAlarm_Pie'); //获得store对象\r",
+                                    "//在load事件中添加参数\r",
+                                    "mystore.load(\r",
+                                    "{params:{\r",
+                                    "    searchDate1:getDate1,\r",
+                                    "    searchDate2:getDate2,\r",
+                                    "    searchKeyword:getKeyword\r",
+                                    "} \r",
+                                    "}\r",
+                                    ");"
+                                ]
+                            },
+                            "designerId": "08fc9d05-003e-42ec-bb80-a2ea1c65eac9"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "width": 60,
+                        "designer|displayName": "",
+                        "text": "返回"
+                    },
+                    "designerId": "826573da-e137-4046-be5e-0ed0fdc4b149",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "var tabs = this.up('tabpanel');\r",
+                                    "tabs.removeAll(true);\r",
+                                    "//用tabs.add()新增加一个tab页面,通过Ext.widget(xtype)得到交易态势异常分析的页面\r",
+                                    "var newtab = tabs.add(Ext.widget('TaishiAlarm'));"
+                                ]
+                            },
+                            "designerId": "5a52a615-0bda-457c-859c-250923a7688c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "autoRender": true,
+                "width": 338,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "TaishiAlarm_Pie"
+            },
+            "designerId": "55f255a9-72e1-4cd5-8a7e-1cb876847412",
+            "isBuiltIn": true,
+            "iconCls": "icon-pie-chart",
+            "autoName": "PieChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.series.Pie",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": [
+                            "{'field':'yctype','display':'none','contrast':true,'font':'12px Arial'}"
+                        ],
+                        "showInLegend": true,
+                        "title": null,
+                        "angleField": "yccount",
+                        "lengthField": null
+                    },
+                    "designerId": "f5b80436-e049-4821-8e2a-ace384ad007f"
+                },
+                {
+                    "type": "Ext.chart.Legend",
+                    "reference": {
+                        "name": "legend",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "position": "right",
+                        "designer|displayName": null
+                    },
+                    "designerId": "62bbda8c-12e2-4766-8087-79a8fd91b5df"
+                }
+            ]
+        },
+        {
+            "type": "Ext.chart.Chart",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "width": 351,
+                "animate": [
+                    "true"
+                ],
+                "insetPadding": 20,
+                "store": "TaishiAlarm_Pie"
+            },
+            "designerId": "35c26d3e-d6a3-4c0d-a74e-779d4685ad65",
+            "isBuiltIn": true,
+            "iconCls": "icon-column-chart",
+            "autoName": "ColumnChart",
+            "cn": [
+                {
+                    "type": "Ext.chart.axis.Category",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "yctype"
+                        ],
+                        "position": "left",
+                        "title": "交易态势异常类型"
+                    },
+                    "designerId": "bdfc1b8e-7578-4256-baa2-9b63c1b912a2"
+                },
+                {
+                    "type": "Ext.chart.axis.Numeric",
+                    "reference": {
+                        "name": "axes",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fields": [
+                            "yccount"
+                        ],
+                        "majorTickSteps": 1,
+                        "minorTickSteps": 1,
+                        "position": "bottom",
+                        "title": "交易态势异常量",
+                        "decimals": 0
+                    },
+                    "designerId": "ab15fae9-fba8-4bc7-a6fd-81f022a74a41"
+                },
+                {
+                    "type": "Ext.chart.series.Column",
+                    "reference": {
+                        "name": "series",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "xField": "yctype",
+                        "yField": [
+                            "yccount"
+                        ],
+                        "type": "bar"
+                    },
+                    "designerId": "d8d8c08c-b835-4ced-a925-e7e728a6bd13"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "height": 252,
+                "title": "交易态势异常地图显示"
+            },
+            "designerId": "7c38821a-c9c1-4ad2-b8f1-ace554bd6319"
+        }
+    ]
+}

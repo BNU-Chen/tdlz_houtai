@@ -1,0 +1,66 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "sortRoot": null,
+        "autoLoad": true,
+        "model": "lyjMyData",
+        "storeId": "landinfo1",
+        "designer|userClassName": "landinfo1",
+        "pageSize": 10
+    },
+    "designerId": "4becc089-3c6a-4e80-a2cc-26919eacbc7d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://localhost:8080/lyj0816/find_transinfo"
+            },
+            "designerId": "cdc9cb76-e217-44b3-8234-2a6b8ecf2bf0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "designerId": "6b653baa-7719-4086-9162-2f622ab786f8"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreBeforeLoad",
+                "implHandler": [
+                    "var extra_params={outArea:Ext.getCmp('areaID').getValue(),\r",
+                    "        outAcre:Ext.getCmp('acreID').getValue(),\r",
+                    "        outTranstyle:Ext.getCmp('transtyleID').getValue(),\r",
+                    "    outYear:Ext.getCmp('yearID').getValue()};\r",
+                    "Ext.apply(store.proxy.extraParams,extra_params);"
+                ],
+                "name": "beforeload",
+                "scope": "me"
+            },
+            "designerId": "8de14121-54ba-4785-82e2-c4e76ddbdc9d"
+        }
+    ]
+}

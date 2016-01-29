@@ -1,0 +1,162 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ccQueryStatisticModel",
+        "designer|userAlias": "ccQueryStatisticModel"
+    },
+    "designerId": "10f21fa8-d70a-4172-ba97-a634ac6993cc",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "id",
+                "name": "id",
+                "sortType": "asInt",
+                "type": "int"
+            },
+            "designerId": "ef15929c-cae3-4de4-97a3-4fe1231d732b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "ticketId"
+            },
+            "designerId": "273369ea-0696-437b-9a08-46aafa25d403"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isPush"
+            },
+            "designerId": "51f7b370-4f90-4305-9424-b7ab9a1cf9ee"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "publishDate"
+            },
+            "designerId": "acb7a0f3-96e9-43cf-b6dd-17c5fea7d37e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "area"
+            },
+            "designerId": "094018ee-1285-4078-aa9f-dbf56585d52e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "deadline"
+            },
+            "designerId": "20d04ae1-d921-4498-885e-51f4117934cc"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "isMailPush"
+            },
+            "designerId": "044e7056-87d2-4aed-b9e9-e614a75994ca"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "price"
+            },
+            "designerId": "f49902eb-d536-473a-bb58-7eb8d674d4de"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "auction"
+            },
+            "designerId": "05dff325-dbb8-4d04-afd7-d6b3eaee27e0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "supplier"
+            },
+            "designerId": "37560738-eb4d-43e3-81c1-39f77e1b700d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "others"
+            },
+            "designerId": "63c7072d-246b-496b-94c5-3333a7a1ffe9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "region"
+            },
+            "designerId": "29743176-8d85-495b-970c-242ef64a9d61"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "model": "recor",
+        "designer|userClassName": "record"
+    },
+    "designerId": "316620a9-563b-4687-a07c-9d89d1d4901d",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "getrecord"
+            },
+            "designerId": "bab12554-7891-44ff-a38b-59c85b7b368d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "root"
+                    },
+                    "designerId": "38f4263a-ec63-4940-98dd-cc300eea0f7e"
+                }
+            ]
+        }
+    ]
+}

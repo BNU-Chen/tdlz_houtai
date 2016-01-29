@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-4-1 17:16:59 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="cn.edu.bnu.land.model.Zcwrecord" table="zcwrecord" catalog="tdlz">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="recordid" type="string">
+            <column name="recordid" length="20" not-null="true">
+                <comment>&#177;&#184;&#176;&#184;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="ticketid" type="string">
+            <column name="ticketid" length="30">
+                <comment>&#214;&#184;&#177;&#234;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="releasedate" type="date">
+            <column name="releasedate" length="10">
+                <comment>&#183;&#162;&#178;&#188;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="windate" type="date">
+            <column name="windate" length="10">
+                <comment>&#214;&#208;&#177;&#234;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+        <property name="winner" type="string">
+            <column name="winner" length="30">
+                <comment>&#214;&#208;&#177;&#234;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="amount" type="string">
+            <column name="amount" length="20">
+                <comment>&#182;&#238;&#182;&#200;</comment>
+            </column>
+        </property>
+        <property name="price" type="string">
+            <column name="price" length="20">
+                <comment>&#179;&#201;&#189;&#187;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="totalprice" type="string">
+            <column name="totalprice" length="20">
+                <comment>&#215;&#220;&#188;&#219;</comment>
+            </column>
+        </property>
+        <property name="contractionid" type="string">
+            <column name="contractionid" length="20">
+                <comment>&#186;&#207;&#205;&#172;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="contractcontent" type="string">
+            <column name="contractcontent" length="20">
+                <comment>&#186;&#207;&#205;&#172;&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="certification" type="string">
+            <column name="certification" length="20">
+                <comment>&#214;&#164;&#202;&#233;</comment>
+            </column>
+        </property>
+        <property name="netsignid" type="string">
+            <column name="netsignid" length="20">
+                <comment>&#205;&#248;&#199;&#169;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="operatorid" type="string">
+            <column name="operatorid" length="20">
+                <comment>&#177;&#184;&#176;&#184;&#178;&#217;&#215;&#247;&#212;&#177;&#177;&#224;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="operator" type="string">
+            <column name="operator" length="20">
+                <comment>&#177;&#184;&#176;&#184;&#178;&#217;&#215;&#247;&#212;&#177;&#208;&#213;&#195;&#251;</comment>
+            </column>
+        </property>
+        <property name="recorddate" type="date">
+            <column name="recorddate" length="10">
+                <comment>&#177;&#184;&#176;&#184;&#200;&#213;&#198;&#218;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
